@@ -1,7 +1,5 @@
 
 
-import FooterOne from '@/layouts/footer'
-import HeaderOne from '@/layouts/headers/HeaderOne'
 import AboutHomeOne from './AboutHomeOne'
 import BlogHomeOne from './BlogHomeOne'
 import BrandHomeOne from './BrandHomeOne'
@@ -18,7 +16,6 @@ import WorkingProcessHomeOne from './WorkingProcessHomeOne'
 export default function HomeOne() {
   return (
     <>
-      <HeaderOne />
       <HeroHomeOne />
       <FeatureHomeOne />
       <AboutHomeOne />
@@ -31,7 +28,6 @@ export default function HomeOne() {
       <ReviewHomeOne />
       <BrandHomeOne />
       <BlogHomeOne />
-      <FooterOne />
     </>
   )
 }

@@ -1,11 +1,12 @@
 
 "use client"
-import Link from 'next/link'
-import React, { useState } from 'react'
-import NavMenu from './NavMenu'
-import MobileMenu from './MobileMenu'
 
-export default function HeaderOne() {
+import Link from 'next/link'
+import { useState } from 'react'
+import MobileMenu from './MobileMenu'
+import NavMenu from './NavMenu'
+
+export default function Header() {
 
   const [open, setOpen] = useState(false)
   const [opneMenu, setOpneMenu] = useState(false)

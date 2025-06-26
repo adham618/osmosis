@@ -1,10 +1,6 @@
-
-import React from 'react'
-
-export default function FooterOne() {
+export default function Footer() {
   return (
-    <>
-      <section className="footer">
+      <footer className="footer">
         <div className="container">
           <div className="row">
             <div className="col-xl-7 col-lg-7 wow fadeIn">
@@ -141,9 +137,8 @@ export default function FooterOne() {
         </div>
 
         <div className="copyright text-center wow fadeIn">
-          <p>Copyright © 2024 <a href="#">Edumon</a>. All rights reserved.</p>
+          <p>Copyright © {new Date().getFullYear()} <a href="#">Edumon</a>. All rights reserved.</p>
         </div>
-      </section>
-    </>
+      </footer>
   )
 }

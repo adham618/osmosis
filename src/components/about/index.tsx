@@ -1,6 +1,4 @@
 
-import FooterOne from '@/layouts/footer'
-import HeaderOne from '@/layouts/headers/HeaderOne'
 import Breadcrumb from '../common/Breadcrumb'
 import AboutHomeOne from '../homes/home/AboutHomeOne'
 import CounterHomeOne from '../homes/home/CounterHomeOne'
@@ -10,13 +8,11 @@ import InstructorsHomeOne from '../homes/home/InstructorsHomeOne'
 export default function About() {
   return (
     <>
-      <HeaderOne />
       <Breadcrumb title="About Us" subtitle="About Us" />
       <FeatureHomeOne />
       <AboutHomeOne />
       <CounterHomeOne />
       <InstructorsHomeOne style_2={true} />
-      <FooterOne />
     </>
   )
 }

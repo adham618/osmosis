@@ -1,13 +1,10 @@
 
-import FooterOne from '@/layouts/footer'
-import HeaderOne from '@/layouts/headers/HeaderOne'
 import Link from 'next/link'
 import Breadcrumb from '../common/Breadcrumb'
 
 export default function Error() {
   return (
     <>
-      <HeaderOne />
       <Breadcrumb title="Error" subtitle="Error" />
       <section className="page_not_found">
         <div className="container">
@@ -21,7 +18,6 @@ export default function Error() {
           </div>
         </div>
       </section>
-      <FooterOne />
     </>
   )
 }
