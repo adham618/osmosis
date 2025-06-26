@@ -1,6 +1,7 @@
-import { Metadata, Viewport } from "next";
-import "../styles/index.css";
+import '@/styles/index.css';
 
+
+import { Metadata, Viewport } from "next";
 
 import { siteConfig } from "@/config/site";
 import RootProviders from "./root-providers";
