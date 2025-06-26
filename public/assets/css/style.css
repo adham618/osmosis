@@ -675,7 +675,7 @@ img{
 	right: 5%;
 	z-index: 1;
 }
-.banner_img img{
+.banner_img video{
 	width: 470px;
 	mask-image: radial-gradient(circle at center, black 60%, transparent 100%);
 	-webkit-mask-image: radial-gradient(circle at center, black 60%, transparent 100%);
@@ -683,7 +683,7 @@ img{
 	transition: all 0.3s ease;
 }
 
-.banner_img img:hover {
+.banner_img video:hover {
 	filter: drop-shadow(0 0 30px rgba(138, 43, 226, 0.3));
 	transform: translateY(-5px);
 }
