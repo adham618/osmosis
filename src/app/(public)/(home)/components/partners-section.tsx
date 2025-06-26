@@ -7,7 +7,7 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 export default function PartnersSection() {
   return (
     <section className="container partner-style-2 wow fadeIn">
-      <div className="row">
+      <div className="row pb-5">
         <div className="col-12 wow fadeInUp" style={{ marginTop: "5%" }}>
           <div className="counter-title text-center">
             <h2>
