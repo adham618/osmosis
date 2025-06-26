@@ -221,6 +221,7 @@
 	}
 	.banner_search_form {
 	  width: 500px;
+		max-width: 90vw;
 	}
 	.banner_img {
 		display: none;
@@ -251,7 +252,15 @@
 }
 
 @media only screen and (max-width: 767px){
-
+	.banner_search_form .form-control {
+	padding: 6px 20px;
+	height: 60px;
+}
+.bsearch_btn {
+	width: 100px;
+	height: 40px;
+	font-size: 14px;
+}
 	#navigation::after {
 		width: 61%;
 	}
@@ -273,6 +282,11 @@
 	}
 	.com-content{
 		float: left;
+	}
+
+	.hbstyle-2 .circle_shape {
+		top: 30px;
+		right: 20px;
 	}
 
 }
@@ -339,8 +353,8 @@
 		font-size: 22px;
 	}
 	.banner-content .title {
-		font-size: 50px;
-		line-height: 75px;
+		font-size: 40px;
+		line-height: 55px;
 	}
 	.cstyle-2 .course-img {
 		width: 100%;

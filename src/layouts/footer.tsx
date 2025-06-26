@@ -169,7 +169,7 @@ const Copyright = () => (
 // Main Footer Component
 export default function Footer() {
   return (
-    <footer className="footer fstyle-2">
+    <footer className="footer max-w-full overflow-hidden fstyle-2">
       <div className="container">
         <div className="row footer-bottom">
           <LogoSection />

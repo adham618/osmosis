@@ -2,16 +2,21 @@ import Image from 'next/image';
 
 export default function HeroSection() {
   return (
-    <section
-      className="home-banner hbstyle-2"
-      style={{ backgroundImage: "url(assets/img/bg/metaverse-1.jpg)" }}
+    <section className="home-banner hbstyle-2 position-relative w-100 overflow-hidden"
     >
+      <Image
+        src="/assets/img/bg/metaverse-1.jpg"
+        alt="background"
+        fill
+        className="position-absolute top-0 start-0 w-100 h-100 object-fit-cover z-n1"
+        priority
+      />
       <div className="container">
         <div className="row">
           <div className="col-xl-8 col-lg-7 col-md-12">
             <div className="banner-content d-flex align-items-center">
               <div className="banner-content-inner">
-                <div style={{ maxWidth: "70%" }}>
+                <div style={{ maxWidth: "80%" }}>
                   <h2 className="title">
                     <span>Integrating</span> AR into Next-Gen Classrooms
                   </h2>
@@ -21,6 +26,8 @@ export default function HeroSection() {
                 <div className="banner_search_form">
                   <form action="#" method="post">
                     <input
+                      name="search"
+                      id="search"
                       type="text"
                       className="form-control"
                       placeholder="What do you want to learn better ?"
@@ -50,8 +57,8 @@ export default function HeroSection() {
               <Image
                 src="/assets/img/placeholder.png"
                 alt="image"
-                width={500}
-                height={300}
+                width={165}
+                height={94}
               />
             </div>
 

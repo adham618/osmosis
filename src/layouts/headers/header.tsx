@@ -53,7 +53,6 @@ export default function Header() {
           </div>
         </div>
       </div>
-
       {/* Mobile Menu Toggle */}
       <div
         id="sm_menu_ham"
@@ -65,9 +64,8 @@ export default function Header() {
         <span></span>
         <span></span>
       </div>
-
       {/* Mobile Menu Component */}
-      <MobileMenu opneMenu={openMenu} />
+      {openMenu && <MobileMenu opneMenu={openMenu} />}
     </header>
   );
 }
