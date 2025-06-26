@@ -365,9 +365,6 @@ img{
 	color: #555;
 }
 .header-2{
-	position: sticky;
-	top: 0;
-	z-index: 99;
 }
 .header-2:after{
 	display: none;

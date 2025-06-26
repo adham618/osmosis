@@ -288,9 +288,18 @@
 		float: right;
 		left: auto;
 	}
+	.call-action-button{
+		font-size: 14px;
+		padding: 6px 20px;
+	}
+	#sm_menu_ham span{
+		width: 25px;
+		height: 2px;
+	}
 	.site-logo {
 		float: left;
 		padding-left: 0;
+		padding-right: 0px;
 	}
 
 	.col-30.left-col,
