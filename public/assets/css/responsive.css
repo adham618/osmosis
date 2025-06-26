@@ -230,6 +230,13 @@
 	  margin-left: 15px;
 	  top: -22px;
 	}
+	.hbstyle-2 {
+	height: 600px;
+}
+	.counter-title h2::before,
+	.counter-title h2::after{
+		display: none;
+	}
 	.cta-item{
 		margin-bottom: 30px;
 	}
