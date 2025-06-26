@@ -1,6 +1,7 @@
 
 
 import Error from '@/components/error'
+import Layout from '@/layouts/layout'
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
@@ -11,8 +12,8 @@ export const metadata: Metadata = {
 
 export default function index() {
   return (
-    <>
+    <Layout>
       <Error />
-    </>
+    </Layout>
   )
 }

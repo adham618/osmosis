@@ -49,7 +49,6 @@ export default function HeroSection() {
         <div className="banner_img">
           <div className="banner_img_inner">
             <video autoPlay loop muted playsInline>
-              <source src="assets/img/vr-girl.webm" type="video/webm" />
               <source src="assets/img/vr-girl.mp4" type="video/mp4" />
             </video>
 
