@@ -1,9 +1,8 @@
 
+import FooterOne from '@/layouts/footer'
 import HeaderOne from '@/layouts/headers/HeaderOne'
-import React from 'react'
-import Breadcrumb from '../common/Breadcrumb'
-import FooterOne from '@/layouts/footers/FooterOne'
 import Link from 'next/link'
+import Breadcrumb from '../common/Breadcrumb'
 
 export default function Error() {
   return (

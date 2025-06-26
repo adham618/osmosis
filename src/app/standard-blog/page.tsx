@@ -1,6 +1,5 @@
-import { Metadata } from "next";
 import StandardBlog from "@/components/standard-blog";
-import Wrapper from "@/layouts/Wrapper";
+import { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: 'Standar dBlog Edumon - Education Next JS Template',
@@ -8,8 +7,7 @@ export const metadata: Metadata = {
 }
 export default function index() {
   return (
-    <Wrapper>
+
       <StandardBlog />
-    </Wrapper>
   )
 }

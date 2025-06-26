@@ -1,11 +1,10 @@
 
-import React from 'react'
+import FooterOne from '@/layouts/footer'
 import HeaderOne from '@/layouts/headers/HeaderOne'
 import Breadcrumb from '../common/Breadcrumb'
-import FooterOne from '@/layouts/footers/FooterOne'
-import FeatureHomeOne from '../homes/home/FeatureHomeOne'
 import AboutHomeOne from '../homes/home/AboutHomeOne'
 import CounterHomeOne from '../homes/home/CounterHomeOne'
+import FeatureHomeOne from '../homes/home/FeatureHomeOne'
 import InstructorsHomeOne from '../homes/home/InstructorsHomeOne'
 
 export default function About() {

@@ -1,8 +1,7 @@
 
-import React from 'react'
-import Breadcrumb from '../common/Breadcrumb'
+import FooterOne from '@/layouts/footer'
 import HeaderOne from '@/layouts/headers/HeaderOne'
-import FooterOne from '@/layouts/footers/FooterOne'
+import Breadcrumb from '../common/Breadcrumb'
 import GridBlogArea from './GridBlogArea'
 
 export default function GridBlog() {

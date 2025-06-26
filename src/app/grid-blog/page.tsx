@@ -1,9 +1,7 @@
 
 
 import GridBlog from '@/components/grid-blog'
-import Wrapper from '@/layouts/Wrapper'
 import { Metadata } from 'next'
-import React from 'react'
 
 export const metadata: Metadata = {
   title: 'Grid Blog Edumon - Education Next JS Template',
@@ -13,8 +11,6 @@ export const metadata: Metadata = {
 
 export default function index() {
   return (
-    <Wrapper>
       <GridBlog />
-    </Wrapper>
   )
 }

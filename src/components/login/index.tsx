@@ -1,9 +1,8 @@
 
+import FooterOne from '@/layouts/footer'
 import HeaderOne from '@/layouts/headers/HeaderOne'
-import React from 'react'
 import Breadcrumb from '../common/Breadcrumb'
 import LoginForm from './LoginForm'
-import FooterOne from '@/layouts/footers/FooterOne'
 
 export default function Login() {
   return (

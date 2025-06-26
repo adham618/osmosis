@@ -1,9 +1,8 @@
 
-import React from 'react'
-import CoursesArea from './CoursesArea'
-import Breadcrumb from '../common/Breadcrumb'
+import FooterOne from '@/layouts/footer'
 import HeaderOne from '@/layouts/headers/HeaderOne'
-import FooterOne from '@/layouts/footers/FooterOne'
+import Breadcrumb from '../common/Breadcrumb'
+import CoursesArea from './CoursesArea'
 
 export default function Courses() {
   return (

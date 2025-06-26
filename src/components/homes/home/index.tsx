@@ -1,20 +1,19 @@
 
 
+import FooterOne from '@/layouts/footer'
 import HeaderOne from '@/layouts/headers/HeaderOne'
-import React from 'react'
-import HeroHomeOne from './HeroHomeOne'
-import FeatureHomeOne from './FeatureHomeOne'
 import AboutHomeOne from './AboutHomeOne'
-import CounterHomeOne from './CounterHomeOne'
-import CoursesHomeOne from './CoursesHomeOne'
-import CourseCategoryHomeOne from './CourseCategoryHomeOne'
-import WorkingProcessHomeOne from './WorkingProcessHomeOne'
-import InstructorsHomeOne from './InstructorsHomeOne'
-import VideoHomeOne from './VideoHomeOne'
-import ReviewHomeOne from './ReviewHomeOne'
-import BrandHomeOne from './BrandHomeOne'
 import BlogHomeOne from './BlogHomeOne'
-import FooterOne from '@/layouts/footers/FooterOne'
+import BrandHomeOne from './BrandHomeOne'
+import CounterHomeOne from './CounterHomeOne'
+import CourseCategoryHomeOne from './CourseCategoryHomeOne'
+import CoursesHomeOne from './CoursesHomeOne'
+import FeatureHomeOne from './FeatureHomeOne'
+import HeroHomeOne from './HeroHomeOne'
+import InstructorsHomeOne from './InstructorsHomeOne'
+import ReviewHomeOne from './ReviewHomeOne'
+import VideoHomeOne from './VideoHomeOne'
+import WorkingProcessHomeOne from './WorkingProcessHomeOne'
 
 export default function HomeOne() {
   return (

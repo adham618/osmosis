@@ -1,8 +1,6 @@
 
 import CourseDetails from '@/components/course-details'
-import Wrapper from '@/layouts/Wrapper'
 import { Metadata } from 'next'
-import React from 'react'
 
 export const metadata: Metadata = {
   title: 'Course Details Edumon - Education Next JS Template',
@@ -13,8 +11,6 @@ export const metadata: Metadata = {
 
 export default function index() {
   return (
-    <Wrapper>
       <CourseDetails />
-    </Wrapper>
   )
 }

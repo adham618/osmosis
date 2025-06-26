@@ -1,10 +1,9 @@
 
 
-import React from 'react'
-import CartArea from './CartArea'
-import Breadcrumb from '../common/Breadcrumb'
-import FooterOne from '@/layouts/footers/FooterOne'
+import FooterOne from '@/layouts/footer'
 import HeaderOne from '@/layouts/headers/HeaderOne'
+import Breadcrumb from '../common/Breadcrumb'
+import CartArea from './CartArea'
 
 export default function Cart() {
   return (

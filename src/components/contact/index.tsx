@@ -1,7 +1,6 @@
 
-import FooterOne from '@/layouts/footers/FooterOne'
+import FooterOne from '@/layouts/footer'
 import HeaderOne from '@/layouts/headers/HeaderOne'
-import React from 'react'
 import Breadcrumb from '../common/Breadcrumb'
 import ContactForm from './ContactForm'
 import GoogleMap from './GoogleMap'
