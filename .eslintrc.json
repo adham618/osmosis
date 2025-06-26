@@ -52,25 +52,15 @@
 "import/order": [
   "warn",
   {
-    "groups": ["builtin", "external", "internal", "parent", "sibling", "index"],
+    "groups": ["type", "builtin", "external", "internal", "parent", "sibling", "index"],
     "pathGroups": [
       {
-        "pattern": "bootstrap/**",
+        "pattern": "{react,react-dom}",
         "group": "external",
         "position": "before"
-      },
-      {
-        "pattern": "@/**",
-        "group": "internal",
-        "position": "after"
       }
     ],
-    "pathGroupsExcludedImportTypes": [],
-    "newlines-between": "always",
-    "alphabetize": {
-      "order": "asc",
-      "caseInsensitive": true
-    }
+    "newlines-between": "always"
   }
 ],
     "react/self-closing-comp": "off",

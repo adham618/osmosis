@@ -10,12 +10,12 @@ Version      : 1.1
     --purple-gradient-hover: linear-gradient(135deg, #DA70D6, #8A2BE2);
     --purple-gradient-vertical: linear-gradient(180deg, #8A2BE2, #DA70D6);
     --purple-gradient-radial: radial-gradient(circle at center, #8A2BE2, #DA70D6);
-    
+
     /* Fallback solid colors */
     --purple-light: #DA70D6;
     --purple-main: #8A2BE2;
     --purple-dark: #6A1B9A;
-    
+
     /* Text gradients need background-clip */
     --purple-text-gradient: linear-gradient(45deg, #8A2BE2, #DA70D6);
 }
@@ -43,7 +43,7 @@ h3,
 h4,
 h5,
 h6 {
-	margin-top: 0px; 
+	margin-top: 0px;
 	font-family: 'Urbanist', sans-serif;
 	color: #222;
 	font-weight: 700;
@@ -142,7 +142,7 @@ img{
   animation-name: spin;
   animation-duration: 5000ms;
   animation-iteration-count: infinite;
-  animation-timing-function: linear; 
+  animation-timing-function: linear;
 }
 
 @keyframes spin {
@@ -177,7 +177,7 @@ img{
 	transition: .5s;
 	position: relative;
 	z-index: 1;
-	overflow: hidden;	
+	overflow: hidden;
 }
 
 .bg_btn{
@@ -194,7 +194,7 @@ img{
 }
 .white-btn{
 	background: #fff;
-	color: #222;	
+	color: #222;
 	border: 2px solid #fff;
 }
 
@@ -209,7 +209,7 @@ img{
 	margin: -15px 0 0 1px;
 	width: 15%;
 	height: 30px;
-	border-radius: 50%;	
+	border-radius: 50%;
 	-webkit-transform-origin: 100% 50%;
 	transform-origin: 100% 50%;
 	-webkit-transform: scale3d(1, 2, 1);
@@ -252,7 +252,7 @@ img{
 .wborder_btn:hover,
 .wborder_btn:focus{
 	color: #fff;
-	border-color: #fff;	
+	border-color: #fff;
 }
 
 /* Header */
@@ -352,19 +352,23 @@ img{
 .course_cat ul li li:last-child{
 	border-bottom: none;
 	padding-bottom: 0px;
-	margin-bottom: 0px;	
+	margin-bottom: 0px;
 }
 .course_cat ul li:hover ul{
 	left: -27px;
 	opacity: 1;
-	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)"; 
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
 	visibility: visible;
 	top: 110%;
 }
 .course_cat ul li li i{
 	color: #555;
 }
-.header-2{}
+.header-2{
+	position: sticky;
+	top: 0;
+	z-index: 99;
+}
 .header-2:after{
 	display: none;
 }
@@ -389,11 +393,11 @@ img{
 	font-weight: 600;
 }
 /*-------------------------------
-# Dropdwon menu 
+# Dropdwon menu
 --------------------------------*/
 
 #navigation #main-menu ul li ul ,
-#navigation #main-menu ul li ul li ul {	
+#navigation #main-menu ul li ul li ul {
 	background: #fff;
 	-webkit-box-shadow: 0 0 10px 3px rgba(0,0,0,.05);
 	box-shadow: 0 0 10px 3px rgba(0,0,0,.05);
@@ -442,11 +446,11 @@ img{
 }
 #navigation.navbar-fixed #main-menu ul li li a{
 	color: #333;
-} 
+}
 #navigation #main-menu ul li:hover ul,
 #navigation #main-menu ul li ul li:hover > ul{
 	opacity: 1;
-	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)"; 
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
 	visibility: visible;
 	top: 100%;
 }
@@ -459,7 +463,7 @@ img{
 	line-height: 30px;
 	font-weight: 600;
 	padding: 5px 12px;
-	position: relative;	
+	position: relative;
 	transition: all 0.3s ease 0s !important;
 	visibility: inherit !important;
 	opacity: inherit !important;
@@ -635,7 +639,7 @@ img{
 	z-index: 1;
 }
 .banner-content-inner{
-	
+
 }
 .banner-content .subtitle{
 	font-size: 25px;
@@ -762,7 +766,7 @@ img{
 }
 .total_course_badge .icon svg{
 	width: 30px;
-	display: inline-block;	
+	display: inline-block;
 }
 .tcourse_content{
 	display: inline-block;
@@ -947,7 +951,7 @@ img{
 	bottom: 65px;
 	left: -257px;
 }
-  
+
 .bwavehape svg{
 	width: 1320px;
 }
@@ -1163,7 +1167,7 @@ img{
 }
 .course_content h2{
 	line-height: 32px;
-	margin-bottom: 20px;	
+	margin-bottom: 20px;
 }
 .course_content h2 a{
 	color: #222;
@@ -1231,7 +1235,7 @@ img{
 	background-position: center center;
 }
 .cstyle-2 .ccategory a{
-	
+
 }
 
 .cstyle-2 .course_content {
@@ -1574,7 +1578,7 @@ img{
 	transform: translateX(-1000%);
 	transition: .5s;
 	z-index: 1;
-	
+
 }
 .single-instructor:hover .social-link{
 	transform: translateX(-50%);
@@ -1739,11 +1743,11 @@ svg#play_icon:hover #triangle {
 	transform-origin: 50% 50%;
 }
 
-.vbtn svg #lineOne, 
+.vbtn svg #lineOne,
 .vbtn svg #lineTwo {
 	transform-origin: 50% 50%;
 	transition: 1s;
-} 
+}
 
 .vbtn svg:hover #lineOne {
 	transform: rotate(260deg);
@@ -1751,12 +1755,12 @@ svg#play_icon:hover #triangle {
 	-moz-transform: rotate(260deg);
 	-o-transform: rotate(260deg);
 	transform-origin: 50% 50%;
-} 
+}
 
 .vbtn svg:hover #lineTwo {
 	transform: rotate(-450deg);
 	transform-origin: 50% 50%;
-} 
+}
 
 
 /*-------------------------------
@@ -1870,7 +1874,7 @@ svg#play_icon:hover #triangle {
 
 .review{
 	background: rgb(2,0,36);
-	background: linear-gradient(148deg, rgba(2,0,36,0.7848273098301821) 0%, rgba(13,95,249,0.9697012594100141) 100%); 
+	background: linear-gradient(148deg, rgba(2,0,36,0.7848273098301821) 0%, rgba(13,95,249,0.9697012594100141) 100%);
 	width: 100%;
 	position: relative;
 }
@@ -2027,7 +2031,7 @@ svg#play_icon:hover #triangle {
     background: rgba(255, 255, 255, 0.2);
     animation: animate 25s linear infinite;
     bottom: -150px;
-    
+
 }
 
 .circles li:nth-child(1){
@@ -2151,7 +2155,7 @@ svg#play_icon:hover #triangle {
 
 .blog-item{
 	border: 1px solid #E9EEF4;
-	border-radius: 8px;	
+	border-radius: 8px;
 }
 .blog-image{
 	position: relative;
@@ -2312,7 +2316,7 @@ svg#play_icon:hover #triangle {
 	margin-bottom: 25px;
 }
 .cta_shape{
-	display: inline-block;	
+	display: inline-block;
 	position: absolute;
 	bottom: 0;
 	right: 0;
@@ -2357,7 +2361,7 @@ svg#play_icon:hover #triangle {
 	padding-right: 10px;
 }
 .footer .newsletter{
-	
+
 }
 .footer .newsletter form{
 	position: relative;
@@ -2400,7 +2404,7 @@ svg#play_icon:hover #triangle {
 .fstyle-2 .footer-bottom{
 	border-top: none;
 	padding-top: 20px;
-	margin-top: 0px;	
+	margin-top: 0px;
 }
 .footer-title {
 	font-size: 24px;
@@ -2442,7 +2446,7 @@ svg#play_icon:hover #triangle {
 	float: left;
 }
 .footer-bottom ul li a{
-	
+
 }
 .single-footer li{
 	line-height: 35px;
@@ -2648,7 +2652,7 @@ svg#play_icon:hover #triangle {
 	transform: translate(-50% , -50%);
 	transition: .5s;
 	z-index: 11;
-	
+
 }
 .scbtn:hover,
 .scbtn:focus{
@@ -2732,7 +2736,7 @@ svg#play_icon:hover #triangle {
 	padding-left: 5px;
 }
 .rev_content{
-	
+
 }
 .cd_tab #nav-tab{
 	background: #F9F9F9;
@@ -2927,7 +2931,7 @@ svg#play_icon:hover #triangle {
 }
 .rava_conent p{
 	margin-bottom: 0;
-	
+
 }
 
 .rating_item_ricon{
@@ -3025,7 +3029,7 @@ svg#play_icon:hover #triangle {
 	border-radius: 5px;
 	position: -webkit-sticky; /* For Safari */
 	position: sticky;
-	top: 0;	
+	top: 0;
 	margin-left: 40px;
 }
 .course-sidebar h3{
@@ -3081,7 +3085,7 @@ svg#play_icon:hover #triangle {
 .cd_btn:focus{
 	background-color: #002935;
 	border-color: 1px solid #002935;
-	color: #fff;	
+	color: #fff;
 	box-shadow:0;
 }
 .cd_social{
@@ -3223,7 +3227,7 @@ textarea.form-control{
 }
 
 .popular-posts-widget{
-	
+
 }
 .popular-posts-widget li{
 	display: block;
@@ -3319,7 +3323,7 @@ textarea.form-control{
 	margin-bottom: 0;
 }
 .cdate{
-	font-size: 15px;	
+	font-size: 15px;
 }
 .creplay {
 	position: absolute;
@@ -3349,8 +3353,8 @@ textarea.form-control{
 	border-radius: 50%;
 }
 li.comment{
-	
-	display: block;	
+
+	display: block;
 }
 .comments .children{
 	padding-left: 30px;
@@ -3459,7 +3463,7 @@ li.comment{
 	transform:rotate(360deg);
 }
 .shopping-cart .border{
-	
+
 }
 .shopping-cart .table .remove-icon{
 	font-size:16px;
@@ -3859,7 +3863,7 @@ li.comment{
 .login label,
 .register label{
 	cursor: pointer;
-	
+
 }
 #rpaword{
 	margin-top: 8px;
@@ -3881,7 +3885,7 @@ li.comment{
 	text-align: center;
 	margin-top: 15px;
 }
-.login p a, 
+.login p a,
 .register p a{
 	background: var(--purple-text-gradient);
 	-webkit-background-clip: text;
@@ -4017,7 +4021,7 @@ li.comment{
 	opacity: 1;
 }
 
-.cart_drawer {	
+.cart_drawer {
 	position: absolute;
 	height: 100%;
 	width: 380px;
@@ -4026,21 +4030,21 @@ li.comment{
 	-webkit-overflow-scrolling: touch;
 	-ms-overflow-style: -ms-autohiding-scrollbar;
 	transition: background 0.5s, transform 0.5s;
-	
+
 	-webkit-transform: translateX(100%);
 	transform: translateX(100%);
 	position: absolute;
 	right: 0;
  	background: #fff;
 	border: 1px solid #E9EEF4;
-	box-shadow: 0 0 10px 3px rgba(0,0,0,.05); 
-   
+	box-shadow: 0 0 10px 3px rgba(0,0,0,.05);
+
 }
 #mini_cart.min_cart_active .cart_drawer {
 	-webkit-transform: translateX(0);
 	transform: translateX(0);
 	visibility: visible;
-	opacity: 1;	
+	opacity: 1;
 }
 
 .cart_drawer .cart_close {
@@ -4219,7 +4223,7 @@ li.comment{
 	transform: translateY(0);
 	transition: all 0.3s ease;
 }
- 
+
 .cart_drawer_btm .button-viewcart:hover,
 .cart_drawer_btm .button-viewcart:focus{
 	background: var(--purple-gradient);
@@ -4435,11 +4439,11 @@ li.comment{
 		max-width: 350px;
 		padding: 0 15px;
 	}
-	
+
 	.login {
 		padding: 20px 15px;
 	}
-	
+
 	.login .form-control {
 		height: 32px !important;
 		font-size: 12px !important;
@@ -4459,13 +4463,13 @@ img[src*="biochem.gif"] {
 	transition: all 0.3s ease;
 	margin-right: 60px; /* Increased spacing from text on right */
 	margin-left: 60px; /* Increased spacing from text on left */
-	
+
 	/* Rectangular feather mask using linear gradients */
-	-webkit-mask: 
+	-webkit-mask:
 		linear-gradient(to right, transparent 0%, black 8%, black 92%, transparent 100%),
 		linear-gradient(to bottom, transparent 0%, black 8%, black 92%, transparent 100%);
 	-webkit-mask-composite: intersect;
-	mask: 
+	mask:
 		linear-gradient(to right, transparent 0%, black 8%, black 92%, transparent 100%),
 		linear-gradient(to bottom, transparent 0%, black 8%, black 92%, transparent 100%);
 	mask-composite: intersect;
@@ -4491,13 +4495,13 @@ img[src*="dinosaur.gif"] {
 	transition: all 0.3s ease;
 	margin-right: 60px; /* Increased spacing from text on right */
 	margin-left: 60px; /* Increased spacing from text on left */
-	
+
 	/* Rectangular feather mask using linear gradients */
-	-webkit-mask: 
+	-webkit-mask:
 		linear-gradient(to right, transparent 0%, black 8%, black 92%, transparent 100%),
 		linear-gradient(to bottom, transparent 0%, black 8%, black 92%, transparent 100%);
 	-webkit-mask-composite: intersect;
-	mask: 
+	mask:
 		linear-gradient(to right, transparent 0%, black 8%, black 92%, transparent 100%),
 		linear-gradient(to bottom, transparent 0%, black 8%, black 92%, transparent 100%);
 	mask-composite: intersect;
@@ -4518,13 +4522,13 @@ img[src*="k12-1.png"] {
 	transition: all 0.3s ease;
 	margin-right: 60px; /* Increased spacing from text on right */
 	margin-left: 60px; /* Increased spacing from text on left */
-	
+
 	/* Rectangular feather mask using linear gradients */
-	-webkit-mask: 
+	-webkit-mask:
 		linear-gradient(to right, transparent 0%, black 8%, black 92%, transparent 100%),
 		linear-gradient(to bottom, transparent 0%, black 8%, black 92%, transparent 100%);
 	-webkit-mask-composite: intersect;
-	mask: 
+	mask:
 		linear-gradient(to right, transparent 0%, black 8%, black 92%, transparent 100%),
 		linear-gradient(to bottom, transparent 0%, black 8%, black 92%, transparent 100%);
 	mask-composite: intersect;
@@ -4544,13 +4548,13 @@ img[src*="k12-2.png"] {
 	transition: all 0.3s ease;
 	margin-right: 60px; /* Increased spacing from text on right */
 	margin-left: 60px; /* Increased spacing from text on left */
-	
+
 	/* Rectangular feather mask using linear gradients */
-	-webkit-mask: 
+	-webkit-mask:
 		linear-gradient(to right, transparent 0%, black 8%, black 92%, transparent 100%),
 		linear-gradient(to bottom, transparent 0%, black 8%, black 92%, transparent 100%);
 	-webkit-mask-composite: intersect;
-	mask: 
+	mask:
 		linear-gradient(to right, transparent 0%, black 8%, black 92%, transparent 100%),
 		linear-gradient(to bottom, transparent 0%, black 8%, black 92%, transparent 100%);
 	mask-composite: intersect;
@@ -4571,13 +4575,13 @@ img[src*="girl.png"] {
 	transition: all 0.3s ease;
 	margin-right: 60px; /* Increased spacing from text on right */
 	margin-left: 60px; /* Increased spacing from text on left */
-	
+
 	/* Rectangular feather mask using linear gradients */
-	-webkit-mask: 
+	-webkit-mask:
 		linear-gradient(to right, transparent 0%, black 8%, black 92%, transparent 100%),
 		linear-gradient(to bottom, transparent 0%, black 8%, black 92%, transparent 100%);
 	-webkit-mask-composite: intersect;
-	mask: 
+	mask:
 		linear-gradient(to right, transparent 0%, black 8%, black 92%, transparent 100%),
 		linear-gradient(to bottom, transparent 0%, black 8%, black 92%, transparent 100%);
 	mask-composite: intersect;
@@ -4597,13 +4601,13 @@ img[src*="classroom.png"] {
 	transition: all 0.3s ease;
 	margin-right: 60px; /* Increased spacing from text on right */
 	margin-left: 60px; /* Increased spacing from text on left */
-	
+
 	/* Rectangular feather mask using linear gradients */
-	-webkit-mask: 
+	-webkit-mask:
 		linear-gradient(to right, transparent 0%, black 8%, black 92%, transparent 100%),
 		linear-gradient(to bottom, transparent 0%, black 8%, black 92%, transparent 100%);
 	-webkit-mask-composite: intersect;
-	mask: 
+	mask:
 		linear-gradient(to right, transparent 0%, black 8%, black 92%, transparent 100%),
 		linear-gradient(to bottom, transparent 0%, black 8%, black 92%, transparent 100%);
 	mask-composite: intersect;
@@ -4624,13 +4628,13 @@ img[src*="k12-2.png"] {
 	transition: all 0.3s ease;
 	margin-right: 60px; /* Increased spacing from text on right */
 	margin-left: 60px; /* Increased spacing from text on left */
-	
+
 	/* Rectangular feather mask using linear gradients */
-	-webkit-mask: 
+	-webkit-mask:
 		linear-gradient(to right, transparent 0%, black 8%, black 92%, transparent 100%),
 		linear-gradient(to bottom, transparent 0%, black 8%, black 92%, transparent 100%);
 	-webkit-mask-composite: intersect;
-	mask: 
+	mask:
 		linear-gradient(to right, transparent 0%, black 8%, black 92%, transparent 100%),
 		linear-gradient(to bottom, transparent 0%, black 8%, black 92%, transparent 100%);
 	mask-composite: intersect;
@@ -4650,13 +4654,13 @@ img[src*="vr-exp.gif"] {
 	transition: all 0.3s ease;
 	margin-right: 60px; /* Increased spacing from text on right */
 	margin-left: 60px; /* Increased spacing from text on left */
-	
+
 	/* Rectangular feather mask using linear gradients */
-	-webkit-mask: 
+	-webkit-mask:
 		linear-gradient(to right, transparent 0%, black 8%, black 92%, transparent 100%),
 		linear-gradient(to bottom, transparent 0%, black 8%, black 92%, transparent 100%);
 	-webkit-mask-composite: intersect;
-	mask: 
+	mask:
 		linear-gradient(to right, transparent 0%, black 8%, black 92%, transparent 100%),
 		linear-gradient(to bottom, transparent 0%, black 8%, black 92%, transparent 100%);
 	mask-composite: intersect;
@@ -4676,13 +4680,13 @@ img[src*="vr-guy.gif"] {
 	transition: all 0.3s ease;
 	margin-right: 60px; /* Increased spacing from text on right */
 	margin-left: 60px; /* Increased spacing from text on left */
-	
+
 	/* Rectangular feather mask using linear gradients */
-	-webkit-mask: 
+	-webkit-mask:
 		linear-gradient(to right, transparent 0%, black 8%, black 92%, transparent 100%),
 		linear-gradient(to bottom, transparent 0%, black 8%, black 92%, transparent 100%);
 	-webkit-mask-composite: intersect;
-	mask: 
+	mask:
 		linear-gradient(to right, transparent 0%, black 8%, black 92%, transparent 100%),
 		linear-gradient(to bottom, transparent 0%, black 8%, black 92%, transparent 100%);
 	mask-composite: intersect;
