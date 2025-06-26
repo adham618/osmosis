@@ -1,8 +1,6 @@
 
-import HomeTwo from '@/components/homes/home-2'
+import HeroSection from './components/hero-section';
 
 export default function index() {
-  return (
-    <HomeTwo />
-  )
+  return <HeroSection />;
 }

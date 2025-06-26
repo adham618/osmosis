@@ -364,8 +364,7 @@ img{
 .course_cat ul li li i{
 	color: #555;
 }
-.header-2{
-}
+.header-2{}
 .header-2:after{
 	display: none;
 }
@@ -817,7 +816,7 @@ img{
 	bottom: 0;
 	right: 10%;
 }
-.hbstyle-2 .banner_img img{
+.hbstyle-2 .banner_img video{
 	border-radius: 0;
 }
 .banner_search_form{

@@ -20,10 +20,11 @@
 }
 
 @media only screen and (max-width:1366px) {
-	.banner_img img {
+	.banner_img video
+	 {
 		width: 440px;
 	}
-	.hbstyle-2 .banner_img img {
+	.hbstyle-2 .banner_img video {
 		width: 420px;
 	}
 	.hbstyle-2 .sinfo img{
@@ -89,7 +90,7 @@
 	.cat_list {
 		width: 160px;
 	}
-	.hbstyle-2 .banner_img img {
+	.hbstyle-2 .banner_img video {
 		width: 390px;
 	}
 	.hbstyle-2 .circle_shape {
