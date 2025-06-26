@@ -2135,14 +2135,16 @@ svg#play_icon:hover #triangle {
 .partners{
 	border-radius: 16px;
 	background-color: #002935;
-	padding: 60px;
+}
+
+.partners .swiper-wrapper{
+  align-items: center;
 }
 
 
 .partner-style-2 .partners{
 	border-radius: 0;
 	background: transparent;
-	padding: 100px 0 0;
 }
 
 /*-------------------------------
