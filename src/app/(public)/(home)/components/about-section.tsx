@@ -12,7 +12,6 @@ export default function AboutSection() {
 
             <div
               className="col-xl-4 col-lg-4 align-self-center align-items-center wow fadeIn"
-              style={{ marginLeft: "10%" }}
             >
               <div className="section-title about-title">
                 <span>One platform, unlimited possibilities</span>
@@ -42,7 +41,6 @@ export default function AboutSection() {
           <div className="row">
             <div
               className="col-xl-4 col-lg-4 align-self-center align-items-center wow fadeIn"
-              style={{ marginRight: "40px", marginLeft: "7%" }}
             >
               <div className="section-title about-title">
                 <span>Learning through living</span>
