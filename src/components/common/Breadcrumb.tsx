@@ -6,9 +6,15 @@ type Props = {
   title: string
   subtitle: string
   img?: string
+  noHomeLink?: boolean
 }
 
-export default function Breadcrumb({ title, subtitle, img = '/assets/img/bg/banner.jpg' }: Props) {
+export default function Breadcrumb({
+  title,
+  subtitle,
+  noHomeLink = false,
+  img = '/assets/img/bg/banner.jpg'
+}: Props) {
   return (
     <section className="main-banner position-relative w-100 overflow-hidden">
       <Image src={img} alt="background" fill className="object-fit-cover z-n1" priority />
@@ -17,7 +23,12 @@ export default function Breadcrumb({ title, subtitle, img = '/assets/img/bg/bann
           <div className="col-xl-12 text-center">
             <h2>{title}</h2>
             <p>
-              <Link href="/">Home</Link> <i className="bx bx-chevrons-right"></i> {subtitle}
+              {!noHomeLink && (
+                <>
+                  <Link href="/">Home</Link> <i className="bx bx-chevrons-right"></i>
+                </>
+              )}{' '}
+              {subtitle}
             </p>
           </div>
         </div>

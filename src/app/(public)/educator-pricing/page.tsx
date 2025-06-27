@@ -17,6 +17,7 @@ export default function EducatorPricingPage() {
         title="Pricing"
         subtitle="Straightforward and easy-to-understand subscription plans"
         img="/assets/img/bg/banner2.png"
+        noHomeLink
       />
       <EducatorPricing />
     </main>
