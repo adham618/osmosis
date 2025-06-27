@@ -2237,9 +2237,10 @@ svg#play_icon:hover #triangle {
 	transform: translateY(0);
 }
 .bmeta .bcat a:hover {
-	background-position: right center;
+	-webkit-text-fill-color: white;
+	/* background-position: right center;
 	transform: translateY(-2px);
-	box-shadow: 0 5px 15px rgba(138, 43, 226, 0.2);
+	box-shadow: 0 5px 15px rgba(138, 43, 226, 0.2); */
 }
 .bbtn{
 	color: #444;
@@ -3695,8 +3696,8 @@ li.comment{
 }
 .shop.checkout .nice-select {
 	width: 100%;
-	height: 45px;
-	line-height: 50px;
+	padding: 10px 10px;
+	height: auto;
 	margin-bottom: 25px;
 	background: #F6F7FB;
 	border-radius: 0px;
@@ -3705,7 +3706,7 @@ li.comment{
 .shop.checkout .nice-select .list {
 	width: 100%;
 	height: 300px;
-	overflow: scroll;
+	overflow: auto;
 }
 .shop.checkout .nice-select .list li{}
 .shop.checkout .nice-select .list li.option{

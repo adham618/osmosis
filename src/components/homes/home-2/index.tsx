@@ -1,5 +1,3 @@
-
-
 import AboutHomeOne from '../home/AboutHomeOne'
 import BlogHomeOne from '../home/BlogHomeOne'
 import CounterHomeOne from '../home/CounterHomeOne'
@@ -8,6 +6,7 @@ import FeatureHomeOne from '../home/FeatureHomeOne'
 import InstructorsHomeOne from '../home/InstructorsHomeOne'
 import ReviewHomeOne from '../home/ReviewHomeOne'
 import WorkingProcessHomeOne from '../home/WorkingProcessHomeOne'
+
 import BrandHomeTwo from './BrandHomeTwo'
 import CoursesHomeTwo from './CoursesHomeTwo'
 import CtaHomeTwo from './CtaHomeTwo'

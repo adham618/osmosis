@@ -1,12 +1,6 @@
-import ModalVideo from "react-modal-video"; 
+import ModalVideo from 'react-modal-video'
 
-
-const VideoPopup = ({
-  isVideoOpen,
-  setIsVideoOpen,
-  videoId = "bgMEvrd2E", 
-  
-}:any ) => {
+const VideoPopup = ({ isVideoOpen, setIsVideoOpen, videoId = 'bgMEvrd2E' }: any) => {
   return (
     <>
       <ModalVideo
@@ -17,8 +11,7 @@ const VideoPopup = ({
         onClose={() => setIsVideoOpen(false)}
       />
     </>
-  );
-};
+  )
+}
 
-export default VideoPopup;
-
+export default VideoPopup

@@ -1,5 +1,5 @@
-
 import Breadcrumb from '../common/Breadcrumb'
+
 import CoursesArea from './CoursesArea'
 
 export default function Courses() {

@@ -1,14 +1,15 @@
-import { siteConfig } from "@/config/site";
-import Image from "next/image";
-import Link from "next/link";
+import Image from 'next/image'
+import Link from 'next/link'
+
+import { siteConfig } from '@/config/site'
 
 // Reusable SVG Components
 const BulbIcon = () => (
   <svg fill="none" viewBox="0 0 90 90" className="w-full h-full">
     <defs>
       <linearGradient id="purpleWhiteTrans" x1="0%" y1="0%" x2="100%" y2="0%">
-        <stop offset="0%" style={{ stopColor: "#8A2BE2", stopOpacity: 0.28 }} />
-        <stop offset="100%" style={{ stopColor: "#DA70D6", stopOpacity: 0.28 }} />
+        <stop offset="0%" style={{ stopColor: '#8A2BE2', stopOpacity: 0.28 }} />
+        <stop offset="100%" style={{ stopColor: '#DA70D6', stopOpacity: 0.28 }} />
       </linearGradient>
     </defs>
     <g fill="url(#purpleWhiteTrans)" clipPath="url(#clip0_2833_430)">
@@ -21,14 +22,14 @@ const BulbIcon = () => (
       </clipPath>
     </defs>
   </svg>
-);
+)
 
 const PencilIcon = () => (
   <svg fill="none" viewBox="0 0 57 57" className="w-full h-full">
     <defs>
       <linearGradient id="purpleWhiteTrans2" x1="0%" y1="0%" x2="100%" y2="0%">
-        <stop offset="0%" style={{ stopColor: "#8A2BE2", stopOpacity: 0.2 }} />
-        <stop offset="100%" style={{ stopColor: "#DA70D6", stopOpacity: 0.2 }} />
+        <stop offset="0%" style={{ stopColor: '#8A2BE2', stopOpacity: 0.2 }} />
+        <stop offset="100%" style={{ stopColor: '#DA70D6', stopOpacity: 0.2 }} />
       </linearGradient>
     </defs>
     <path
@@ -36,14 +37,14 @@ const PencilIcon = () => (
       d="M46.865.174c-.345.122-.846.367-1.113.557-.268.19-9.479 9.334-20.46 20.316l-19.96 19.97-2.629 6.393C1.255 50.92.041 53.993.02 54.227-.171 55.597 1.089 57 2.514 57c.479 0 1.078-.158 1.37-.352.293-.21 3.586-1.547 7.313-2.988 3.744-1.442 6.873-2.672 6.978-2.742.088-.053 9.285-9.194 20.425-20.3C49.757 19.494 58.866 10.39 58.866 10.32c0-.281-1.582-4.518-2.092-5.607C55.297 1.686 52.885.051 50.082.034c-.914 0-2.092.053-2.619.14-.527.105-1.113.14-1.301.105-.193-.018-.95.053-1.687.158"
     />
   </svg>
-);
+)
 
 const PolygonIcon = () => (
   <svg fill="none" viewBox="0 0 68 73" className="w-full h-full">
     <defs>
       <linearGradient id="purpleWhiteTrans3" x1="0%" y1="0%" x2="100%" y2="0%">
-        <stop offset="0%" style={{ stopColor: "#8A2BE2", stopOpacity: 0.05 }} />
-        <stop offset="100%" style={{ stopColor: "#DA70D6", stopOpacity: 0.05 }} />
+        <stop offset="0%" style={{ stopColor: '#8A2BE2', stopOpacity: 0.05 }} />
+        <stop offset="100%" style={{ stopColor: '#DA70D6', stopOpacity: 0.05 }} />
       </linearGradient>
     </defs>
     <path
@@ -51,32 +52,32 @@ const PolygonIcon = () => (
       d="M4.216 47.5C.004 45.604-.578 39.86 3.17 37.16L52.345 1.71c3.747-2.7 9.013-.332 9.478 4.263l6.112 60.313c.465 4.595-4.218 7.971-8.43 6.077L4.216 47.5z"
     />
   </svg>
-);
+)
 
 const CircleIcon = () => (
   <svg fill="none" viewBox="0 0 199 199" className="w-full h-full">
     <defs>
       <linearGradient id="purpleGradientTrans" x1="0%" y1="0%" x2="100%" y2="0%">
-        <stop offset="0%" style={{ stopColor: "#8A2BE2", stopOpacity: 0.05 }} />
-        <stop offset="100%" style={{ stopColor: "#DA70D6", stopOpacity: 0.05 }} />
+        <stop offset="0%" style={{ stopColor: '#8A2BE2', stopOpacity: 0.05 }} />
+        <stop offset="100%" style={{ stopColor: '#DA70D6', stopOpacity: 0.05 }} />
       </linearGradient>
     </defs>
     <circle cx="99.5" cy="99.5" r="99.5" fill="url(#purpleGradientTrans)" />
   </svg>
-);
+)
 
 // Navigation data
 const NAVIGATION_LINKS = [
-  { href: "/", label: "Home" },
-  { href: "/courses-1", label: "Courses" },
-  { href: "/educator-pricing", label: "Pricing" },
-];
+  { href: '/', label: 'Home' },
+  { href: '/courses-1', label: 'Courses' },
+  { href: '/educator-pricing', label: 'Pricing' }
+]
 
 // Contact information
 const CONTACT_INFO = {
-  email: "contact@osmosis-ar.com",
-  address: "101 N 1st Ave Suite 2325, Phoenix AZ 85003 USA",
-};
+  email: 'contact@osmosis-ar.com',
+  address: '101 N 1st Ave Suite 2325, Phoenix AZ 85003 USA'
+}
 
 // Footer Section Components
 const LogoSection = () => (
@@ -97,7 +98,7 @@ const LogoSection = () => (
       </div>
     </div>
   </div>
-);
+)
 
 const UsefulLinksSection = () => (
   <div className="col-xl-3 col-md-6 col-12 wow fadeIn">
@@ -106,36 +107,29 @@ const UsefulLinksSection = () => (
       <ul>
         {NAVIGATION_LINKS.map((link) => (
           <li key={link.href}>
-            <Link href={link.href}>
-              {link.label}
-            </Link>
+            <Link href={link.href}>{link.label}</Link>
           </li>
         ))}
       </ul>
     </div>
   </div>
-);
+)
 
 const ContactSection = () => (
   <div className="col-xl-3 col-md-6 col-12 wow fadeIn">
     <div className="single-footer">
       <h3 className="footer-title">Contact Us</h3>
       <div className="newsletter">
-        <Link
-          href={`mailto:${CONTACT_INFO.email}`}
-          className="footer-email"
-        >
+        <Link href={`mailto:${CONTACT_INFO.email}`} className="footer-email">
           {CONTACT_INFO.email}
         </Link>
         <p>
-          <span>
-            {CONTACT_INFO.address}
-          </span>
+          <span>{CONTACT_INFO.address}</span>
         </p>
       </div>
     </div>
   </div>
-);
+)
 
 const DecorativeShapes = () => (
   <>
@@ -152,19 +146,16 @@ const DecorativeShapes = () => (
       <CircleIcon />
     </div>
   </>
-);
+)
 
 const Copyright = () => (
   <div className="copyright text-center wow fadeIn">
     <p>
-      Copyright © {new Date().getFullYear()}{" "}
-      <Link href="/">
-        {siteConfig.short_name}
-      </Link>
-      . All rights reserved.
+      Copyright © {new Date().getFullYear()} <Link href="/">{siteConfig.short_name}</Link>. All
+      rights reserved.
     </p>
   </div>
-);
+)
 
 // Main Footer Component
 export default function Footer() {
@@ -180,5 +171,5 @@ export default function Footer() {
       </div>
       <Copyright />
     </footer>
-  );
+  )
 }

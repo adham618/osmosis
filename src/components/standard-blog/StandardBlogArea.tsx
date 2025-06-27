@@ -1,5 +1,5 @@
-
-"use client"
+/* eslint-disable @next/next/no-img-element */
+'use client'
 
 import Link from 'next/link'
 import React from 'react'
@@ -27,11 +27,18 @@ export default function StandardBlogArea() {
                     </span>
                   </div>
 
-                  <h3><Link href="/blog-details">A Student Learning with Online Programme on Computer</Link></h3>
+                  <h3>
+                    <Link href="/blog-details">
+                      A Student Learning with Online Programme on Computer
+                    </Link>
+                  </h3>
                   <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut luctus eget dolor non condimentum. Mauris ac augue eu ex elementum dictum Quisque fermentum augue.
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut luctus eget dolor
+                    non condimentum. Mauris ac augue eu ex elementum dictum Quisque fermentum augue.
                   </p>
-                  <Link href="/blog-details" className="bbtn">Explore More</Link>
+                  <Link href="/blog-details" className="bbtn">
+                    Explore More
+                  </Link>
                 </div>
               </div>
 
@@ -51,22 +58,43 @@ export default function StandardBlogArea() {
                     </span>
                   </div>
 
-                  <h3><Link href="/blog-details">All Students and Teachers are Happy To Back to School</Link></h3>
+                  <h3>
+                    <Link href="/blog-details">
+                      All Students and Teachers are Happy To Back to School
+                    </Link>
+                  </h3>
                   <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut luctus eget dolor non condimentum. Mauris ac augue eu ex elementum dictum Quisque fermentum augue.
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut luctus eget dolor
+                    non condimentum. Mauris ac augue eu ex elementum dictum Quisque fermentum augue.
                   </p>
-                  <Link href="/blog-details" className="bbtn">Explore More</Link>
+                  <Link href="/blog-details" className="bbtn">
+                    Explore More
+                  </Link>
                 </div>
               </div>
 
               <div className="col-12 text-center">
                 <div className="post_pagination">
                   <ul>
-                    <li><a href="#"><i className="fa-solid fa-arrow-left-long"></i></a></li>
-                    <li><a href="#">1</a></li>
-                    <li className="active"><a href="#">2</a></li>
-                    <li><a href="#">3</a></li>
-                    <li><a href="#"><i className="fa-solid fa-arrow-right-long"></i></a></li>
+                    <li>
+                      <a href="#">
+                        <i className="fa-solid fa-arrow-left-long"></i>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">1</a>
+                    </li>
+                    <li className="active">
+                      <a href="#">2</a>
+                    </li>
+                    <li>
+                      <a href="#">3</a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <i className="fa-solid fa-arrow-right-long"></i>
+                      </a>
+                    </li>
                   </ul>
                 </div>
               </div>
@@ -87,10 +115,18 @@ export default function StandardBlogArea() {
               <div className="widget category-widget wow fadeIn">
                 <h3 className="widget-title">Category</h3>
                 <ul>
-                  <li><a href="#">UI / UX Design</a></li>
-                  <li><a href="#">Web Design</a></li>
-                  <li><a href="#">App Development</a></li>
-                  <li><a href="#">Branding and Printing</a></li>
+                  <li>
+                    <a href="#">UI / UX Design</a>
+                  </li>
+                  <li>
+                    <a href="#">Web Design</a>
+                  </li>
+                  <li>
+                    <a href="#">App Development</a>
+                  </li>
+                  <li>
+                    <a href="#">Branding and Printing</a>
+                  </li>
                 </ul>
               </div>
 
@@ -104,7 +140,7 @@ export default function StandardBlogArea() {
                       </div>
                       <div className="ppcontent">
                         <h4>Lorem Ipsum is simply dummy</h4>
-                        <span>10 Jan,  2024</span>
+                        <span>10 Jan, 2024</span>
                       </div>
                     </a>
                   </li>
@@ -116,7 +152,7 @@ export default function StandardBlogArea() {
                       </div>
                       <div className="ppcontent">
                         <h4>Lorem Ipsum is simply dummy</h4>
-                        <span>10 Jan,  2024</span>
+                        <span>10 Jan, 2024</span>
                       </div>
                     </a>
                   </li>
@@ -128,7 +164,7 @@ export default function StandardBlogArea() {
                       </div>
                       <div className="ppcontent">
                         <h4>Lorem Ipsum is simply dummy</h4>
-                        <span>10 Jan,  2024</span>
+                        <span>10 Jan, 2024</span>
                       </div>
                     </a>
                   </li>
@@ -146,7 +182,6 @@ export default function StandardBlogArea() {
                   <a href="#">Profit</a>
                 </div>
               </div>
-
             </div>
           </div>
         </div>

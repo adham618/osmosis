@@ -1,6 +1,5 @@
-
-
 import Breadcrumb from '../common/Breadcrumb'
+
 import StandardBlogArea from './StandardBlogArea'
 
 export default function StandardBlog() {

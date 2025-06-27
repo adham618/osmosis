@@ -1,6 +1,7 @@
-import Image from "next/image";
-import Link from "next/link";
-import Breadcrumb from "../common/Breadcrumb";
+import Image from 'next/image'
+import Link from 'next/link'
+
+import Breadcrumb from '../common/Breadcrumb'
 
 export default function Error() {
   return (
@@ -10,12 +11,7 @@ export default function Error() {
         <div className="container">
           <div className="row">
             <div className="col-12 text-center wow fadeIn">
-              <Image
-                src="/assets/img/404.svg"
-                alt="404"
-                width={500}
-                height={500}
-              />
+              <Image src="/assets/img/404.svg" alt="404" width={500} height={500} />
               <h2>Page not found: /error</h2>
               <p>Please try searching for some other page.</p>
               <Link href="/" className="bg_btn bt">
@@ -26,5 +22,5 @@ export default function Error() {
         </div>
       </section>
     </>
-  );
+  )
 }

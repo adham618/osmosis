@@ -1,5 +1,5 @@
-import Image from 'next/image';
-import Link from 'next/link';
+import Image from 'next/image'
+import Link from 'next/link'
 
 export default function CtaSection() {
   return (
@@ -13,9 +13,8 @@ export default function CtaSection() {
                   For <span>Educators</span>
                 </h3>
                 <p>
-                  We offer comprehensive software solutions to make classroom
-                  AR/VR integration as easy as possible, offering training and
-                  support every step of the way.
+                  We offer comprehensive software solutions to make classroom AR/VR integration as
+                  easy as possible, offering training and support every step of the way.
                 </p>
                 <div className="mt-auto">
                   <Link href="/educator-features" className="bg_btn bt">
@@ -47,10 +46,10 @@ export default function CtaSection() {
                   </mask>
                   <path
                     stroke="#0F2B5A"
-                    stroke-dasharray="7 7"
-                    stroke-linecap="square"
-                    stroke-linejoin="round"
-                    stroke-width="2"
+                    strokeDasharray="7 7"
+                    strokeLinecap="square"
+                    strokeLinejoin="round"
+                    strokeWidth="2"
                     d="M177 89c0 48.601-39.399 88-88 88S1 137.601 1 89 40.399 1 89 1s88 39.399 88 88zM26.996 89c0 34.244 27.76 62.004 62.004 62.004s62.004-27.76 62.004-62.004S123.244 26.996 89 26.996 26.996 54.756 26.996 89z"
                     mask="url(#a)"
                   />
@@ -66,8 +65,8 @@ export default function CtaSection() {
                   For <span>Students</span>
                 </h3>
                 <p>
-                  Offering a wide variety of courses in varying formats, from
-                  school-run, to instructor-based, to fully independent.
+                  Offering a wide variety of courses in varying formats, from school-run, to
+                  instructor-based, to fully independent.
                 </p>
                 <div className="mt-auto">
                   <Link href="/k12" className="bg_btn bt">
@@ -99,10 +98,10 @@ export default function CtaSection() {
                   </mask>
                   <path
                     stroke="#0F2B5A"
-                    stroke-dasharray="7 7"
-                    stroke-linecap="square"
-                    stroke-linejoin="round"
-                    stroke-width="2"
+                    strokeDasharray="7 7"
+                    strokeLinecap="square"
+                    strokeLinejoin="round"
+                    strokeWidth="2"
                     d="M177 89c0 48.601-39.399 88-88 88S1 137.601 1 89 40.399 1 89 1s88 39.399 88 88zM26.996 89c0 34.244 27.76 62.004 62.004 62.004s62.004-27.76 62.004-62.004S123.244 26.996 89 26.996 26.996 54.756 26.996 89z"
                     mask="url(#a)"
                   />
@@ -113,5 +112,5 @@ export default function CtaSection() {
         </div>
       </div>
     </section>
-  );
+  )
 }

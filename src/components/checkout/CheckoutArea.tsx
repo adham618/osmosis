@@ -1,12 +1,8 @@
-
-"use client"
+'use client'
 import NiceSelect from '@/ui/NiceSelect'
-import React from 'react'
 
 export default function CheckoutArea() {
-
-  const selectHandler = (e: any) => { };
-
+  const selectHandler = () => {}
 
   return (
     <>
@@ -17,36 +13,45 @@ export default function CheckoutArea() {
               <div className="checkout-form">
                 <h2>Billing Details</h2>
 
-
-                <form className="form" onSubmit={e => e.preventDefault()}>
+                <form className="form" onSubmit={(e) => e.preventDefault()}>
                   <div className="row">
                     <div className="col-lg-6 col-md-6 col-12">
                       <div className="form-group">
-                        <label htmlFor="fname">First Name <span> * </span> </label>
+                        <label htmlFor="fname">
+                          First Name <span> * </span>{' '}
+                        </label>
                         <input id="fname" type="text" name="name" placeholder="" required />
                       </div>
                     </div>
                     <div className="col-lg-6 col-md-6 col-12">
                       <div className="form-group">
-                        <label htmlFor="lname">Last Name<span>*</span></label>
+                        <label htmlFor="lname">
+                          Last Name<span>*</span>
+                        </label>
                         <input id="lname" type="text" name="name" placeholder="" required />
                       </div>
                     </div>
                     <div className="col-lg-6 col-md-6 col-12">
                       <div className="form-group">
-                        <label htmlFor="email">Email Address<span>*</span></label>
+                        <label htmlFor="email">
+                          Email Address<span>*</span>
+                        </label>
                         <input id="email" type="email" name="email" placeholder="" required />
                       </div>
                     </div>
                     <div className="col-lg-6 col-md-6 col-12">
                       <div className="form-group">
-                        <label htmlFor="pnumber">Phone Number<span>*</span></label>
+                        <label htmlFor="pnumber">
+                          Phone Number<span>*</span>
+                        </label>
                         <input id="pnumber" type="text" name="number" placeholder="" required />
                       </div>
                     </div>
                     <div className="col-lg-6 col-md-6 col-12">
                       <div className="form-group">
-                        <label htmlFor="country">Country<span>*</span></label>
+                        <label htmlFor="country">
+                          Country<span>*</span>
+                        </label>
                         {/* <select name="country_name" id="country">
                           <option value="AF">Afghanistan</option>
                           <option value="AX">Åland Islands</option>
@@ -102,7 +107,7 @@ export default function CheckoutArea() {
                           <option value="CD">Congo - Kinshasa</option>
                           <option value="CK">Cook Islands</option>
                           <option value="CR">Costa Rica</option>
-                          <option value="CI">Côte d’Ivoire</option>
+                          <option value="CI">Côte d'Ivoire</option>
                           <option value="HR">Croatia</option>
                           <option value="CU">Cuba</option>
                           <option value="CY">Cyprus</option>
@@ -298,70 +303,78 @@ export default function CheckoutArea() {
                         <NiceSelect
                           className="nice-select"
                           options={[
-                            { value: "01", text: "Afghanistan" },
-                            { value: "02", text: "Åland Islands" },
-                            { value: "03", text: "Albania" },
-                            { value: "04", text: "Algeria" },
-                            { value: "05", text: "American Samoa" },
-                            { value: "06", text: "Andorra" },
-                            { value: "07", text: "Angola" },
-                            { value: "08", text: "Anguilla" },
-                            { value: "09", text: "Antarctica" },
-                            { value: "10", text: "Antigua and Barbuda" },
-                            { value: "11", text: "Argentina" },
-                            { value: "12", text: "Armenia" },
-                            { value: "13", text: "Aruba" },
-                            { value: "14", text: "Australia" },
-                            { value: "15", text: "Austria" },
-                            { value: "16", text: "Azerbaijan" },
-                            { value: "17", text: "Bahamas" },
-                            { value: "18", text: "Bahrain" },
-                            { value: "19", text: "Bangladesh" },
-                            { value: "20", text: "Barbados" },
+                            { value: '01', text: 'Afghanistan' },
+                            { value: '02', text: 'Åland Islands' },
+                            { value: '03', text: 'Albania' },
+                            { value: '04', text: 'Algeria' },
+                            { value: '05', text: 'American Samoa' },
+                            { value: '06', text: 'Andorra' },
+                            { value: '07', text: 'Angola' },
+                            { value: '08', text: 'Anguilla' },
+                            { value: '09', text: 'Antarctica' },
+                            { value: '10', text: 'Antigua and Barbuda' },
+                            { value: '11', text: 'Argentina' },
+                            { value: '12', text: 'Armenia' },
+                            { value: '13', text: 'Aruba' },
+                            { value: '14', text: 'Australia' },
+                            { value: '15', text: 'Austria' },
+                            { value: '16', text: 'Azerbaijan' },
+                            { value: '17', text: 'Bahamas' },
+                            { value: '18', text: 'Bahrain' },
+                            { value: '19', text: 'Bangladesh' },
+                            { value: '20', text: 'Barbados' }
                           ]}
                           defaultCurrent={0}
                           onChange={selectHandler}
                           name=""
-                          placeholder="" />
-
+                          placeholder=""
+                        />
                       </div>
                     </div>
                     <div className="col-lg-6 col-md-6 col-12">
                       <div className="form-group">
-                        <label>State / Divition<span>*</span></label> 
+                        <label htmlFor="state">
+                          State / Division<span>*</span>
+                        </label>
                         <NiceSelect
                           className="nice-select"
                           options={[
-                            { value: "01", text: "New York" },
-                            { value: "02", text: "Los Angeles" },
-                            { value: "03", text: "Chicago" },
-                            { value: "04", text: "Houston" },
-                            { value: "05", text: "San Diego" },
-                            { value: "06", text: "Dallas" },
-                            { value: "07", text: "Charlotte" },
+                            { value: '01', text: 'New York' },
+                            { value: '02', text: 'Los Angeles' },
+                            { value: '03', text: 'Chicago' },
+                            { value: '04', text: 'Houston' },
+                            { value: '05', text: 'San Diego' },
+                            { value: '06', text: 'Dallas' },
+                            { value: '07', text: 'Charlotte' }
                           ]}
                           defaultCurrent={0}
                           onChange={selectHandler}
-                          name=""
-                          placeholder="" />
-
+                          name="state"
+                          placeholder=""
+                        />
                       </div>
                     </div>
                     <div className="col-lg-6 col-md-6 col-12">
                       <div className="form-group">
-                        <label htmlFor="aline1">Address Line 1<span>*</span></label>
+                        <label htmlFor="aline1">
+                          Address Line 1<span>*</span>
+                        </label>
                         <input id="aline1" type="text" name="address" placeholder="" required />
                       </div>
                     </div>
                     <div className="col-lg-6 col-md-6 col-12">
                       <div className="form-group">
-                        <label htmlFor="aline2">Address Line 2<span>*</span></label>
+                        <label htmlFor="aline2">
+                          Address Line 2<span>*</span>
+                        </label>
                         <input id="aline2" type="text" name="address" placeholder="" required />
                       </div>
                     </div>
                     <div className="col-lg-6 col-md-6 col-12">
                       <div className="form-group">
-                        <label htmlFor="pcode">Postal Code<span>*</span></label>
+                        <label htmlFor="pcode">
+                          Postal Code<span>*</span>
+                        </label>
                         <input id="pcode" type="text" name="post" placeholder="" required />
                       </div>
                     </div>
@@ -369,58 +382,77 @@ export default function CheckoutArea() {
                       <div className="form-group">
                         <label htmlFor="note">Note </label>
                         <input id="note" type="text" name="note" placeholder="" required />
-
                       </div>
                     </div>
                     <div className="col-12">
                       <div className="form-group create-account">
-                        <input id="cbox" type="checkbox" />
-                        <label>Create an account?</label>
+                        <div>
+                          <label htmlFor="createAccount">Create an account?</label>
+                          <input type="checkbox" id="createAccount" name="createAccount" />
+                        </div>
                       </div>
                     </div>
                   </div>
                 </form>
-
               </div>
             </div>
 
             <div className="col-lg-4 col-12 wow fadeIn">
               <div className="order-details">
-
                 <div className="single-widget">
                   <h2>Cart Total</h2>
                   <div className="content">
                     <ul>
-                      <li>Sub Total<span>$250.00</span></li>
-                      <li>(+) Shipping<span>$20.00</span></li>
-                      <li className="last">Total<span>$270.00</span></li>
+                      <li>
+                        Sub Total<span>$250.00</span>
+                      </li>
+                      <li>
+                        (+) Shipping<span>$20.00</span>
+                      </li>
+                      <li className="last">
+                        Total<span>$270.00</span>
+                      </li>
                     </ul>
                   </div>
                 </div>
 
-
                 <div className="single-widget">
                   <h2>Payments</h2>
                   <div className="content">
-
-
                     <div className="checkbox">
                       <div className="form-check">
-                        <input className="form-check-input" type="radio" name="flexRadioDefault" id="pmethod1" />
+                        <input
+                          className="form-check-input"
+                          type="radio"
+                          name="flexRadioDefault"
+                          id="pmethod1"
+                        />
                         <label className="form-check-label" htmlFor="pmethod1">
                           Check Payments
                         </label>
                       </div>
 
                       <div className="form-check">
-                        <input className="form-check-input" type="radio" name="flexRadioDefault" id="pmethod2" defaultChecked />
+                        <input
+                          className="form-check-input"
+                          type="radio"
+                          name="flexRadioDefault"
+                          id="pmethod2"
+                          defaultChecked
+                        />
                         <label className="form-check-label" htmlFor="pmethod2">
                           Cash On Delivery
                         </label>
                       </div>
 
                       <div className="form-check">
-                        <input className="form-check-input" type="radio" name="flexRadioDefault" id="pmethod3" defaultChecked />
+                        <input
+                          className="form-check-input"
+                          type="radio"
+                          name="flexRadioDefault"
+                          id="pmethod3"
+                          defaultChecked
+                        />
                         <label className="form-check-label" htmlFor="pmethod3">
                           PayPal
                         </label>
@@ -429,16 +461,15 @@ export default function CheckoutArea() {
                   </div>
                 </div>
 
-
-
                 <div className="single-widget get-button">
                   <div className="content">
                     <div className="button">
-                      <a href="#" className="bg_btn bt">Proceed to Checkout</a>
+                      <a href="#" className="bg_btn bt">
+                        Proceed to Checkout
+                      </a>
                     </div>
                   </div>
                 </div>
-
               </div>
             </div>
           </div>

@@ -1,4 +1,5 @@
-"use client"
+/* eslint-disable @next/next/no-img-element */
+'use client'
 
 import React from 'react'
 
@@ -16,12 +17,13 @@ export default function ContactForm() {
                     <div className="col-xl-4 col-md-4 ">
                       <div className="contact_list">
                         <div className="cicon">
-                          <i className='bx bx-phone-call'></i>
+                          <i className="bx bx-phone-call"></i>
                         </div>
                         <div className="cinfo_content">
                           <h4>For any Query?</h4>
                           <p>
-                            <a href="#">Free +68 (025)-9875</a><br />
+                            <a href="#">Free +68 (025)-9875</a>
+                            <br />
                             <a href="#">Free +68 (026)-9879</a>
                           </p>
                         </div>
@@ -31,12 +33,13 @@ export default function ContactForm() {
                     <div className="col-xl-4 col-md-4">
                       <div className="contact_list">
                         <div className="cicon">
-                          <i className='bx bx-envelope' ></i>
+                          <i className="bx bx-envelope"></i>
                         </div>
                         <div className="cinfo_content">
                           <h4>Write email Us</h4>
                           <p>
-                            <a href="#">admin@example.com</a><br />
+                            <a href="#">admin@example.com</a>
+                            <br />
                             <a href="#">support@example.com</a>
                           </p>
                         </div>
@@ -46,13 +49,11 @@ export default function ContactForm() {
                     <div className="col-xl-4 col-md-4">
                       <div className="contact_list">
                         <div className="cicon">
-                          <i className='bx bx-map' ></i>
+                          <i className="bx bx-map"></i>
                         </div>
                         <div className="cinfo_content">
                           <h4>Visit anytime</h4>
-                          <p>
-                            427 Hall Place Longview, Texas
-                          </p>
+                          <p>427 Hall Place Longview, Texas</p>
                         </div>
                       </div>
                     </div>
@@ -97,7 +98,6 @@ export default function ContactForm() {
                 </form>
               </div>
             </div>
-
           </div>
         </div>
       </section>

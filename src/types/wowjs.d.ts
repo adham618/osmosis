@@ -1,4 +1,4 @@
 declare module 'wowjs' {
-  const WOW: any;
-  export default WOW;
+  const WOW: any
+  export default WOW
 }

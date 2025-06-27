@@ -1,4 +1,4 @@
-
+/* eslint-disable @next/next/no-img-element */
 import Link from 'next/link'
 import React from 'react'
 
@@ -9,7 +9,9 @@ export default function CoursesArea() {
         <div className="container">
           <div className="row">
             <div className="col-12">
-              <p className="ccount_result">Showing 12 <span>Courses</span> of 16 result</p>
+              <p className="ccount_result">
+                Showing 12 <span>Courses</span> of 16 result
+              </p>
             </div>
 
             <div className="col-xl-4 col-md-6 col-12 wow fadeIn">
@@ -30,21 +32,25 @@ export default function CoursesArea() {
                       <span>(21)</span>
                     </a>
                   </div>
-                  <h2><Link href="/course-details">Financial Security Thinking and Principles Theorys</Link></h2>
+                  <h2>
+                    <Link href="/course-details">
+                      Financial Security Thinking and Principles Theorys
+                    </Link>
+                  </h2>
 
                   <div className="cmeta">
                     <div className="smeta">
-                      <i className='bx bx-user'></i>
+                      <i className="bx bx-user"></i>
                       25 Students
                     </div>
 
                     <div className="smeta">
-                      <i className='bx bx-file'></i>
+                      <i className="bx bx-file"></i>
                       15 Lessons
                     </div>
 
                     <div className="smeta">
-                      <i className='bx bx-time-five'></i>
+                      <i className="bx bx-time-five"></i>
                       1.5 Hours
                     </div>
                   </div>
@@ -58,15 +64,12 @@ export default function CoursesArea() {
                     </div>
 
                     <div className="ccategory">
-                      <a href="#">
-                        WordPress
-                      </a>
+                      <a href="#">WordPress</a>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
-
 
             <div className="col-xl-4 col-md-6 col-12 wow fadeIn">
               <div className="single-course">
@@ -86,20 +89,22 @@ export default function CoursesArea() {
                       <span>(21)</span>
                     </a>
                   </div>
-                  <h2><Link href="/course-details">Professional Ceramic Moulding for Beginners</Link></h2>
+                  <h2>
+                    <Link href="/course-details">Professional Ceramic Moulding for Beginners</Link>
+                  </h2>
                   <div className="cmeta">
                     <div className="smeta">
-                      <i className='bx bx-user'></i>
+                      <i className="bx bx-user"></i>
                       25 Students
                     </div>
 
                     <div className="smeta">
-                      <i className='bx bx-file'></i>
+                      <i className="bx bx-file"></i>
                       15 Lessons
                     </div>
 
                     <div className="smeta">
-                      <i className='bx bx-time-five'></i>
+                      <i className="bx bx-time-five"></i>
                       1.5 Hours
                     </div>
                   </div>
@@ -113,15 +118,12 @@ export default function CoursesArea() {
                     </div>
 
                     <div className="ccategory">
-                      <a href="#">
-                        JavaScript
-                      </a>
+                      <a href="#">JavaScript</a>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
-
 
             <div className="col-xl-4 col-md-6 col-12 wow fadeIn">
               <div className="single-course">
@@ -141,20 +143,24 @@ export default function CoursesArea() {
                       <span>(21)</span>
                     </a>
                   </div>
-                  <h2><Link href="/course-details">Basic Fundamentals of Interior & Graphics Design</Link></h2>
+                  <h2>
+                    <Link href="/course-details">
+                      Basic Fundamentals of Interior & Graphics Design
+                    </Link>
+                  </h2>
                   <div className="cmeta">
                     <div className="smeta">
-                      <i className='bx bx-user'></i>
+                      <i className="bx bx-user"></i>
                       25 Students
                     </div>
 
                     <div className="smeta">
-                      <i className='bx bx-file'></i>
+                      <i className="bx bx-file"></i>
                       15 Lessons
                     </div>
 
                     <div className="smeta">
-                      <i className='bx bx-time-five'></i>
+                      <i className="bx bx-time-five"></i>
                       1.5 Hours
                     </div>
                   </div>
@@ -168,15 +174,12 @@ export default function CoursesArea() {
                     </div>
 
                     <div className="ccategory">
-                      <a href="#">
-                        React
-                      </a>
+                      <a href="#">React</a>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
-
 
             <div className="col-xl-4 col-md-6 col-12 wow fadeIn">
               <div className="single-course">
@@ -196,21 +199,22 @@ export default function CoursesArea() {
                       <span>(21)</span>
                     </a>
                   </div>
-                  <h2><Link href="/course-details">Photography Crash Course
-                    for Photographer</Link></h2>
+                  <h2>
+                    <Link href="/course-details">Photography Crash Course for Photographer</Link>
+                  </h2>
                   <div className="cmeta">
                     <div className="smeta">
-                      <i className='bx bx-user'></i>
+                      <i className="bx bx-user"></i>
                       25 Students
                     </div>
 
                     <div className="smeta">
-                      <i className='bx bx-file'></i>
+                      <i className="bx bx-file"></i>
                       15 Lessons
                     </div>
 
                     <div className="smeta">
-                      <i className='bx bx-time-five'></i>
+                      <i className="bx bx-time-five"></i>
                       1.5 Hours
                     </div>
                   </div>
@@ -224,15 +228,12 @@ export default function CoursesArea() {
                     </div>
 
                     <div className="ccategory">
-                      <a href="#">
-                        UI / UX Design
-                      </a>
+                      <a href="#">UI / UX Design</a>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
-
 
             <div className="col-xl-4 col-md-6 col-12 wow fadeIn">
               <div className="single-course">
@@ -252,20 +253,22 @@ export default function CoursesArea() {
                       <span>(21)</span>
                     </a>
                   </div>
-                  <h2><Link href="/course-details">WordPress for Beginners – Master WordPress</Link></h2>
+                  <h2>
+                    <Link href="/course-details">WordPress for Beginners – Master WordPress</Link>
+                  </h2>
                   <div className="cmeta">
                     <div className="smeta">
-                      <i className='bx bx-user'></i>
+                      <i className="bx bx-user"></i>
                       25 Students
                     </div>
 
                     <div className="smeta">
-                      <i className='bx bx-file'></i>
+                      <i className="bx bx-file"></i>
                       15 Lessons
                     </div>
 
                     <div className="smeta">
-                      <i className='bx bx-time-five'></i>
+                      <i className="bx bx-time-five"></i>
                       1.5 Hours
                     </div>
                   </div>
@@ -279,15 +282,12 @@ export default function CoursesArea() {
                     </div>
 
                     <div className="ccategory">
-                      <a href="#">
-                        WordPress
-                      </a>
+                      <a href="#">WordPress</a>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
-
 
             <div className="col-xl-4 col-md-6 col-12 wow fadeIn">
               <div className="single-course">
@@ -307,20 +307,22 @@ export default function CoursesArea() {
                       <span>(21)</span>
                     </a>
                   </div>
-                  <h2><Link href="/course-details">Ultimate Photoshop Training: From Beginner</Link></h2>
+                  <h2>
+                    <Link href="/course-details">Ultimate Photoshop Training: From Beginner</Link>
+                  </h2>
                   <div className="cmeta">
                     <div className="smeta">
-                      <i className='bx bx-user'></i>
+                      <i className="bx bx-user"></i>
                       25 Students
                     </div>
 
                     <div className="smeta">
-                      <i className='bx bx-file'></i>
+                      <i className="bx bx-file"></i>
                       15 Lessons
                     </div>
 
                     <div className="smeta">
-                      <i className='bx bx-time-five'></i>
+                      <i className="bx bx-time-five"></i>
                       1.5 Hours
                     </div>
                   </div>
@@ -334,24 +336,35 @@ export default function CoursesArea() {
                     </div>
 
                     <div className="ccategory">
-                      <a href="#">
-                        Photoshop
-                      </a>
+                      <a href="#">Photoshop</a>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
 
-
             <div className="col-12 text-center">
               <div className="post_pagination">
                 <ul>
-                  <li><a href="#"><i className="fa-solid fa-arrow-left-long"></i></a></li>
-                  <li><a href="#">1</a></li>
-                  <li className="active"><a href="#">2</a></li>
-                  <li><a href="#">3</a></li>
-                  <li><a href="#"><i className="fa-solid fa-arrow-right-long"></i></a></li>
+                  <li>
+                    <a href="#">
+                      <i className="fa-solid fa-arrow-left-long"></i>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">1</a>
+                  </li>
+                  <li className="active">
+                    <a href="#">2</a>
+                  </li>
+                  <li>
+                    <a href="#">3</a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <i className="fa-solid fa-arrow-right-long"></i>
+                    </a>
+                  </li>
                 </ul>
               </div>
             </div>

@@ -1,11 +1,13 @@
-"use client"
+'use client'
 
-import { siteConfig } from '@/config/site'
 import Image from 'next/image'
 import Link from 'next/link'
 import { useState } from 'react'
+
 import MobileMenu from './MobileMenu'
 import NavMenu from './NavMenu'
+
+import { siteConfig } from '@/config/site'
 
 export default function Header() {
   const [openMenu, setOpenMenu] = useState(false)
@@ -18,7 +20,7 @@ export default function Header() {
           <div
             className="col-auto p-0"
             style={{
-              maxWidth: "34%",
+              maxWidth: '34%'
             }}
           >
             <div className="site-logo">
@@ -44,28 +46,27 @@ export default function Header() {
 
           {/* Call to Action Button */}
           <div className="col-xl-3 col-lg-3 col-md-3 col-auto align-self-center text-end pe-5 pe-sm-0 flex-shrink-0">
-            <Link
-              href="/dashboard/login"
-              className="bg_btn call-action-button bt"
-            >
+            <Link href="/dashboard/login" className="bg_btn call-action-button bt">
               Get Started
             </Link>
           </div>
         </div>
       </div>
       {/* Mobile Menu Toggle */}
-      <div
+      <button
         id="sm_menu_ham"
-        className={openMenu ? "open" : ""}
+        className={openMenu ? 'open' : ''}
         onClick={() => setOpenMenu(!openMenu)}
+        aria-label="Toggle mobile menu"
+        aria-expanded={openMenu}
       >
         <span></span>
         <span></span>
         <span></span>
         <span></span>
-      </div>
+      </button>
       {/* Mobile Menu Component */}
       {openMenu && <MobileMenu opneMenu={openMenu} />}
     </header>
-  );
+  )
 }

@@ -1,9 +1,9 @@
-"use client";
+'use client'
 
-import Image from 'next/image';
+import Image from 'next/image'
 
-if (typeof window !== "undefined") {
-  require("bootstrap/js/dist/collapse");
+if (typeof window !== 'undefined') {
+  require('bootstrap/js/dist/collapse')
 }
 
 export default function FaqSection() {
@@ -57,10 +57,9 @@ export default function FaqSection() {
                   data-bs-parent="#faq_accordion"
                 >
                   <div className="accordion-body">
-                    Fusce luctus lacinia lorem non ornare. Aliquam quis libero
-                    quis orci finibus accumsan. Quisque suscipit justo dictum
-                    augue vehicula, quis tincidunt erat elementum. Curabitur
-                    tincidunt convallis blandit
+                    Fusce luctus lacinia lorem non ornare. Aliquam quis libero quis orci finibus
+                    accumsan. Quisque suscipit justo dictum augue vehicula, quis tincidunt erat
+                    elementum. Curabitur tincidunt convallis blandit
                   </div>
                 </div>
               </div>
@@ -86,10 +85,9 @@ export default function FaqSection() {
                   data-bs-parent="#faq_accordion"
                 >
                   <div className="accordion-body">
-                    Fusce luctus lacinia lorem non ornare. Aliquam quis libero
-                    quis orci finibus accumsan. Quisque suscipit justo dictum
-                    augue vehicula, quis tincidunt erat elementum. Curabitur
-                    tincidunt convallis blandit
+                    Fusce luctus lacinia lorem non ornare. Aliquam quis libero quis orci finibus
+                    accumsan. Quisque suscipit justo dictum augue vehicula, quis tincidunt erat
+                    elementum. Curabitur tincidunt convallis blandit
                   </div>
                 </div>
               </div>
@@ -115,10 +113,9 @@ export default function FaqSection() {
                   data-bs-parent="#faq_accordion"
                 >
                   <div className="accordion-body">
-                    Fusce luctus lacinia lorem non ornare. Aliquam quis libero
-                    quis orci finibus accumsan. Quisque suscipit justo dictum
-                    augue vehicula, quis tincidunt erat elementum. Curabitur
-                    tincidunt convallis blandit
+                    Fusce luctus lacinia lorem non ornare. Aliquam quis libero quis orci finibus
+                    accumsan. Quisque suscipit justo dictum augue vehicula, quis tincidunt erat
+                    elementum. Curabitur tincidunt convallis blandit
                   </div>
                 </div>
               </div>
@@ -144,10 +141,9 @@ export default function FaqSection() {
                   data-bs-parent="#faq_accordion"
                 >
                   <div className="accordion-body">
-                    Fusce luctus lacinia lorem non ornare. Aliquam quis libero
-                    quis orci finibus accumsan. Quisque suscipit justo dictum
-                    augue vehicula, quis tincidunt erat elementum. Curabitur
-                    tincidunt convallis blandit
+                    Fusce luctus lacinia lorem non ornare. Aliquam quis libero quis orci finibus
+                    accumsan. Quisque suscipit justo dictum augue vehicula, quis tincidunt erat
+                    elementum. Curabitur tincidunt convallis blandit
                   </div>
                 </div>
               </div>
@@ -156,5 +152,5 @@ export default function FaqSection() {
         </div>
       </div>
     </section>
-  );
+  )
 }

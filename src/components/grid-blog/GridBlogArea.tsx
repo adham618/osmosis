@@ -1,4 +1,4 @@
-
+/* eslint-disable @next/next/no-img-element */
 import Link from 'next/link'
 import React from 'react'
 
@@ -25,8 +25,14 @@ export default function GridBlogArea() {
                     </span>
                   </div>
 
-                  <h3><Link href="/blog-details">A Student Learning with Online Programme on Computer</Link></h3>
-                  <Link href="/blog-details" className="bbtn">Explore More</Link>
+                  <h3>
+                    <Link href="/blog-details">
+                      A Student Learning with Online Programme on Computer
+                    </Link>
+                  </h3>
+                  <Link href="/blog-details" className="bbtn">
+                    Explore More
+                  </Link>
                 </div>
               </div>
             </div>
@@ -48,8 +54,14 @@ export default function GridBlogArea() {
                     </span>
                   </div>
 
-                  <h3><Link href="/blog-details">All Students and Teachers are Happy To Back to School</Link></h3>
-                  <Link href="/blog-details" className="bbtn">Explore More</Link>
+                  <h3>
+                    <Link href="/blog-details">
+                      All Students and Teachers are Happy To Back to School
+                    </Link>
+                  </h3>
+                  <Link href="/blog-details" className="bbtn">
+                    Explore More
+                  </Link>
                 </div>
               </div>
             </div>
@@ -71,9 +83,15 @@ export default function GridBlogArea() {
                     </span>
                   </div>
 
-                  <h3><Link href="/blog-details">Learners are studing with togather in the Class Room</Link></h3>
+                  <h3>
+                    <Link href="/blog-details">
+                      Learners are studing with togather in the Class Room
+                    </Link>
+                  </h3>
 
-                  <Link href="/blog-details" className="bbtn">Explore More</Link>
+                  <Link href="/blog-details" className="bbtn">
+                    Explore More
+                  </Link>
                 </div>
               </div>
             </div>
@@ -95,8 +113,14 @@ export default function GridBlogArea() {
                     </span>
                   </div>
 
-                  <h3><Link href="/blog-details">All Students and Teachers are Happy To Back to School</Link></h3>
-                  <Link href="/blog-details" className="bbtn">Explore More</Link>
+                  <h3>
+                    <Link href="/blog-details">
+                      All Students and Teachers are Happy To Back to School
+                    </Link>
+                  </h3>
+                  <Link href="/blog-details" className="bbtn">
+                    Explore More
+                  </Link>
                 </div>
               </div>
             </div>
@@ -118,8 +142,14 @@ export default function GridBlogArea() {
                     </span>
                   </div>
 
-                  <h3><Link href="/blog-details">Learners are studing with togather in the Class Room</Link></h3>
-                  <Link href="/blog-details" className="bbtn">Explore More</Link>
+                  <h3>
+                    <Link href="/blog-details">
+                      Learners are studing with togather in the Class Room
+                    </Link>
+                  </h3>
+                  <Link href="/blog-details" className="bbtn">
+                    Explore More
+                  </Link>
                 </div>
               </div>
             </div>
@@ -141,9 +171,15 @@ export default function GridBlogArea() {
                     </span>
                   </div>
 
-                  <h3><Link href="/blog-details">A Student Learning with Online Programme on Computer</Link></h3>
+                  <h3>
+                    <Link href="/blog-details">
+                      A Student Learning with Online Programme on Computer
+                    </Link>
+                  </h3>
 
-                  <Link href="/blog-details" className="bbtn">Explore More</Link>
+                  <Link href="/blog-details" className="bbtn">
+                    Explore More
+                  </Link>
                 </div>
               </div>
             </div>
@@ -151,15 +187,28 @@ export default function GridBlogArea() {
             <div className="col-12 text-center">
               <div className="post_pagination">
                 <ul>
-                  <li><a href="#"><i className="fa-solid fa-arrow-left-long"></i></a></li>
-                  <li><a href="#">1</a></li>
-                  <li className="active"><a href="#">2</a></li>
-                  <li><a href="#">3</a></li>
-                  <li><a href="#"><i className="fa-solid fa-arrow-right-long"></i></a></li>
+                  <li>
+                    <a href="#">
+                      <i className="fa-solid fa-arrow-left-long"></i>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">1</a>
+                  </li>
+                  <li className="active">
+                    <a href="#">2</a>
+                  </li>
+                  <li>
+                    <a href="#">3</a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <i className="fa-solid fa-arrow-right-long"></i>
+                    </a>
+                  </li>
                 </ul>
               </div>
             </div>
-
           </div>
         </div>
       </section>

@@ -1,19 +1,14 @@
-"use client";
+'use client'
 
-import Footer from "./footer";
-import Header from "./headers/header";
+import Footer from './footer'
+import Header from './headers/header'
 
-
-export default function Layout({
-  children,
-}: {
-  children: React.ReactNode;
-}) {
+export default function Layout({ children }: { children: React.ReactNode }) {
   return (
     <>
-      <Header/>
+      <Header />
       {children}
-      <Footer/>
+      <Footer />
     </>
   )
 }

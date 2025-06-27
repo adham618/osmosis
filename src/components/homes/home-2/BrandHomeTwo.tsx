@@ -1,5 +1,5 @@
-
-"use client"
+/* eslint-disable @next/next/no-img-element */
+'use client'
 
 import React from 'react'
 import { Autoplay } from 'swiper/modules'
@@ -19,44 +19,57 @@ export default function BrandHomeTwo() {
             centeredSlides={true}
             breakpoints={{
               0: {
-                slidesPerView: 2,
+                slidesPerView: 2
               },
               768: {
-                slidesPerView: 3,
+                slidesPerView: 3
               },
               1200: {
-                slidesPerView: 6,
-              },
-
+                slidesPerView: 6
+              }
             }}
-            className="mx-auto partners owl-carousel">
-
+            className="mx-auto partners owl-carousel"
+          >
             <SwiperSlide className="client-item">
-              <a href="#"><img src="assets/img/partners/dark/1.svg" alt="client" /></a>
+              <a href="#">
+                <img src="assets/img/partners/dark/1.svg" alt="client" />
+              </a>
             </SwiperSlide>
 
             <SwiperSlide className="client-item">
-              <a href="#"><img src="assets/img/partners/dark/2.svg" alt="client" /></a>
+              <a href="#">
+                <img src="assets/img/partners/dark/2.svg" alt="client" />
+              </a>
             </SwiperSlide>
 
             <SwiperSlide className="client-item">
-              <a href="#"><img src="assets/img/partners/dark/3.svg" alt="client" /></a>
+              <a href="#">
+                <img src="assets/img/partners/dark/3.svg" alt="client" />
+              </a>
             </SwiperSlide>
 
             <SwiperSlide className="client-item">
-              <a href="#"><img src="assets/img/partners/dark/4.svg" alt="client" /></a>
+              <a href="#">
+                <img src="assets/img/partners/dark/4.svg" alt="client" />
+              </a>
             </SwiperSlide>
 
             <SwiperSlide className="client-item">
-              <a href="#"><img src="assets/img/partners/dark/5.svg" alt="client" /></a>
+              <a href="#">
+                <img src="assets/img/partners/dark/5.svg" alt="client" />
+              </a>
             </SwiperSlide>
 
             <SwiperSlide className="client-item">
-              <a href="#"><img src="assets/img/partners/dark/1.svg" alt="client" /></a>
+              <a href="#">
+                <img src="assets/img/partners/dark/1.svg" alt="client" />
+              </a>
             </SwiperSlide>
 
             <SwiperSlide className="client-item">
-              <a href="#"><img src="assets/img/partners/dark/2.svg" alt="client" /></a>
+              <a href="#">
+                <img src="assets/img/partners/dark/2.svg" alt="client" />
+              </a>
             </SwiperSlide>
           </Swiper>
         </div>
