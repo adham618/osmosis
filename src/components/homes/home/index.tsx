@@ -13,8 +13,8 @@ import ReviewHomeOne from './ReviewHomeOne'
 import BrandHomeOne from './BrandHomeOne'
 import BlogHomeOne from './BlogHomeOne'
 
-import HeaderOne from '@/layouts/headers/HeaderOne'
-import FooterOne from '@/layouts/footers/FooterOne'
+import HeaderOne from '@/layouts/headers/header'
+import FooterOne from '@/layouts/footer'
 
 export default function HomeOne() {
   return (

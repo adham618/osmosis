@@ -16,7 +16,7 @@ import HeroHomeTwo from './HeroHomeTwo'
 import CtaHomeTwo from './CtaHomeTwo'
 
 import HeaderTwo from '@/layouts/headers/HeaderTwo'
-import FooterOne from '@/layouts/footers/FooterOne'
+import FooterOne from '@/layouts/footer'
 
 export default function HomeTwo() {
   return (
