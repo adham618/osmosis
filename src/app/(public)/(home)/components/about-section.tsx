@@ -10,9 +10,7 @@ export default function AboutSection() {
               </video>
             </div>
 
-            <div
-              className="col-xl-4 col-lg-4 align-self-center align-items-center wow fadeIn"
-            >
+            <div className="col-xl-6  col-lg-4 align-self-center align-items-center wow fadeIn">
               <div className="section-title about-title">
                 <span>One platform, unlimited possibilities</span>
                 <h2>The Future of Education</h2>
@@ -39,9 +37,7 @@ export default function AboutSection() {
       >
         <div className="container">
           <div className="row">
-            <div
-              className="col-xl-4 col-lg-4 align-self-center align-items-center wow fadeIn"
-            >
+            <div className="col-xl-6 col-lg-4 align-self-center align-items-center wow fadeIn">
               <div className="section-title about-title">
                 <span>Learning through living</span>
                 <h2>Revolutionizing how you absorb knowledge</h2>
