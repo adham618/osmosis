@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import Link from 'next/link';
 
 export default function CtaSection() {
   return (
@@ -17,9 +18,9 @@ export default function CtaSection() {
                   support every step of the way.
                 </p>
                 <div className="mt-auto">
-                  <a href="educator-features.html" className="bg_btn bt">
+                  <Link href="/educator-features" className="bg_btn bt">
                     Work With Us
-                  </a>
+                  </Link>
                 </div>
               </div>
               <Image
@@ -69,9 +70,9 @@ export default function CtaSection() {
                   school-run, to instructor-based, to fully independent.
                 </p>
                 <div className="mt-auto">
-                  <a href="k12.html" className="bg_btn bt">
+                  <Link href="/k12" className="bg_btn bt">
                     Learn More
-                  </a>
+                  </Link>
                 </div>
               </div>
               <Image

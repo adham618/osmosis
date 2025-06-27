@@ -24,7 +24,7 @@ export default function AboutSection() {
                 want to teach, Osmosis is the place to bring it to life.
               </p>
 
-              <a href="#" className="bg_btn bt">
+              <a href="/about" className="bg_btn bt">
                 Discover More
               </a>
             </div>
@@ -50,7 +50,7 @@ export default function AboutSection() {
                 classroom.
               </p>
 
-              <a href="#" className="bg_btn bt">
+              <a href="/courses" className="bg_btn bt">
                 Explore Courses
               </a>
             </div>

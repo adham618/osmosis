@@ -1,8 +1,8 @@
 "use client"
-import React, { useState } from 'react'
-import NavMenu from './NavMenu'
 import Link from 'next/link'
+import { useState } from 'react'
 import MobileMenu from './MobileMenu'
+import NavMenu from './NavMenu'
 
 export default function HeaderTwo() {
 
@@ -24,7 +24,7 @@ export default function HeaderTwo() {
             </div>
 
             <div className="col-xl-6 col-lg-6 col-md-6 menu_col justify-content-center d-flex align-self-center">
-              <nav id="main-menu"> 
+              <nav id="main-menu">
                 <NavMenu />
               </nav>
             </div>
@@ -41,7 +41,7 @@ export default function HeaderTwo() {
               <a href="#" className="bg_btn bt">Sign In</a>
             </div>
           </div>
-        </div> 
+        </div>
 
         <div id="mini_cart" className="cart_drawer">
           <div className="cart_top">
@@ -147,12 +147,12 @@ export default function HeaderTwo() {
             </div>
 
             <div className="bottom_group">
-              <a href="cart.html" className="button-viewcart">
+              <Link href="/cart" className="button-viewcart">
                 <span>View Cart</span>
-              </a>
-              <a href="checkout.html" className="button-checkout">
+              </Link>
+              <Link href="/checkout" className="button-checkout">
                 <span>Checkout</span>
-              </a>
+              </Link>
             </div>
           </div>
         </div>
