@@ -1,4 +1,3 @@
-import Image from 'next/image'
 import Link from 'next/link'
 
 export default function CollegeBeyondK12() {
@@ -87,29 +86,30 @@ export default function CollegeBeyondK12() {
           <div className="row gap-5 justify-content-between">
             <div className="col-lg-5 align-self-center align-items-center wow fadeIn">
               <div className="section-title about-title">
-                <span>For aids, parents, and caretakers</span>
-                <h2>Learning with your child</h2>
+                <span>The Future University</span>
+                <h2>How AR and VR are reshaping college courses</h2>
               </div>
 
               <p className="mb50">
-                There&apos;s no reason why the fun of AR learning should be limited to kids and
-                teens - Osmosis is currently developing <b>Guardian</b>, a new feature which will
-                enable parents and caretakers to learn alongside their children, both in the same
-                room and in remote locations.
+                <b>18%</b> of colleges and universities in the United States have fully integrated
+                VR (Virtual Reality), AR (Augmented Reality), and MR (Mixed Reality) into some
+                courses, and <b>28%</b> have partially integrated these new modes of learning.
+                Osmosis strives to be at the forefront of this new wave of education.
               </p>
 
-              <Link href="/dashboard/login" className="bg_btn bt">
-                More on Guardian
+              <Link
+                href="https://link.springer.com/article/10.1007/s11528-025-01092-y"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="bg_btn bt"
+              >
+                Read More
               </Link>
             </div>
             <div className="col-lg-6 aboutvideo align-self-center wow fadeIn">
-              <Image
-                className="w-100 h-auto"
-                src="/assets/img/special-needs/girl.png"
-                alt="about"
-                width={481}
-                height={432}
-              />
+              <video autoPlay loop muted playsInline>
+                <source src="assets/img/college-beyond/vr-guy.mp4" type="video/mp4" />
+              </video>
             </div>
           </div>
         </div>
