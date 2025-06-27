@@ -6,14 +6,14 @@ export default function CourseCategoryHomeOne() {
       <section className="course-category section-padding">
         <div className="container">
           <div className="row">
-            <div className="col-12 wow fadeInUp" data-aos="fade-up">
+            <div className="col-12" data-aos="fade-up">
               <div className="section-title text-center">
                 <span>Browse Categories</span>
                 <h2>Explore Our Courses</h2>
               </div>
             </div>
 
-            <div className="col-xl-3 col-lg-4 col-md-6 col-12 wow fadeIn" data-aos="fade-in">
+            <div className="col-xl-3 col-lg-4 col-md-6 col-12" data-aos="fade-in">
               <div className="single-category">
                 <div className="icon">
                   <svg fill="none" viewBox="0 0 41 36">
@@ -35,7 +35,7 @@ export default function CourseCategoryHomeOne() {
               </div>
             </div>
 
-            <div className="col-xl-3 col-lg-4 col-md-6 col-12 wow fadeIn" data-aos="fade-in">
+            <div className="col-xl-3 col-lg-4 col-md-6 col-12" data-aos="fade-in">
               <div className="single-category">
                 <div className="icon">
                   <svg fill="none" viewBox="0 0 38 38">
@@ -57,7 +57,7 @@ export default function CourseCategoryHomeOne() {
               </div>
             </div>
 
-            <div className="col-xl-3 col-lg-4 col-md-6 col-12 wow fadeIn" data-aos="fade-in">
+            <div className="col-xl-3 col-lg-4 col-md-6 col-12" data-aos="fade-in">
               <div className="single-category">
                 <div className="icon">
                   <svg fill="none" viewBox="0 0 38 38">
@@ -83,7 +83,7 @@ export default function CourseCategoryHomeOne() {
               </div>
             </div>
 
-            <div className="col-xl-3 col-lg-4 col-md-6 col-12 wow fadeIn" data-aos="fade-in">
+            <div className="col-xl-3 col-lg-4 col-md-6 col-12" data-aos="fade-in">
               <div className="single-category">
                 <div className="icon">
                   <svg fill="none" viewBox="0 0 41 38">
@@ -105,7 +105,7 @@ export default function CourseCategoryHomeOne() {
               </div>
             </div>
 
-            <div className="col-xl-3 col-lg-4 col-md-6 col-12 wow fadeIn" data-aos="fade-in">
+            <div className="col-xl-3 col-lg-4 col-md-6 col-12" data-aos="fade-in">
               <div className="single-category ">
                 <div className="icon">
                   <svg
@@ -166,7 +166,7 @@ export default function CourseCategoryHomeOne() {
               </div>
             </div>
 
-            <div className="col-xl-3 col-lg-4 col-md-6 col-12 wow fadeIn" data-aos="fade-in">
+            <div className="col-xl-3 col-lg-4 col-md-6 col-12" data-aos="fade-in">
               <div className="single-category">
                 <div className="icon">
                   <svg fill="none" viewBox="0 0 38 38">
@@ -188,7 +188,7 @@ export default function CourseCategoryHomeOne() {
               </div>
             </div>
 
-            <div className="col-xl-3 col-lg-4 col-md-6 col-12 wow fadeIn" data-aos="fade-in">
+            <div className="col-xl-3 col-lg-4 col-md-6 col-12" data-aos="fade-in">
               <div className="single-category">
                 <div className="icon">
                   <svg fill="none" viewBox="0 0 39 38">
@@ -210,7 +210,7 @@ export default function CourseCategoryHomeOne() {
               </div>
             </div>
 
-            <div className="col-xl-3 col-lg-4 col-md-6 col-12 wow fadeIn" data-aos="fade-in">
+            <div className="col-xl-3 col-lg-4 col-md-6 col-12" data-aos="fade-in">
               <div className="single-category">
                 <div className="icon">
                   <svg fill="none" viewBox="0 0 49 38">

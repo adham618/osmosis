@@ -9,7 +9,7 @@ export default function BlogDetailsArea() {
       <section className="blog-details section-padding">
         <div className="container">
           <div className="row">
-            <div className="col-xl-8 col-lg-8 col-md-12 col-12 wow fadeIn" data-aos="fade-in">
+            <div className="col-xl-8 col-lg-8 col-md-12 col-12" data-aos="fade-in">
               <div className="post-inner">
                 <div className="post-image">
                   <img src="assets/img/blog/bdetails.jpg" alt="Post details" />
@@ -167,7 +167,7 @@ export default function BlogDetailsArea() {
             </div>
 
             <div className="col-xl-4 col-lg-4 col-12 sidebar">
-              <div className="widget search-widget wow fadeIn" data-aos="fade-in">
+              <div className="widget search-widget" data-aos="fade-in">
                 <div className="search-form">
                   <form onSubmit={(e) => e.preventDefault()}>
                     <input type="text" className="search-control" placeholder="Search Query" />
@@ -178,7 +178,7 @@ export default function BlogDetailsArea() {
                 </div>
               </div>
 
-              <div className="widget category-widget wow fadeIn" data-aos="fade-in">
+              <div className="widget category-widget" data-aos="fade-in">
                 <h3 className="widget-title">Category</h3>
                 <ul>
                   <li>
@@ -196,7 +196,7 @@ export default function BlogDetailsArea() {
                 </ul>
               </div>
 
-              <div className="widget popular-posts-widget wow fadeIn" data-aos="fade-in">
+              <div className="widget popular-posts-widget" data-aos="fade-in">
                 <h3 className="widget-title">Popular Posts</h3>
                 <ul>
                   <li>
@@ -237,7 +237,7 @@ export default function BlogDetailsArea() {
                 </ul>
               </div>
 
-              <div className="widget popular-posts-widget wow fadeIn" data-aos="fade-in">
+              <div className="widget popular-posts-widget" data-aos="fade-in">
                 <h3 className="widget-title">Tags</h3>
                 <div className="tags_clouds">
                   <a href="#">Trading</a>

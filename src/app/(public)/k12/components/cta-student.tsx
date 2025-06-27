@@ -7,7 +7,7 @@ export default function CtaStudent() {
     <section className="cta mx-auto" style={{ marginTop: '5%' }}>
       <div className="container mx-auto">
         <div className="row">
-          <div className="col-xl-6 col-lg-6 col-12 wow fadeIn mx-auto" data-aos="fade-in">
+          <div className="col-xl-6 col-lg-6 col-12 mx-auto" data-aos="fade-in">
             <div className="cta-item">
               <div className="cta-content">
                 <h3>

@@ -11,14 +11,14 @@ export default function CoursesHomeOne() {
       <section className="courses">
         <div className="container">
           <div className="row">
-            <div className="col-12 wow fadeInUp" data-aos="fade-up">
+            <div className="col-12" data-aos="fade-up">
               <div className="section-title">
                 <span>Our Courses List</span>
                 <h2>Most Popular Courses</h2>
               </div>
             </div>
 
-            <div className="col-12 wow fadeIn" data-aos="fade-in">
+            <div className="col-12" data-aos="fade-in">
               <div className="courses-slider owl-carousel owl-loaded owl-drag">
                 <Swiper
                   slidesPerView={3}

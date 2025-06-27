@@ -7,7 +7,7 @@ export default function AboutK12() {
       <section className="about" style={{ marginBottom: '5%' }}>
         <div className="container" style={{ paddingTop: '60px' }}>
           <div className="row gap-5 justify-content-between">
-            <div className="col-lg-6 aboutvideo align-self-center wow fadeIn" data-aos="fade-in">
+            <div className="col-lg-6 aboutvideo align-self-center" data-aos="fade-in">
               <Image
                 className="w-100 h-auto"
                 src="/assets/img/k12/k12-1.png"
@@ -18,7 +18,7 @@ export default function AboutK12() {
             </div>
 
             <div
-              className="col-lg-5 align-self-center align-items-center wow fadeIn"
+              className="col-lg-5 align-self-center align-items-center"
               data-aos="fade-in"
             >
               <div className="section-title about-title">
@@ -105,7 +105,7 @@ export default function AboutK12() {
         <div className="container">
           <div className="row gap-5 justify-content-between">
             <div
-              className="col-lg-5 align-self-center align-items-center wow fadeIn"
+              className="col-lg-5 align-self-center align-items-center"
               data-aos="fade-in"
             >
               <div className="section-title about-title">
@@ -131,7 +131,7 @@ export default function AboutK12() {
                 Read More
               </Link>
             </div>
-            <div className="col-lg-6 aboutvideo align-self-center wow fadeIn" data-aos="fade-in">
+            <div className="col-lg-6 aboutvideo align-self-center" data-aos="fade-in">
               <Image
                 className="w-100 h-auto"
                 src="/assets/img/k12/k12-2.png"

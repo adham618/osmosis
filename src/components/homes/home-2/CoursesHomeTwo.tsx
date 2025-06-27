@@ -8,7 +8,7 @@ export default function CoursesHomeTwo() {
       <section className="courses">
         <div className="container">
           <div className="row">
-            <div className="col-xl-8 col-md-8 wow fadeInUp" data-aos="fade-up">
+            <div className="col-xl-8 col-md-8" data-aos="fade-up">
               <div className="section-title">
                 <span>Our Courses List</span>
                 <h2>Most Popular Courses</h2>
@@ -16,7 +16,7 @@ export default function CoursesHomeTwo() {
             </div>
 
             <div
-              className="col-xl-4 col-md-4 align-self-center text-end title_btn wow fadeIn"
+              className="col-xl-4 col-md-4 align-self-center text-end title_btn"
               data-aos="fade-in"
             >
               <Link href="/courses" className="bg_btn bt">
@@ -24,7 +24,7 @@ export default function CoursesHomeTwo() {
               </Link>
             </div>
 
-            <div className="col-xl-6 col-lg-6 wow fadeIn" data-aos="fade-in">
+            <div className="col-xl-6 col-lg-6" data-aos="fade-in">
               <div className="single-course cstyle-2">
                 <div className="row">
                   <div className="col-xl-6 col-md-6 col-sm-6 col-12">
@@ -85,7 +85,7 @@ export default function CoursesHomeTwo() {
               </div>
             </div>
 
-            <div className="col-xl-6 col-lg-6 wow fadeIn" data-aos="fade-in">
+            <div className="col-xl-6 col-lg-6" data-aos="fade-in">
               <div className="single-course cstyle-2">
                 <div className="row">
                   <div className="col-xl-6 col-md-6 col-sm-6 col-12">
@@ -146,7 +146,7 @@ export default function CoursesHomeTwo() {
               </div>
             </div>
 
-            <div className="col-xl-6 col-lg-6 wow fadeIn" data-aos="fade-in">
+            <div className="col-xl-6 col-lg-6" data-aos="fade-in">
               <div className="single-course cstyle-2">
                 <div className="row">
                   <div className="col-xl-6 col-md-6 col-sm-6 col-12">
@@ -207,7 +207,7 @@ export default function CoursesHomeTwo() {
               </div>
             </div>
 
-            <div className="col-xl-6 col-lg-6 wow fadeIn" data-aos="fade-in">
+            <div className="col-xl-6 col-lg-6" data-aos="fade-in">
               <div className="single-course cstyle-2">
                 <div className="row">
                   <div className="col-xl-6 col-md-6 col-sm-6 col-12">

@@ -14,7 +14,7 @@ export default function CoursesTwoArea() {
               </p>
             </div>
 
-            <div className="col-xl-6 col-lg-6 wow fadeIn" data-aos="fade-in">
+            <div className="col-xl-6 col-lg-6" data-aos="fade-in">
               <div className="single-course cstyle-2">
                 <div className="row">
                   <div className="col-xl-6 col-md-6 col-sm-6 col-12">
@@ -75,7 +75,7 @@ export default function CoursesTwoArea() {
               </div>
             </div>
 
-            <div className="col-xl-6 col-lg-6 wow fadeIn" data-aos="fade-in">
+            <div className="col-xl-6 col-lg-6" data-aos="fade-in">
               <div className="single-course cstyle-2">
                 <div className="row">
                   <div className="col-xl-6 col-md-6 col-sm-6 col-12">
@@ -136,7 +136,7 @@ export default function CoursesTwoArea() {
               </div>
             </div>
 
-            <div className="col-xl-6 col-lg-6 wow fadeIn" data-aos="fade-in">
+            <div className="col-xl-6 col-lg-6" data-aos="fade-in">
               <div className="single-course cstyle-2">
                 <div className="row">
                   <div className="col-xl-6 col-md-6 col-sm-6 col-12">
@@ -197,7 +197,7 @@ export default function CoursesTwoArea() {
               </div>
             </div>
 
-            <div className="col-xl-6 col-lg-6 wow fadeIn" data-aos="fade-in">
+            <div className="col-xl-6 col-lg-6" data-aos="fade-in">
               <div className="single-course cstyle-2">
                 <div className="row">
                   <div className="col-xl-6 col-md-6 col-sm-6 col-12">

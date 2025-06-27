@@ -81,7 +81,7 @@ const CONTACT_INFO = {
 
 // Footer Section Components
 const LogoSection = () => (
-  <div className="col-xl-3 col-md-6 col-12 wow fadeIn" data-aos="fade-in">
+  <div className="col-xl-3 col-md-6 col-12" data-aos="fade-in">
     <div className="single-footer">
       <div className="about-footer">
         <div className="footer-logo">
@@ -101,7 +101,7 @@ const LogoSection = () => (
 )
 
 const UsefulLinksSection = () => (
-  <div className="col-xl-3 col-md-6 col-12 wow fadeIn" data-aos="fade-in">
+  <div className="col-xl-3 col-md-6 col-12" data-aos="fade-in">
     <div className="single-footer">
       <h3 className="footer-title">Useful Links</h3>
       <ul>
@@ -116,7 +116,7 @@ const UsefulLinksSection = () => (
 )
 
 const ContactSection = () => (
-  <div className="col-xl-3 col-md-6 col-12 wow fadeIn" data-aos="fade-in">
+  <div className="col-xl-3 col-md-6 col-12" data-aos="fade-in">
     <div className="single-footer">
       <h3 className="footer-title">Contact Us</h3>
       <div className="newsletter">
@@ -149,7 +149,7 @@ const DecorativeShapes = () => (
 )
 
 const Copyright = () => (
-  <div className="copyright text-center wow fadeIn" data-aos="fade-in">
+  <div className="copyright text-center" data-aos="fade-in">
     <p>
       Copyright © {new Date().getFullYear()} <Link href="/">{siteConfig.short_name}</Link>. All
       rights reserved.

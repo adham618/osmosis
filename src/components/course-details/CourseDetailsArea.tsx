@@ -25,7 +25,7 @@ export default function CourseDetailsArea() {
       <section className="courses-details section-padding">
         <div className="container">
           <div className="row">
-            <div className="col-xl-8 wow fadeIn" data-aos="fade-in">
+            <div className="col-xl-8" data-aos="fade-in">
               <div className="scourse_image">
                 <img src="assets/img/courses/cdetails.jpg" alt="image" />
                 <button
@@ -503,7 +503,7 @@ export default function CourseDetailsArea() {
               </div>
             </div>
 
-            <div className="col-xl-4 wow fadeIn" data-aos="fade-in">
+            <div className="col-xl-4" data-aos="fade-in">
               <div className="course-sidebar">
                 <h3>Course Features</h3>
                 <ul className="scourse_list">
@@ -599,7 +599,7 @@ export default function CourseDetailsArea() {
             <h3 className="created-title">Courses You May Like</h3>
 
             <div className="row">
-              <div className="col-xl-4 col-md-6 col-12 wow fadeIn" data-aos="fade-in">
+              <div className="col-xl-4 col-md-6 col-12" data-aos="fade-in">
                 <div className="single-course">
                   <div className="course-img">
                     <img src="assets/img/courses/1.jpg" alt="course image" />
@@ -653,7 +653,7 @@ export default function CourseDetailsArea() {
                 </div>
               </div>
 
-              <div className="col-xl-4 col-md-6 col-12 wow fadeIn" data-aos="fade-in">
+              <div className="col-xl-4 col-md-6 col-12" data-aos="fade-in">
                 <div className="single-course">
                   <div className="course-img">
                     <img src="assets/img/courses/2.jpg" alt="course image" />
@@ -707,7 +707,12 @@ export default function CourseDetailsArea() {
                 </div>
               </div>
 
-              <div className="col-xl-4 col-md-6 col-12 wow fadeIn" data-aos="fade-in">
+              <div
+                className="col-xl-4 col-md-6 col-12
+
+              fadeIn"
+                data-aos="fade-in"
+              >
                 <div className="single-course">
                   <div className="course-img">
                     <img src="assets/img/courses/2.jpg" alt="course image" />

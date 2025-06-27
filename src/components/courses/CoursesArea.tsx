@@ -14,7 +14,7 @@ export default function CoursesArea() {
               </p>
             </div>
 
-            <div className="col-xl-4 col-md-6 col-12 wow fadeIn" data-aos="fade-in">
+            <div className="col-xl-4 col-md-6 col-12" data-aos="fade-in">
               <div className="single-course">
                 <div className="course-img">
                   <img src="assets/img/courses/1.jpg" alt="course image" />
@@ -71,7 +71,7 @@ export default function CoursesArea() {
               </div>
             </div>
 
-            <div className="col-xl-4 col-md-6 col-12 wow fadeIn" data-aos="fade-in">
+            <div className="col-xl-4 col-md-6 col-12" data-aos="fade-in">
               <div className="single-course">
                 <div className="course-img">
                   <img src="assets/img/courses/2.jpg" alt="course image" />
@@ -125,7 +125,7 @@ export default function CoursesArea() {
               </div>
             </div>
 
-            <div className="col-xl-4 col-md-6 col-12 wow fadeIn" data-aos="fade-in">
+            <div className="col-xl-4 col-md-6 col-12" data-aos="fade-in">
               <div className="single-course">
                 <div className="course-img">
                   <img src="assets/img/courses/3.jpg" alt="course image" />
@@ -181,7 +181,7 @@ export default function CoursesArea() {
               </div>
             </div>
 
-            <div className="col-xl-4 col-md-6 col-12 wow fadeIn" data-aos="fade-in">
+            <div className="col-xl-4 col-md-6 col-12" data-aos="fade-in">
               <div className="single-course">
                 <div className="course-img">
                   <img src="assets/img/courses/2.jpg" alt="course image" />
@@ -235,7 +235,7 @@ export default function CoursesArea() {
               </div>
             </div>
 
-            <div className="col-xl-4 col-md-6 col-12 wow fadeIn" data-aos="fade-in">
+            <div className="col-xl-4 col-md-6 col-12" data-aos="fade-in">
               <div className="single-course">
                 <div className="course-img">
                   <img src="assets/img/courses/5.jpg" alt="course image" />
@@ -289,7 +289,7 @@ export default function CoursesArea() {
               </div>
             </div>
 
-            <div className="col-xl-4 col-md-6 col-12 wow fadeIn" data-aos="fade-in">
+            <div className="col-xl-4 col-md-6 col-12" data-aos="fade-in">
               <div className="single-course">
                 <div className="course-img">
                   <img src="assets/img/courses/6.jpg" alt="course image" />

@@ -8,7 +8,7 @@ import { Swiper, SwiperSlide } from 'swiper/react'
 export default function BrandHomeTwo() {
   return (
     <>
-      <section className="container partner-style-2 wow fadeIn" data-aos="fade-in">
+      <section className="container partner-style-2" data-aos="fade-in">
         <div className="row">
           <Swiper
             slidesPerView={6}

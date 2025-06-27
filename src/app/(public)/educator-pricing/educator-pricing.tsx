@@ -286,7 +286,7 @@ export default function EducatorPricing() {
     <section className="features fstyle-2 section-padding">
       <div className="container">
         <div className="row">
-          <div className="col-12 wow fadeInUp">
+          <div className="col-12" data-aos="fade-up">
             <div className="section-title text-center">
               <span>Subscriptions</span>
               <h2>Our Plans</h2>

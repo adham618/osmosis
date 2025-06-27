@@ -8,11 +8,11 @@ export default function AboutHomeOne() {
       <section className="about">
         <div className="container">
           <div className="row">
-            <div className="col-xl-6 col-lg-6 align-self-center wow fadeIn" data-aos="fade-in">
+            <div className="col-xl-6 col-lg-6 align-self-center" data-aos="fade-in">
               <img src="assets/img/about.png" alt="about" />
             </div>
 
-            <div className="col-xl-6 col-lg-6 align-self-center wow fadeIn" data-aos="fade-in">
+            <div className="col-xl-6 col-lg-6 align-self-center" data-aos="fade-in">
               <div className="section-title about-title">
                 <span>About Us Education</span>
                 <h2>Go Your Skill in Next Level</h2>

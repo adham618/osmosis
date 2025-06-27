@@ -9,7 +9,7 @@ export default function CheckoutArea() {
       <section className="shop checkout section-padding">
         <div className="container">
           <div className="row">
-            <div className="col-lg-8 col-12 wow fadeIn" data-aos="fade-in">
+            <div className="col-lg-8 col-12" data-aos="fade-in">
               <div className="checkout-form">
                 <h2>Billing Details</h2>
 
@@ -397,7 +397,7 @@ export default function CheckoutArea() {
               </div>
             </div>
 
-            <div className="col-lg-4 col-12 wow fadeIn" data-aos="fade-in">
+            <div className="col-lg-4 col-12" data-aos="fade-in">
               <div className="order-details">
                 <div className="single-widget">
                   <h2>Cart Total</h2>

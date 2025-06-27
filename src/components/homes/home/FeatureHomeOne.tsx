@@ -10,14 +10,14 @@ export default function FeatureHomeOne({ style_2 }: Props) {
       <section className={`features section-padding ${style_2 ? 'fstyle-2' : ''}`}>
         <div className="container">
           <div className="row">
-            <div className="col-12 wow fadeInUp" data-aos="fade-up">
+            <div className="col-12" data-aos="fade-up">
               <div className="section-title text-center">
                 <span>Features</span>
                 <h2>One Platform Many Course</h2>
               </div>
             </div>
 
-            <div className="col-xl-3 col-lg-4 col-md-6 col-12 wow fadeIn" data-aos="fade-in">
+            <div className="col-xl-3 col-lg-4 col-md-6 col-12" data-aos="fade-in">
               <div className="feature-item">
                 <div className="fea-icon">
                   <svg fill="none" viewBox="0 0 37 37">
@@ -40,7 +40,7 @@ export default function FeatureHomeOne({ style_2 }: Props) {
               </div>
             </div>
 
-            <div className="col-xl-3 col-lg-4 col-md-6 col-12 wow fadeIn" data-aos="fade-in">
+            <div className="col-xl-3 col-lg-4 col-md-6 col-12" data-aos="fade-in">
               <div className="feature-item">
                 <div className="fea-icon">
                   <svg fill="none" viewBox="0 0 38 31">
@@ -60,7 +60,7 @@ export default function FeatureHomeOne({ style_2 }: Props) {
               </div>
             </div>
 
-            <div className="col-xl-3 col-lg-4 col-md-6 col-12 wow fadeIn" data-aos="fade-in">
+            <div className="col-xl-3 col-lg-4 col-md-6 col-12" data-aos="fade-in">
               <div className="feature-item">
                 <div className="fea-icon">
                   <svg fill="none" viewBox="0 0 37 37">
@@ -81,7 +81,7 @@ export default function FeatureHomeOne({ style_2 }: Props) {
               </div>
             </div>
 
-            <div className="col-xl-3 col-lg-4 col-md-6 col-12 wow fadeIn" data-aos="fade-in">
+            <div className="col-xl-3 col-lg-4 col-md-6 col-12" data-aos="fade-in">
               <div className="feature-item">
                 <div className="fea-icon">
                   <svg fill="none" viewBox="0 0 37 37">

@@ -8,7 +8,7 @@ export default function CartArea() {
       <div className="shopping-cart section-padding">
         <div className="container">
           <div className="row">
-            <div className="col-xl-8 wow fadeIn" data-aos="fade-in">
+            <div className="col-xl-8" data-aos="fade-in">
               <table className="table shopping-summery responsive-table woocommerce-cart-form">
                 <thead>
                   <tr className="main-hading">
@@ -228,7 +228,7 @@ export default function CartArea() {
               </table>
             </div>
 
-            <div className="col-xl-4 wow fadeIn" data-aos="fade-in">
+            <div className="col-xl-4" data-aos="fade-in">
               <div className="cart-collaterals">
                 <h2>Cart totals</h2>
 

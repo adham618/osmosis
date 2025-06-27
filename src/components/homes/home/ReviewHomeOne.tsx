@@ -10,14 +10,14 @@ export default function ReviewHomeOne() {
       <section className="review section-padding">
         <div className="container">
           <div className="row">
-            <div className="col-10 wow fadeInUp" data-aos="fade-up">
+            <div className="col-10" data-aos="fade-up">
               <div className="section-title">
                 <span>Our Students Review</span>
                 <h2>What Our Students Are Says</h2>
               </div>
             </div>
 
-            <div className="col-xl-12 wow fadeIn" data-aos="fade-in">
+            <div className="col-xl-12" data-aos="fade-in">
               <div className="review-slider owl-carousel owl-loaded owl-drag">
                 <Swiper
                   slidesPerView={3}

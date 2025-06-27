@@ -8,14 +8,14 @@ export default function BlogHomeOne() {
       <section className="blog section-padding">
         <div className="container">
           <div className="row">
-            <div className="col-12 wow fadeInUp" data-aos="fade-up">
+            <div className="col-12" data-aos="fade-up">
               <div className="section-title text-center">
                 <span>Latest Blog & Articles</span>
                 <h2>Take a Look Our latest Posts</h2>
               </div>
             </div>
 
-            <div className="col-xl-4 col-md-6 col-12 wow fadeIn">
+            <div className="col-xl-4 col-md-6 col-12">
               <div className="blog-item">
                 <div className="blog-image">
                   <img src="assets/img/blog/1.jpg" alt="image" />
@@ -44,7 +44,7 @@ export default function BlogHomeOne() {
               </div>
             </div>
 
-            <div className="col-xl-4 col-md-6 col-12 wow fadeIn" data-aos="fade-in">
+            <div className="col-xl-4 col-md-6 col-12" data-aos="fade-in">
               <div className="blog-item">
                 <div className="blog-image">
                   <img src="assets/img/blog/2.jpg" alt="image" />
@@ -73,7 +73,7 @@ export default function BlogHomeOne() {
               </div>
             </div>
 
-            <div className="col-xl-4 col-md-6 col-12 wow fadeIn" data-aos="fade-in">
+            <div className="col-xl-4 col-md-6 col-12" data-aos="fade-in">
               <div className="blog-item">
                 <div className="blog-image">
                   <img src="assets/img/blog/3.jpg" alt="image" />

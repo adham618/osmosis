@@ -14,7 +14,7 @@ export default function InstructorsHomeOne({ style_2, style_3 }: Props) {
       >
         <div className="container">
           <div className="row">
-            <div className="col-xl-8 col-md-8 wow fadeInUp" data-aos="fade-up">
+            <div className="col-xl-8 col-md-8" data-aos="fade-up">
               <div className="section-title">
                 <span>Talented Instructors</span>
                 <h2>Our Expert Instructors</h2>
@@ -22,7 +22,7 @@ export default function InstructorsHomeOne({ style_2, style_3 }: Props) {
             </div>
 
             <div
-              className="col-xl-4 col-md-4 align-self-center text-end title_btn wow fadeIn"
+              className="col-xl-4 col-md-4 align-self-center text-end title_btn"
               data-aos="fade-in"
             >
               <a href="#" className="bg_btn bt">
@@ -30,7 +30,7 @@ export default function InstructorsHomeOne({ style_2, style_3 }: Props) {
               </a>
             </div>
 
-            <div className="col-xl-3 col-md-6 col-12 wow fadeIn" data-aos="fade-in">
+            <div className="col-xl-3 col-md-6 col-12" data-aos="fade-in">
               <div className="single-instructor">
                 <div className="inimage">
                   <img src="assets/img/instructor/1.png" alt="" />
@@ -84,7 +84,7 @@ export default function InstructorsHomeOne({ style_2, style_3 }: Props) {
               </div>
             </div>
 
-            <div className="col-xl-3 col-md-6 col-12 wow fadeIn" data-aos="fade-in">
+            <div className="col-xl-3 col-md-6 col-12" data-aos="fade-in">
               <div className="single-instructor">
                 <div className="inimage">
                   <img src="assets/img/instructor/2.png" alt="" />
@@ -138,7 +138,7 @@ export default function InstructorsHomeOne({ style_2, style_3 }: Props) {
               </div>
             </div>
 
-            <div className="col-xl-3 col-md-6 col-12 wow fadeIn" data-aos="fade-in">
+            <div className="col-xl-3 col-md-6 col-12" data-aos="fade-in">
               <div className="single-instructor">
                 <div className="inimage">
                   <img src="assets/img/instructor/3.png" alt="" />
@@ -192,7 +192,7 @@ export default function InstructorsHomeOne({ style_2, style_3 }: Props) {
               </div>
             </div>
 
-            <div className="col-xl-3 col-md-6 col-12 wow fadeIn" data-aos="fade-in">
+            <div className="col-xl-3 col-md-6 col-12" data-aos="fade-in">
               <div className="single-instructor">
                 <div className="inimage">
                   <img src="assets/img/instructor/4.png" alt="" />

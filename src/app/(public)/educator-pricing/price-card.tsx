@@ -26,7 +26,7 @@ export default function PriceCard({
   subtitle
 }: PriceCardProps) {
   return (
-    <div className="col-xl-4 col-lg-4 col-md-6 col-12 wow fadeIn">
+    <div className="col-xl-4 col-lg-4 col-md-6 col-12">
       <div className="feature-item">
         <div className="fea-icon">{icon}</div>
         <h1>{price}</h1>

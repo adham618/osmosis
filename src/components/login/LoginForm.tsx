@@ -7,7 +7,7 @@ export default function LoginForm() {
       <section className="login_register section-padding">
         <div className="container">
           <div className="row">
-            <div className="col-lg-6 offset-lg-3 col-xs-12 wow fadeIn" data-aos="fade-in">
+            <div className="col-lg-6 offset-lg-3 col-xs-12" data-aos="fade-in">
               <div className="login">
                 <h4 className="login_register_title">Already a member? Sign in:</h4>
                 <div className="form-group">
