@@ -4542,8 +4542,6 @@ img[src*="girl.png"] {
 	border-radius: 15px;
 	box-shadow: 0 20px 40px rgba(138, 43, 226, 0.15);
 	transition: all 0.3s ease;
-	margin-right: 60px; /* Increased spacing from text on right */
-	margin-left: 60px; /* Increased spacing from text on left */
 
 	/* Rectangular feather mask using linear gradients */
 	-webkit-mask:
@@ -4568,8 +4566,6 @@ img[src*="classroom.png"] {
 	border-radius: 15px;
 	box-shadow: 0 20px 40px rgba(138, 43, 226, 0.15);
 	transition: all 0.3s ease;
-	margin-right: 60px; /* Increased spacing from text on right */
-	margin-left: 60px; /* Increased spacing from text on left */
 
 	/* Rectangular feather mask using linear gradients */
 	-webkit-mask:
@@ -4619,8 +4615,6 @@ img[src*="vr-exp.gif"] {
 	border-radius: 15px;
 	box-shadow: 0 20px 40px rgba(138, 43, 226, 0.15);
 	transition: all 0.3s ease;
-	margin-right: 60px; /* Increased spacing from text on right */
-	margin-left: 60px; /* Increased spacing from text on left */
 
 	/* Rectangular feather mask using linear gradients */
 	-webkit-mask:
@@ -4645,8 +4639,6 @@ img[src*="vr-guy.gif"] {
 	border-radius: 15px;
 	box-shadow: 0 20px 40px rgba(138, 43, 226, 0.15);
 	transition: all 0.3s ease;
-	margin-right: 60px; /* Increased spacing from text on right */
-	margin-left: 60px; /* Increased spacing from text on left */
 
 	/* Rectangular feather mask using linear gradients */
 	-webkit-mask:

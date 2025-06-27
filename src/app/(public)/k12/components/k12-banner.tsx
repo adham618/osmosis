@@ -20,7 +20,6 @@ export default function K12Banner() {
                   <h2 className="title">
                     <span>Transforming</span> K-12 Education{' '}
                   </h2>
-                  <h2 className="title"> </h2>
                   <p>Bringing textbooks to life through interactive 3D experiences</p>
                 </div>
                 <div className="bcate">

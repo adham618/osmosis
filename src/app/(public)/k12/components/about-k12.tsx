@@ -1,4 +1,5 @@
 import Image from 'next/image'
+import Link from 'next/link'
 
 export default function AboutK12() {
   return (
@@ -90,9 +91,9 @@ export default function AboutK12() {
                 </div>
               </div>
 
-              <a href="courses-1.html" className="bg_btn bt">
+              <Link href="/courses-1" className="bg_btn bt">
                 Discover More
-              </a>
+              </Link>
             </div>
           </div>
         </div>
@@ -115,14 +116,14 @@ export default function AboutK12() {
                 hood.
               </p>
 
-              <a
+              <Link
                 href="https://elearningindustry.com/augmented-reality-in-education-staggering-insight-into-future"
                 className="bg_btn bt"
                 target="_blank"
                 rel="noopener noreferrer"
               >
                 Read More
-              </a>
+              </Link>
             </div>
             <div className="col-lg-6 aboutvideo align-self-center wow fadeIn">
               <Image
