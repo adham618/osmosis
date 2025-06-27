@@ -354,6 +354,10 @@
 		transform: translateY(-2px);
 		box-shadow: 0 5px 15px rgba(138, 43, 226, 0.2);
 	}
+	.cta-content{
+	padding-right: 0px;
+	padding-bottom: 200px;
+}
 }
 @media only screen and (max-width: 575px){
 	.banner-content .subtitle {
