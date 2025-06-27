@@ -1,13 +1,15 @@
-/* eslint-disable @next/next/no-img-element */
 'use client'
+
+/* eslint-disable @next/next/no-img-element */
+
 import React, { useState } from 'react'
 
+if (typeof window !== 'undefined') {
+  require('bootstrap/js/dist/tab')
+}
 import VideoPopup from '@/modals/VideoPopup'
 
 export default function CourseDetailsArea() {
-  if (typeof window !== 'undefined') {
-    require('bootstrap/js/dist/tab')
-  }
   const [isVideoOpen, setIsVideoOpen] = useState<boolean>(false)
 
   return (
