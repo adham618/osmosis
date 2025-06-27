@@ -1,7 +1,7 @@
-/* eslint-disable @next/next/no-img-element */
 'use client'
 
 import React from 'react'
+import Image from 'next/image'
 
 export default function ContactForm() {
   return (
@@ -11,10 +11,16 @@ export default function ContactForm() {
           <div className="row">
             <div className="col-xl-6 wow fadeIn">
               <div className="contact_content">
-                <img src="assets/img/contact.jpg" alt="image" />
+                <Image
+                  className="w-100 h-auto"
+                  src="/assets/img/office.png"
+                  alt="image"
+                  width={696}
+                  height={812}
+                />
                 <div className="contact_info">
                   <div className="row">
-                    <div className="col-xl-4 col-md-4 ">
+                    {/* <div className="col-xl-4 col-md-4 ">
                       <div className="contact_list">
                         <div className="cicon">
                           <i className="bx bx-phone-call"></i>
@@ -28,7 +34,7 @@ export default function ContactForm() {
                           </p>
                         </div>
                       </div>
-                    </div>
+                    </div> */}
 
                     <div className="col-xl-4 col-md-4">
                       <div className="contact_list">
@@ -38,9 +44,9 @@ export default function ContactForm() {
                         <div className="cinfo_content">
                           <h4>Write email Us</h4>
                           <p>
-                            <a href="#">admin@example.com</a>
+                            <a href="mailto:admin@example.com">admin@example.com</a>
                             <br />
-                            <a href="#">support@example.com</a>
+                            <a href="mailto:support@example.com">support@example.com</a>
                           </p>
                         </div>
                       </div>
@@ -53,7 +59,7 @@ export default function ContactForm() {
                         </div>
                         <div className="cinfo_content">
                           <h4>Visit anytime</h4>
-                          <p>427 Hall Place Longview, Texas</p>
+                          <p>101 North First Ave, Phoenix, AZ</p>
                         </div>
                       </div>
                     </div>

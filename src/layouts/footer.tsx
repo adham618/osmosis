@@ -88,7 +88,7 @@ const LogoSection = () => (
           <Link href="/">
             <Image
               src="/assets/img/logo-footer.svg"
-              alt="Edumon"
+              alt={siteConfig.short_name}
               width={250}
               height={83}
               priority

@@ -6,6 +6,8 @@ import { useState } from 'react'
 import MobileMenu from './MobileMenu'
 import NavMenu from './NavMenu'
 
+import { siteConfig } from '@/config/site'
+
 export default function HeaderTwo() {
   const [open, setOpen] = useState(false)
   const [opneMenu, setOpneMenu] = useState(false)
@@ -18,7 +20,7 @@ export default function HeaderTwo() {
             <div className="col-xl-3 col-lg-3 col-md-6 align-self-center">
               <div className="site-logo">
                 <Link href="/">
-                  <img src="assets/img/logo.svg" alt="Edumon" />
+                  <img src="assets/img/logo.svg" alt={siteConfig.short_name} />
                 </Link>
               </div>
             </div>

@@ -3907,6 +3907,10 @@ li.comment{
 	margin-top: -102px;
 	margin-left: 0;
 }
+.contact_us .contact_list a:hover{
+		-webkit-text-fill-color:white;
+		text-decoration: underline;
+	}
 .contact_list {
 	color: #fff;
 	text-align: center;

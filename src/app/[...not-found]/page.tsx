@@ -4,12 +4,12 @@ import Error from '@/components/error'
 import Layout from '@/layouts/layout'
 
 export const metadata: Metadata = {
-  title: '404 || Error Edumon - Education Next JS Template',
+  title: '404 - Page Not Found',
   description:
-    'Transform your educational website with Edumon - the ultimate Next template thats powered by the latest Bootstrap technology. Impress your visitors with sleek animations, a user-friendly contact form, and seamless course integration. Elevate your online presence and engage your audience like never before with Edumon!'
+    'The page you are looking for does not exist. Please check the URL or navigate back to the homepage.'
 }
 
-export default function index() {
+export default function NotFoundPage() {
   return (
     <Layout>
       <Error />
