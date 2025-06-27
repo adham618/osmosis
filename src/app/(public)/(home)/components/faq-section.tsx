@@ -1,5 +1,6 @@
 "use client";
 
+import Image from 'next/image';
 
 if (typeof window !== "undefined") {
   require("bootstrap/js/dist/collapse");
@@ -12,7 +13,13 @@ export default function FaqSection() {
         <div className="row">
           <div className="col-xl-6 wow fadeIn">
             <div className="faq-image">
-              <img src="assets/img/vr-gog.png" alt="faq" />
+              <Image
+                className="w-100 h-auto"
+                src="/assets/img/vr-gog.png"
+                alt="faq"
+                width={392}
+                height={457}
+              />
               {/* <div className="faq_contact">
                   <h4>Online Support</h4>
                   <p>+858 75 45 64 24</p>
