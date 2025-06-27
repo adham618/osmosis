@@ -11,7 +11,7 @@ export default function FaqSection() {
     <section className="faq pb120">
       <div className="container">
         <div className="row">
-          <div className="col-xl-6 wow fadeIn">
+          <div className="col-xl-6 wow fadeIn" data-aos="fade-in">
             <div className="faq-image">
               <Image
                 className="w-100 h-auto"
@@ -27,7 +27,7 @@ export default function FaqSection() {
             </div>
           </div>
 
-          <div className="col-xl-6 align-self-center wow fadeIn">
+          <div className="col-xl-6 align-self-center wow fadeIn" data-aos="fade-in">
             <div className="section-title">
               <span>FAQ</span>
               <h2>

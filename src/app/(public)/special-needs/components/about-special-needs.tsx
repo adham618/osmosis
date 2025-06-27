@@ -7,7 +7,7 @@ export default function SpecialNeedsK12() {
       <section className="about" style={{ marginBottom: '5%' }}>
         <div className="container" style={{ paddingTop: '60px' }}>
           <div className="row gap-5 justify-content-between">
-            <div className="col-lg-6 aboutvideo align-self-center wow fadeIn">
+            <div className="col-lg-6 aboutvideo align-self-center wow fadeIn" data-aos="fade-in">
               <Image
                 className="w-100 h-auto"
                 src="/assets/img/special-needs/classroom.png"
@@ -17,7 +17,7 @@ export default function SpecialNeedsK12() {
               />
             </div>
 
-            <div className="col-lg-5 align-self-center align-items-center wow fadeIn">
+            <div className="col-lg-5 align-self-center align-items-center wow fadeIn" data-aos="fade-in">
               <div className="section-title about-title">
                 <span>Unlocking Potential</span>
                 <h2>Empowering Students with Special Needs</h2>
@@ -91,7 +91,7 @@ export default function SpecialNeedsK12() {
       <section className="about" style={{ marginTop: '5%', marginBottom: '5%' }}>
         <div className="container">
           <div className="row gap-5 justify-content-between">
-            <div className="col-lg-5 align-self-center align-items-center wow fadeIn">
+            <div className="col-lg-5 align-self-center align-items-center wow fadeIn" data-aos="fade-in">
               <div className="section-title about-title">
                 <span>For aids, parents, and caretakers</span>
                 <h2>Learning with your child</h2>
@@ -108,7 +108,7 @@ export default function SpecialNeedsK12() {
                 More on Guardian
               </Link>
             </div>
-            <div className="col-lg-6 aboutvideo align-self-center wow fadeIn">
+            <div className="col-lg-6 aboutvideo align-self-center wow fadeIn" data-aos="fade-in">
               <Image
                 className="w-100 h-auto"
                 src="/assets/img/special-needs/girl.png"

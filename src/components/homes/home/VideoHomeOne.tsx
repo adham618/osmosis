@@ -9,7 +9,7 @@ export default function VideoHomeOne() {
 
   return (
     <>
-      <section className="container pb170 wow fadeIn">
+      <section className="container pb170 wow fadeIn" data-aos="fade-in">
         <div className="row">
           <div className="col-xl-10 mx-auto">
             <div className="video-area">

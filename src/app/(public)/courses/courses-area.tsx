@@ -125,21 +125,24 @@ export default function CoursesArea() {
       <section className="courses" style={{ marginTop: '5%', marginBottom: '0%' }}>
         <div className="container">
           <div className="row">
-            <div className="col-xl-8 col-md-8 wow fadeInUp">
+            <div className="col-xl-8 col-md-8 wow fadeInUp" data-aos="fade-up">
               <div className="section-title">
                 <span>Explore</span>
                 <h2>Most Popular Courses</h2>
               </div>
             </div>
 
-            <div className="col-xl-4 col-md-4 align-self-center text-end title_btn wow fadeIn">
+            <div
+              className="col-xl-4 col-md-4 align-self-center text-end title_btn wow fadeIn"
+              data-aos="fade-in"
+            >
               <a href="#all-courses" className="bg_btn bt">
                 View All
               </a>
             </div>
 
             {popularCourses.map((course) => (
-              <div key={course.id} className="col-xl-6 col-lg-6 wow fadeIn">
+              <div key={course.id} className="col-xl-6 col-lg-6 wow fadeIn" data-aos="fade-in">
                 <CourseCard course={course} variant="horizontal" />
               </div>
             ))}
@@ -156,7 +159,11 @@ export default function CoursesArea() {
             </div>
 
             {allCourses.map((course) => (
-              <div key={course.id} className="col-xl-4 col-md-6 col-12 wow fadeIn">
+              <div
+                key={course.id}
+                className="col-xl-4 col-md-6 col-12 wow fadeIn"
+                data-aos="fade-in"
+              >
                 <CourseCard course={course} />
               </div>
             ))}

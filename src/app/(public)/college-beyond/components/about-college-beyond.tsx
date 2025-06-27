@@ -6,13 +6,13 @@ export default function CollegeBeyondK12() {
       <section className="about" style={{ marginBottom: '5%' }}>
         <div className="container" style={{ paddingTop: '60px' }}>
           <div className="row gap-5 justify-content-between">
-            <div className="col-lg-6 aboutvideo align-self-center wow fadeIn">
+            <div className="col-lg-6 aboutvideo align-self-center wow fadeIn" data-aos="fade-in">
               <video autoPlay loop muted playsInline>
                 <source src="assets/img/college-beyond/vr-exp.mp4" type="video/mp4" />
               </video>
             </div>
 
-            <div className="col-lg-5 align-self-center align-items-center wow fadeIn">
+            <div className="col-lg-5 align-self-center align-items-center wow fadeIn" data-aos="fade-in">
               <div className="section-title about-title">
                 <span>Simulations and Modelling</span>
                 <h2>A new way to visualize anything</h2>
@@ -84,7 +84,7 @@ export default function CollegeBeyondK12() {
       <section className="about" style={{ marginTop: '5%', marginBottom: '5%' }}>
         <div className="container">
           <div className="row gap-5 justify-content-between">
-            <div className="col-lg-5 align-self-center align-items-center wow fadeIn">
+            <div className="col-lg-5 align-self-center align-items-center wow fadeIn" data-aos="fade-in">
               <div className="section-title about-title">
                 <span>The Future University</span>
                 <h2>How AR and VR are reshaping college courses</h2>
@@ -106,7 +106,7 @@ export default function CollegeBeyondK12() {
                 Read More
               </Link>
             </div>
-            <div className="col-lg-6 aboutvideo align-self-center wow fadeIn">
+            <div className="col-lg-6 aboutvideo align-self-center wow fadeIn" data-aos="fade-in">
               <video autoPlay loop muted playsInline>
                 <source src="assets/img/college-beyond/vr-guy.mp4" type="video/mp4" />
               </video>

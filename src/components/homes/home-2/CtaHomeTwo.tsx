@@ -7,7 +7,7 @@ export default function CtaHomeTwo() {
       <section className="cta">
         <div className="container">
           <div className="row">
-            <div className="col-xl-6 col-lg-6 col-12 wow fadeIn">
+            <div className="col-xl-6 col-lg-6 col-12 wow fadeIn" data-aos="fade-in">
               <div className="cta-item">
                 <div className="cta-content">
                   <h3>
@@ -48,7 +48,7 @@ export default function CtaHomeTwo() {
               </div>
             </div>
 
-            <div className="col-xl-6 col-lg-6 col-12 wow fadeIn">
+            <div className="col-xl-6 col-lg-6 col-12 wow fadeIn" data-aos="fade-in">
               <div className="cta-item">
                 <div className="cta-content">
                   <h3>

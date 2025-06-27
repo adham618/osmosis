@@ -22,7 +22,7 @@ export default function FaqHomeTwo() {
               </div>
             </div>
 
-            <div className="col-xl-6 align-self-center wow fadeIn">
+            <div className="col-xl-6 align-self-center wow fadeIn" data-aos="fade-in">
               <div className="section-title">
                 <span>FAQ</span>
                 <h2>

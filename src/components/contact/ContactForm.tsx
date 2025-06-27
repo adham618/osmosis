@@ -9,7 +9,7 @@ export default function ContactForm() {
       <section className="contact_us section-padding">
         <div className="container">
           <div className="row">
-            <div className="col-xl-6 wow fadeIn">
+            <div className="col-xl-6 wow fadeIn" data-aos="fade-in">
               <div className="contact_content">
                 <Image
                   className="w-100 h-auto"
@@ -68,7 +68,7 @@ export default function ContactForm() {
               </div>
             </div>
 
-            <div className="col-xl-6 wow fadeIn">
+            <div className="col-xl-6 wow fadeIn" data-aos="fade-in">
               <div className="contact-form align-self-center">
                 <div className="section-title">
                   <span>Send us email</span>

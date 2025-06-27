@@ -6,13 +6,16 @@ export default function AboutSection() {
       <section className="about" style={{ marginBottom: '5%' }}>
         <div className="container" style={{ paddingTop: '20px' }}>
           <div className="row gap-5 justify-content-between">
-            <div className="col-lg-6 aboutvideo align-self-center wow fadeIn">
+            <div className="col-lg-6 aboutvideo align-self-center wow fadeIn" data-aos="fade-in">
               <video autoPlay loop muted playsInline>
                 <source src="assets/img/biochem.mp4" type="video/mp4" />
               </video>
             </div>
 
-            <div className="col-lg-5 align-self-center align-items-center wow fadeIn">
+            <div
+              className="col-lg-5 align-self-center align-items-center wow fadeIn"
+              data-aos="fade-in"
+            >
               <div className="section-title about-title">
                 <span>One platform, unlimited possibilities</span>
                 <h2>The Future of Education</h2>
@@ -35,7 +38,10 @@ export default function AboutSection() {
       <section className="about" style={{ marginTop: '5%', marginBottom: '5%' }}>
         <div className="container">
           <div className="row gap-5 justify-content-between">
-            <div className="col-lg-5 align-self-center align-items-center wow fadeIn">
+            <div
+              className="col-lg-5 align-self-center align-items-center wow fadeIn"
+              data-aos="fade-in"
+            >
               <div className="section-title about-title">
                 <span>Learning through living</span>
                 <h2>Revolutionizing how you absorb knowledge</h2>
@@ -51,7 +57,7 @@ export default function AboutSection() {
                 Explore Courses
               </Link>
             </div>
-            <div className="col-lg-6 aboutvideo align-self-center wow fadeIn">
+            <div className="col-lg-6 aboutvideo align-self-center wow fadeIn" data-aos="fade-in">
               <video autoPlay loop muted playsInline>
                 <source src="assets/img/dinosaur.mp4" type="video/mp4" />
               </video>

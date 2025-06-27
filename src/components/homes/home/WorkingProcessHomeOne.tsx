@@ -13,14 +13,14 @@ export default function WorkingProcessHomeOne() {
       >
         <div className="container">
           <div className="row">
-            <div className="col-12 wow fadeInUp">
+            <div className="col-12 wow fadeInUp" data-aos="fade-up">
               <div className="section-title white-title text-center">
                 <span>Working Process</span>
                 <h2>How Does It Work</h2>
               </div>
             </div>
 
-            <div className="col-xl-4 col-md-6 col-12 wow fadeIn">
+            <div className="col-xl-4 col-md-6 col-12 wow fadeIn" data-aos="fade-in">
               <div className="single-work">
                 <div className="wicon">
                   <svg
@@ -53,7 +53,7 @@ export default function WorkingProcessHomeOne() {
               </div>
             </div>
 
-            <div className="col-xl-4 col-md-6 col-12 wow fadeIn">
+            <div className="col-xl-4 col-md-6 col-12 wow fadeIn" data-aos="fade-in">
               <div className="single-work">
                 <div className="wicon">
                   <svg
@@ -90,7 +90,7 @@ export default function WorkingProcessHomeOne() {
               </div>
             </div>
 
-            <div className="col-xl-4 col-md-6 col-12 wow fadeIn">
+            <div className="col-xl-4 col-md-6 col-12 wow fadeIn" data-aos="fade-in">
               <div className="single-work">
                 <div className="wicon">
                   <svg

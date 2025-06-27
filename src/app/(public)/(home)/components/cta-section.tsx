@@ -6,7 +6,10 @@ export default function CtaSection() {
     <section className="cta">
       <div className="container">
         <div className="row d-flex flex-wrap">
-          <div className="col-xl-6 col-lg-6 col-12 wow fadeIn d-flex flex-column">
+          <div
+            className="col-xl-6 col-lg-6 col-12 wow fadeIn d-flex flex-column"
+            data-aos="fade-in"
+          >
             <div className="cta-item flex-fill">
               <div className="cta-content h-100 d-flex flex-column">
                 <h3>
@@ -58,7 +61,10 @@ export default function CtaSection() {
             </div>
           </div>
 
-          <div className="col-xl-6 col-lg-6 col-12 wow fadeIn d-flex flex-column">
+          <div
+            className="col-xl-6 col-lg-6 col-12 wow fadeIn d-flex flex-column"
+            data-aos="fade-in"
+          >
             <div className="cta-item flex-fill">
               <div className="cta-content h-100 d-flex flex-column">
                 <h3>

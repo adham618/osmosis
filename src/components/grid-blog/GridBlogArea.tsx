@@ -8,7 +8,7 @@ export default function GridBlogArea() {
       <section className="blog bstyle-2 section-padding">
         <div className="container">
           <div className="row">
-            <div className="col-xl-4 col-md-6 col-12 wow fadeIn">
+            <div className="col-xl-4 col-md-6 col-12 wow fadeIn" data-aos="fade-in">
               <div className="blog-item">
                 <div className="blog-image">
                   <img src="assets/img/blog/1.jpg" alt="image" />
@@ -37,7 +37,7 @@ export default function GridBlogArea() {
               </div>
             </div>
 
-            <div className="col-xl-4 col-md-6 col-12 wow fadeIn">
+            <div className="col-xl-4 col-md-6 col-12 wow fadeIn" data-aos="fade-in">
               <div className="blog-item">
                 <div className="blog-image">
                   <img src="assets/img/blog/2.jpg" alt="image" />
@@ -66,7 +66,7 @@ export default function GridBlogArea() {
               </div>
             </div>
 
-            <div className="col-xl-4 col-md-6 col-12 wow fadeIn">
+            <div className="col-xl-4 col-md-6 col-12 wow fadeIn" data-aos="fade-in">
               <div className="blog-item">
                 <div className="blog-image">
                   <img src="assets/img/blog/3.jpg" alt="image" />
@@ -96,7 +96,7 @@ export default function GridBlogArea() {
               </div>
             </div>
 
-            <div className="col-xl-4 col-md-6 col-12 wow fadeIn">
+            <div className="col-xl-4 col-md-6 col-12 wow fadeIn" data-aos="fade-in">
               <div className="blog-item">
                 <div className="blog-image">
                   <img src="assets/img/blog/2.jpg" alt="image" />
@@ -125,7 +125,7 @@ export default function GridBlogArea() {
               </div>
             </div>
 
-            <div className="col-xl-4 col-md-6 col-12 wow fadeIn">
+            <div className="col-xl-4 col-md-6 col-12 wow fadeIn" data-aos="fade-in">
               <div className="blog-item">
                 <div className="blog-image">
                   <img src="assets/img/blog/3.jpg" alt="image" />
@@ -154,7 +154,7 @@ export default function GridBlogArea() {
               </div>
             </div>
 
-            <div className="col-xl-4 col-md-6 col-12 wow fadeIn">
+            <div className="col-xl-4 col-md-6 col-12 wow fadeIn" data-aos="fade-in">
               <div className="blog-item">
                 <div className="blog-image">
                   <img src="assets/img/blog/1.jpg" alt="image" />

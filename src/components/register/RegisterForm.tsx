@@ -7,7 +7,7 @@ export default function RegisterForm() {
       <section className="login_register section-padding">
         <div className="container">
           <div className="row">
-            <div className="col-lg-6 offset-lg-3 col-xs-12 wow fadeIn">
+            <div className="col-lg-6 offset-lg-3 col-xs-12 wow fadeIn" data-aos="fade-in">
               <div className="register">
                 <h4 className="login_register_title">Create a new account:</h4>
                 <div className="form-group">

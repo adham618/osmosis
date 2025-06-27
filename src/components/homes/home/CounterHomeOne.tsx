@@ -48,7 +48,7 @@ export default function CounterHomeOne() {
       <section className="counter-up section-padding">
         <div className="container">
           <div className="row">
-            <div className="col-12 wow fadeInUp">
+            <div className="col-12 wow fadeInUp" data-aos="fade-up">
               <div className="counter-title text-center">
                 <h2>
                   Trusted by <span>Companies</span> Achievements
@@ -56,7 +56,7 @@ export default function CounterHomeOne() {
               </div>
             </div>
             {counter_data.map((item, i) => (
-              <div key={i} className="col-xl-3 col-md-6 col-12 wow fadeIn">
+              <div key={i} className="col-xl-3 col-md-6 col-12 wow fadeIn" data-aos="fade-in">
                 <div className="counter-item">
                   <div className="cicon" dangerouslySetInnerHTML={{ __html: item.icon }}></div>
                   <h4>
