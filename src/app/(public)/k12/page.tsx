@@ -1,5 +1,9 @@
 import type { Metadata } from 'next'
 
+import K12Banner from './components/k12-banner'
+import AboutK12 from './components/about-k12'
+import CtaStudent from './components/cta-student'
+
 export const metadata: Metadata = {
   title: 'Transforming K-12 Education',
   description:
@@ -7,5 +11,11 @@ export const metadata: Metadata = {
 }
 
 export default function K12Page() {
-  return <main></main>
+  return (
+    <main>
+      <K12Banner />
+      <AboutK12 />
+      <CtaStudent />
+    </main>
+  )
 }

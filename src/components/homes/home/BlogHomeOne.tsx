@@ -1,4 +1,3 @@
-/* eslint-disable @next/next/no-img-element */
 import Link from 'next/link'
 import React from 'react'
 
@@ -32,14 +31,8 @@ export default function BlogHomeOne() {
                     </span>
                   </div>
 
-                  <h3>
-                    <Link href="/blog-details">
-                      A Student Learning with Online Programme on Computer
-                    </Link>
-                  </h3>
-                  <Link href="/blog-details" className="bbtn">
-                    Explore More
-                  </Link>
+                  <h3><Link href="/blog-details">A Student Learning with Online Programme on Computer</Link></h3>
+                  <Link href="/blog-details" className="bbtn">Explore More</Link>
                 </div>
               </div>
             </div>
@@ -61,14 +54,8 @@ export default function BlogHomeOne() {
                     </span>
                   </div>
 
-                  <h3>
-                    <Link href="/blog-details">
-                      All Students and Teachers are Happy To Back to School
-                    </Link>
-                  </h3>
-                  <Link href="/blog-details" className="bbtn">
-                    Explore More
-                  </Link>
+                  <h3><Link href="/blog-details">All Students and Teachers are Happy To Back to School</Link></h3>
+                  <Link href="/blog-details" className="bbtn">Explore More</Link>
                 </div>
               </div>
             </div>
@@ -90,18 +77,13 @@ export default function BlogHomeOne() {
                     </span>
                   </div>
 
-                  <h3>
-                    <Link href="/blog-details">
-                      Learners are studing with togather in the Class Room
-                    </Link>
-                  </h3>
+                  <h3><Link href="/blog-details">Learners are studing with togather in the Class Room</Link></h3>
 
-                  <Link href="/blog-details" className="bbtn">
-                    Explore More
-                  </Link>
+                  <Link href="/blog-details" className="bbtn">Explore More</Link>
                 </div>
               </div>
             </div>
+
           </div>
         </div>
       </section>

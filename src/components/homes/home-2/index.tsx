@@ -1,23 +1,28 @@
-import AboutHomeOne from '../home/AboutHomeOne'
-import BlogHomeOne from '../home/BlogHomeOne'
-import CounterHomeOne from '../home/CounterHomeOne'
-import CourseCategoryHomeOne from '../home/CourseCategoryHomeOne'
-import FeatureHomeOne from '../home/FeatureHomeOne'
-import InstructorsHomeOne from '../home/InstructorsHomeOne'
-import ReviewHomeOne from '../home/ReviewHomeOne'
-import WorkingProcessHomeOne from '../home/WorkingProcessHomeOne'
 
-import BrandHomeTwo from './BrandHomeTwo'
-import CoursesHomeTwo from './CoursesHomeTwo'
-import CtaHomeTwo from './CtaHomeTwo'
-import FaqHomeTwo from './FaqHomeTwo'
+
+import HeaderTwo from '@/layouts/headers/HeaderTwo'
+import React from 'react'
 import HeroHomeTwo from './HeroHomeTwo'
+import BrandHomeTwo from './BrandHomeTwo' 
+import FeatureHomeOne from '../home/FeatureHomeOne'
+import AboutHomeOne from '../home/AboutHomeOne'
+import CounterHomeOne from '../home/CounterHomeOne'
+import CoursesHomeTwo from './CoursesHomeTwo'
+import CourseCategoryHomeOne from '../home/CourseCategoryHomeOne'
+import WorkingProcessHomeOne from '../home/WorkingProcessHomeOne'
+import InstructorsHomeOne from '../home/InstructorsHomeOne'
+import FaqHomeTwo from './FaqHomeTwo'
+import ReviewHomeOne from '../home/ReviewHomeOne'
+import BlogHomeOne from '../home/BlogHomeOne'
+import CtaHomeTwo from './CtaHomeTwo'
+import FooterOne from '@/layouts/footers/FooterOne'
 
 export default function HomeTwo() {
   return (
     <>
+      <HeaderTwo />
       <HeroHomeTwo />
-      <BrandHomeTwo />
+      <BrandHomeTwo /> 
       <FeatureHomeOne style_2={true} />
       <AboutHomeOne />
       <CounterHomeOne />
@@ -29,6 +34,8 @@ export default function HomeTwo() {
       <ReviewHomeOne />
       <BlogHomeOne />
       <CtaHomeTwo />
+      <FooterOne />
+
     </>
   )
 }
