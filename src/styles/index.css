@@ -29,5 +29,5 @@
 /* @import "../../public/assets/owlcarousel/css/owl.carousel.min.css";  */
 /* @import "../../public/assets/owlcarousel/css/owl.theme.default.min.css";  */
 
-@import '../../public/assets/css/style.css';
-@import '../../public/assets/css/responsive.css';
+@import './style.css';
+@import './responsive.css';

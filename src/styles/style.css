@@ -268,7 +268,7 @@ img{
 	content: '';
 	height: 100%;
 	width: 30%;
-	background-image: url(../img/shapes/header.svg);
+	background-image: url(/assets/img/shapes/header.svg);
 	right: 0;
 	top: 0;
 	z-index: -1;
@@ -827,7 +827,7 @@ img{
 	height: 70px;
 	padding: 10px 50px;
 	position: relative;
-	background-image: url(../img/icons/search-2.svg);
+	background-image: url(/assets/img/icons/search-2.svg);
 	background-repeat: no-repeat;
 	background-position: 27px;
 }
@@ -1475,7 +1475,7 @@ img{
 	position: absolute;
 	top: 18px;
 	right: -100px;
-	background-image: url(../img/shapes/working-arrow.svg);
+	background-image: url(/assets/img/shapes/working-arrow.svg);
 	width: 170px;
 	height: 40px;
 	background-repeat: no-repeat;
@@ -1656,7 +1656,7 @@ img{
 }
 .instyle-2 .inimage::after {
 	content: '';
-	background-image: url(../img/shapes/talent-shape.svg);
+	background-image: url(/assets/img/shapes/talent-shape.svg);
 	background-repeat: no-repeat;
 	position: absolute;
 	left: 24px;
@@ -1696,7 +1696,7 @@ img{
 .video-area::after {
 	content: '';
 	position: absolute;
-	background-image: url(../img/shapes/video.svg);
+	background-image: url(/assets/img/shapes/video.svg);
 	width: 991px;
 	height: 522px;
 	background-repeat: no-repeat;
@@ -2787,7 +2787,7 @@ svg#play_icon:hover #triangle {
 	top: 10px;
 	width: 40px;
 	height: 24px;
-	background-image: url(../img/icons/check.svg);
+	background-image: url(/assets/img/icons/check.svg);
 	background-repeat: no-repeat;
 }
 .cd_curriculum{
@@ -4493,8 +4493,6 @@ img[src*="k12-1.png"] {
 	border-radius: 15px;
 	box-shadow: 0 20px 40px rgba(138, 43, 226, 0.15);
 	transition: all 0.3s ease;
-	margin-right: 60px; /* Increased spacing from text on right */
-	margin-left: 60px; /* Increased spacing from text on left */
 
 	/* Rectangular feather mask using linear gradients */
 	-webkit-mask:
@@ -4519,8 +4517,6 @@ img[src*="k12-2.png"] {
 	border-radius: 15px;
 	box-shadow: 0 20px 40px rgba(138, 43, 226, 0.15);
 	transition: all 0.3s ease;
-	margin-right: 60px; /* Increased spacing from text on right */
-	margin-left: 60px; /* Increased spacing from text on left */
 
 	/* Rectangular feather mask using linear gradients */
 	-webkit-mask:
@@ -4599,8 +4595,6 @@ img[src*="k12-2.png"] {
 	border-radius: 15px;
 	box-shadow: 0 20px 40px rgba(138, 43, 226, 0.15);
 	transition: all 0.3s ease;
-	margin-right: 60px; /* Increased spacing from text on right */
-	margin-left: 60px; /* Increased spacing from text on left */
 
 	/* Rectangular feather mask using linear gradients */
 	-webkit-mask:
@@ -4663,12 +4657,6 @@ img[src*="vr-guy.gif"] {
 		linear-gradient(to right, transparent 0%, black 8%, black 92%, transparent 100%),
 		linear-gradient(to bottom, transparent 0%, black 8%, black 92%, transparent 100%);
 	mask-composite: intersect;
-}
-
-/* Ensure proper spacing in about sections */
-.about .row {
-	margin-left: -30px;
-	margin-right: -30px;
 }
 
 .about .col-xl-6,

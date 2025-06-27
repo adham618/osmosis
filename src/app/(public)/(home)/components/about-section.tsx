@@ -4,15 +4,15 @@ export default function AboutSection() {
   return (
     <>
       <section className="about" style={{ marginBottom: '5%' }}>
-        <div className="container">
-          <div className="row">
-            <div className="col-xl-6 col-lg-6 aboutvideo align-self-center wow fadeIn">
+        <div className="container" style={{ paddingTop: '20px' }}>
+          <div className="row gap-5 justify-content-between">
+            <div className="col-lg-6 aboutvideo align-self-center wow fadeIn">
               <video autoPlay loop muted playsInline>
                 <source src="assets/img/biochem.mp4" type="video/mp4" />
               </video>
             </div>
 
-            <div className="col-xl-6  col-lg-4 align-self-center align-items-center wow fadeIn">
+            <div className="col-lg-5 align-self-center align-items-center wow fadeIn">
               <div className="section-title about-title">
                 <span>One platform, unlimited possibilities</span>
                 <h2>The Future of Education</h2>
@@ -34,8 +34,8 @@ export default function AboutSection() {
       </section>
       <section className="about" style={{ marginTop: '5%', marginBottom: '5%' }}>
         <div className="container">
-          <div className="row">
-            <div className="col-xl-6 col-lg-4 align-self-center align-items-center wow fadeIn">
+          <div className="row gap-5 justify-content-between">
+            <div className="col-lg-5 align-self-center align-items-center wow fadeIn">
               <div className="section-title about-title">
                 <span>Learning through living</span>
                 <h2>Revolutionizing how you absorb knowledge</h2>
@@ -51,7 +51,7 @@ export default function AboutSection() {
                 Explore Courses
               </Link>
             </div>
-            <div className="col-xl-6 aboutvideo mt-3 mt-lg-0 col-lg-6 align-self-center wow fadeIn">
+            <div className="col-lg-6 aboutvideo align-self-center wow fadeIn">
               <video autoPlay loop muted playsInline>
                 <source src="assets/img/dinosaur.mp4" type="video/mp4" />
               </video>
