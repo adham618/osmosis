@@ -1,5 +1,6 @@
 import * as React from 'react'
 import Image from 'next/image'
+import Link from 'next/link'
 
 export default function CtaStudent() {
   return (
@@ -16,9 +17,9 @@ export default function CtaStudent() {
                   Offering a wide variety of courses in varying formats, from school-run, to
                   instructor-based, to fully independent.
                 </p>
-                <a href="dashboard/login.html" className="bg_btn bt">
+                <Link href="/dashboard/login" className="bg_btn bt">
                   Sign Up Now!
-                </a>
+                </Link>
               </div>
               <Image
                 src="/assets/img/k12/desks.png"

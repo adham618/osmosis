@@ -17,7 +17,7 @@ export default function SpecialNeedsBanner() {
             <div className="banner-content d-flex align-items-center">
               <div className="banner-content-inner">
                 <div style={{ maxWidth: '70%' }}>
-                  <h2 className="title">AR for Children with Special Needs</h2>
+                  <h1 className="title">AR for Children with Special Needs</h1>
                   <p>Making a difference where it matters most.</p>
                 </div>
                 <div className="bcate">

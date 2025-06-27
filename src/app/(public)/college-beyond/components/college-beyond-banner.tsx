@@ -1,11 +1,11 @@
 import Image from 'next/image'
 import Link from 'next/link'
 
-export default function K12Banner() {
+export default function CollegeBeyondBanner() {
   return (
     <section className="home-banner hbstyle-2 position-relative w-100 overflow-hidden">
       <Image
-        src="/assets/img/bg/metaverse-2.jpg"
+        src="/assets/img/college-beyond/two-young-women-in-vr-glasses-doing-experiments-in-2025-02-19-20-57-44-utc.jpg"
         alt="background"
         fill
         className="position-absolute top-0 start-0 w-100 h-100 object-fit-cover z-n1"
@@ -18,9 +18,12 @@ export default function K12Banner() {
               <div className="banner-content-inner">
                 <div style={{ maxWidth: '70%' }}>
                   <h1 className="title">
-                    <span>Transforming</span> K-12 Education{' '}
+                    <span>Augmenting</span> Higher Education
                   </h1>
-                  <p>Bringing textbooks to life through interactive 3D experiences</p>
+                  <p>
+                    AR unlocks new possibilities in undergraduate and graduate education,
+                    particularly in science, technology, and medicine.
+                  </p>
                 </div>
                 <div className="bcate">
                   <Link href="/k12">K-12</Link> , <Link href="/special-needs">Special Needs</Link> ,{' '}
@@ -34,7 +37,7 @@ export default function K12Banner() {
         <div className="banner_img">
           <div className="banner_img_inner">
             <video autoPlay loop muted playsInline>
-              <source src="assets/img/k12/vr-girl.mp4" type="video/mp4" />
+              <source src="assets/img/college-beyond/vr-couple.mp4" type="video/mp4" />
             </video>
             <div className="sinfo">
               <Image src="/assets/img/placeholder.png" alt="image" width={165} height={94} />

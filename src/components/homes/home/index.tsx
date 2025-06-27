@@ -1,7 +1,5 @@
-
-
-import HeaderOne from '@/layouts/headers/HeaderOne'
 import React from 'react'
+
 import HeroHomeOne from './HeroHomeOne'
 import FeatureHomeOne from './FeatureHomeOne'
 import AboutHomeOne from './AboutHomeOne'
@@ -14,6 +12,8 @@ import VideoHomeOne from './VideoHomeOne'
 import ReviewHomeOne from './ReviewHomeOne'
 import BrandHomeOne from './BrandHomeOne'
 import BlogHomeOne from './BlogHomeOne'
+
+import HeaderOne from '@/layouts/headers/HeaderOne'
 import FooterOne from '@/layouts/footers/FooterOne'
 
 export default function HomeOne() {

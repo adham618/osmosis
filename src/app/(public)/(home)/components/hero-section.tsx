@@ -16,9 +16,9 @@ export default function HeroSection() {
             <div className="banner-content d-flex align-items-center">
               <div className="banner-content-inner">
                 <div style={{ maxWidth: '80%' }}>
-                  <h2 className="title">
+                  <h1 className="title">
                     <span>Integrating</span> AR into Next-Gen Classrooms
-                  </h2>
+                  </h1>
                   <p>Bringing Augmented Reality to education at every level.</p>
                 </div>
                 <div className="banner_search_form">
