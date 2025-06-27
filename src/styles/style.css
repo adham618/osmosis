@@ -991,8 +991,9 @@ img{
 	display: inline-block;
 	transition: .5s;
 }
-.feature-item:hover svg path{
-	fill: #fff;
+.feature-item:hover svg circle,
+.feature-item:hover svg ellipse {
+    fill: #fff;
 }
 .feature-item:hover .fea-icon{
 	background: var(--purple-gradient);
@@ -1001,6 +1002,7 @@ img{
 }
 .fea-icon svg{
 	width: 40px;
+	height:auto;
 }
 .fea-icon svg path{
 	fill: var(--purple-solid);

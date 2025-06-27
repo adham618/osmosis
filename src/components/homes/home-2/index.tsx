@@ -15,13 +15,9 @@ import BrandHomeTwo from './BrandHomeTwo'
 import HeroHomeTwo from './HeroHomeTwo'
 import CtaHomeTwo from './CtaHomeTwo'
 
-import HeaderTwo from '@/layouts/headers/HeaderTwo'
-import FooterOne from '@/layouts/footer'
-
 export default function HomeTwo() {
   return (
     <>
-      <HeaderTwo />
       <HeroHomeTwo />
       <BrandHomeTwo />
       <FeatureHomeOne style_2={true} />
@@ -35,7 +31,6 @@ export default function HomeTwo() {
       <ReviewHomeOne />
       <BlogHomeOne />
       <CtaHomeTwo />
-      <FooterOne />
     </>
   )
 }
