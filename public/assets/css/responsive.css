@@ -295,7 +295,9 @@
 		top: 30px;
 		right: 20px;
 	}
-
+.pb120{
+	padding-bottom: 80px;
+}
 }
 @media only screen and (max-width: 576px){
 	 #navigation::after{
