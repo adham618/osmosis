@@ -8,7 +8,7 @@ export default function PartnersSection() {
   return (
     <section className="container partner-style-2 wow fadeIn" data-aos="fade-in">
       <div className="row" style={{ paddingBottom: '4.5rem' }}>
-        <div className="col-12 wow fadeInUp" data-aos="fade-up" style={{ marginTop: '5%' }}>
+        <div className="col-12" data-aos="fade-up" style={{ marginTop: '5%' }}>
           <div className="counter-title text-center">
             <h2>
               Courses tailored to <span> all of following </span> curriculums

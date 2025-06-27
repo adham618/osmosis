@@ -992,7 +992,8 @@ img{
 	transition: .5s;
 }
 .feature-item:hover svg circle,
-.feature-item:hover svg ellipse {
+.feature-item:hover svg ellipse,
+.feature-item:hover svg path {
     fill: #fff;
 }
 .feature-item:hover .fea-icon{
@@ -1006,6 +1007,11 @@ img{
 }
 .fea-icon svg path{
 	fill: var(--purple-solid);
+}
+.feature-item {
+	height: 100%;
+	display: flex;
+	flex-direction: column;
 }
 .feature-item h3{
 	font-size: 24px;
