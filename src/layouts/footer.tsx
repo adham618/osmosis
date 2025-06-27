@@ -69,7 +69,7 @@ const CircleIcon = () => (
 // Navigation data
 const NAVIGATION_LINKS = [
   { href: '/', label: 'Home' },
-  { href: '/courses-1', label: 'Courses' },
+  { href: '/courses', label: 'Courses' },
   { href: '/educator-pricing', label: 'Pricing' }
 ]
 

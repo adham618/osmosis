@@ -7,7 +7,7 @@ export default function HeroSection() {
         src="/assets/img/bg/metaverse-1.jpg"
         alt="background"
         fill
-        className="position-absolute top-0 start-0 w-100 h-100 object-fit-cover z-n1"
+        className="object-fit-cover z-n1"
         priority
       />
       <div className="container">

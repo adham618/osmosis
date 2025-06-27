@@ -1,15 +1,18 @@
+import Image from 'next/image'
 import Link from 'next/link'
 import React from 'react'
 
 type Props = {
   title: string
   subtitle: string
+  img?: string
 }
 
-export default function Breadcrumb({ title, subtitle }: Props) {
+export default function Breadcrumb({ title, subtitle, img = '/assets/img/bg/banner.jpg' }: Props) {
   return (
-    <section className="main-banner" style={{ background: `url(/assets/img/bg/banner.jpg)` }}>
-      <div className="container z-3">
+    <section className="main-banner position-relative w-100 overflow-hidden">
+      <Image src={img} alt="background" fill className="object-fit-cover z-n1" priority />
+      <div className="container position-relative z-3">
         <div className="row">
           <div className="col-xl-12 text-center">
             <h2>{title}</h2>

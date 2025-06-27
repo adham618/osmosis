@@ -8,7 +8,7 @@ export default function CollegeBeyondBanner() {
         src="/assets/img/college-beyond/two-young-women-in-vr-glasses-doing-experiments-in-2025-02-19-20-57-44-utc.jpg"
         alt="background"
         fill
-        className="position-absolute top-0 start-0 w-100 h-100 object-fit-cover z-n1"
+        className="object-fit-cover z-n1"
         priority
       />
       <div className="container">

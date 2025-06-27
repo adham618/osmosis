@@ -91,7 +91,7 @@ export default function AboutK12() {
                 </div>
               </div>
 
-              <Link href="/courses-1" className="bg_btn bt">
+              <Link href="/courses" className="bg_btn bt">
                 Discover More
               </Link>
             </div>

@@ -26,7 +26,7 @@ const menu_data: DataType[] = [
       { link: '/k12', title: 'K-12' },
       { link: '/special-needs', title: 'Special Needs' },
       { link: '/college-beyond', title: 'College & Beyond' },
-      { link: '/courses-1', title: 'Explore Courses' }
+      { link: '/courses', title: 'Explore Courses' }
     ]
   },
   {
