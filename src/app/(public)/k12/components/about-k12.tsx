@@ -17,10 +17,7 @@ export default function AboutK12() {
               />
             </div>
 
-            <div
-              className="col-lg-5 align-self-center align-items-center"
-              data-aos="fade-in"
-            >
+            <div className="col-lg-5 align-self-center align-items-center" data-aos="fade-in">
               <div className="section-title about-title">
                 <span>What we offer</span>
                 <h2>Providing a new way to learn immersively</h2>
@@ -104,10 +101,7 @@ export default function AboutK12() {
       <section className="about" style={{ marginTop: '5%', marginBottom: '5%' }}>
         <div className="container">
           <div className="row gap-5 justify-content-between">
-            <div
-              className="col-lg-5 align-self-center align-items-center"
-              data-aos="fade-in"
-            >
+            <div className="col-lg-5 align-self-center align-items-center" data-aos="fade-in">
               <div className="section-title about-title">
                 <span>The Advantage</span>
                 <h2>Captivating interest beyond the classroom</h2>
