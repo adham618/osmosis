@@ -29,8 +29,8 @@ export default function Header() {
                   className="h-auto"
                   src="/assets/img/logo-purp.png"
                   alt={siteConfig.short_name}
-                  width={150}
-                  height={50}
+                  width={180}
+                  height={60}
                   priority
                 />
               </Link>

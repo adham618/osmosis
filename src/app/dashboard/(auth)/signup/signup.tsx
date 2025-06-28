@@ -51,8 +51,8 @@ export default function SignUp() {
                   src="/assets/img/logo-purp.png"
                   alt="Logo"
                   className="avatar logo-avatar"
-                  width={100}
-                  height={50}
+                  width={180}
+                  height={60}
                   priority
                 />
               </div>

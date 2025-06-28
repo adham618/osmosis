@@ -35,8 +35,9 @@ export default function Login() {
                   src="/assets/img/logo-purp.png"
                   alt={siteConfig.short_name}
                   className="avatar logo-avatar-2"
-                  width={150}
-                  height={50}
+                  width={180}
+                  height={60}
+                  priority
                 />
               </div>
               <div className="input-control">
