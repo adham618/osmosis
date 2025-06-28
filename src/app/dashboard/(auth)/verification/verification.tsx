@@ -42,7 +42,7 @@ export default function Verification() {
                 <div className="login-with-btns">
                   <span className="already-acc">
                     Return to{' '}
-                    <Link href="/login" className="login-btn">
+                    <Link href="/dashboard/login" className="login-btn">
                       Login
                     </Link>
                   </span>

@@ -126,7 +126,7 @@ export default function SignUp() {
                 <div className="login-with-btns">
                   <span className="already-acc">
                     Already you have an account?{' '}
-                    <Link href="/login" className="login-btn">
+                    <Link href="/dashboard/login" className="login-btn">
                       Login
                     </Link>
                   </span>

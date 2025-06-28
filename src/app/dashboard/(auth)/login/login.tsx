@@ -70,7 +70,7 @@ export default function Login() {
                   <span className="checkmark"></span>
                 </label>
                 <span className="psw">
-                  <Link href="/forgot-password" className="forgot-btn">
+                  <Link href="/dashboard/forgot-password" className="forgot-btn">
                     Forgot password?
                   </Link>
                 </span>
@@ -82,7 +82,7 @@ export default function Login() {
                 </div>
                 <div className="login-with-btns">
                   <span className="already-acc">
-                    <Link href="/signup" className="signup-btn">
+                    <Link href="/dashboard/signup" className="signup-btn">
                       Sign up
                     </Link>
                   </span>

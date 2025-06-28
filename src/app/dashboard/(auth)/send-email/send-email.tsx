@@ -29,7 +29,7 @@ export default function SendEmail() {
                 <div className="login-with-btns" style={{ marginTop: '20px' }}>
                   <span className="already-acc">
                     Return to{' '}
-                    <Link href="/login" className="login-btn">
+                    <Link href="/dashboard/login" className="login-btn">
                       Login
                     </Link>
                   </span>
