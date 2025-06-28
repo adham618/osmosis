@@ -52,7 +52,7 @@ export default function SignUp() {
                   alt="Logo"
                   className="avatar logo-avatar"
                   width={100}
-                  height={100}
+                  height={50}
                   priority
                 />
               </div>
