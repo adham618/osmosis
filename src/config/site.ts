@@ -28,8 +28,8 @@ export const siteConfig = {
     'AR/VR Collaboration',
     'AR/VR Experiences'
   ],
-  url: 'http://localhost:3000',
-  ogImage: 'http://localhost:3000/images/og.png',
+  url: process.env.NEXT_PUBLIC_SITE_URL!,
+  ogImage: `${process.env.NEXT_PUBLIC_SITE_URL!}/og.png`,
   twitter: '@OsmosisAR',
   indexingEnabled: process.env.NEXT_PUBLIC_INDEXING_ENABLED === 'true'
 }
