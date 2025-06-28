@@ -51,6 +51,9 @@
 .page-section {
   background-blend-mode: overlay;
   background-color: rgba(0, 0, 0, 0.5);
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
 }
 .page-section .water-bg {
   height: 100vh;
