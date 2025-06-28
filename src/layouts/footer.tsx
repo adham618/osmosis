@@ -149,7 +149,12 @@ const DecorativeShapes = () => (
 )
 
 const Copyright = () => (
-  <div className="copyright text-center" data-aos="fade-in">
+  <div
+    className="copyright text-center"
+    data-aos="fade-in"
+    data-aos-offset="200"
+    data-aos-delay="50"
+  >
     <p>
       Copyright © {new Date().getFullYear()} <Link href="/">{siteConfig.short_name}</Link>. All
       rights reserved.
