@@ -51,7 +51,7 @@ export default function CourseCard({
                 <a href="#">{renderStars(course.rating)}</a>
               </div>
               <h2>
-                <a href={course.link || 'dashboard/login.html'}>{course.title}</a>
+                <a href={course.link || 'dashboard/login'}>{course.title}</a>
               </h2>
 
               <div className="cmeta">
@@ -95,7 +95,7 @@ export default function CourseCard({
           <a href="#">{renderStars(course.rating)}</a>
         </div>
         <h2>
-          <a href={course.link || 'dashboard/login.html'}>{course.title}</a>
+          <a href={course.link || 'dashboard/login'}>{course.title}</a>
         </h2>
 
         <div className="cmeta">

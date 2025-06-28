@@ -171,13 +171,13 @@ export default function CoursesArea() {
                     <a href="#">1</a>
                   </li>
                   <li>
-                    <a href="dashboard/login.html">2</a>
+                    <a href="dashboard/login">2</a>
                   </li>
                   <li>
-                    <a href="dashboard/login.html">3</a>
+                    <a href="dashboard/login">3</a>
                   </li>
                   <li>
-                    <a href="dashboard/login.html">
+                    <a href="dashboard/login">
                       <i className="fa-solid fa-arrow-right-long" />
                     </a>
                   </li>
