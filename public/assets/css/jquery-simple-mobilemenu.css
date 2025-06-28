@@ -12,11 +12,11 @@ body.mmactive {
 }
 .sm_menu_outer.active .mobile_menu {
   display: block;
-  padding-top: 60px;
+  padding-top: 80px;
 }
 .sm_menu_outer {
   height: calc(100vh - 60px);
-  overflow-y: scroll;
+  overflow-y: auto;
   overflow-x: hidden;
   position: fixed;
   top: 0;
@@ -36,7 +36,20 @@ body.mmactive {
 }
 .sm_menu_outer .mobile_menu li.back a {
   padding: 20px 5px 20px 55px;
-  background: url("../img/back.png") no-repeat scroll 15px center / 2% auto;
+  position: relative;
+}
+.sm_menu_outer .mobile_menu li.back a::before {
+  content: "";
+  position: absolute;
+  left: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 2%;
+  height: 100%;
+  background: url("../img/back.png") no-repeat center / contain;
+}
+.sm_menu_outer .mobile_menu li.back a:hover::before {
+  filter: brightness(0) invert(1);
 }
 .sm_menu_outer .mobile_menu a {
 	color: #ffffff;
@@ -52,7 +65,7 @@ body.mmactive {
   height: 100%;
   position: absolute;
   right: -100%;
-  top: 30px;
+  top: 80px;
   transition: all 0.5s ease 0s;
   width: 100%;
   z-index: 999;

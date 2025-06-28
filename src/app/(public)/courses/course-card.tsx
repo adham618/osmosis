@@ -1,5 +1,6 @@
 import React from 'react'
 import Image from 'next/image'
+import Link from 'next/link'
 
 export interface Course {
   id: string
@@ -40,7 +41,7 @@ export default function CourseCard({
             <div className="course-img">
               <div className="c_image" style={{ backgroundImage: `url(${course.image})` }} />
               <div className="ccategory">
-                <a href="#">{course.level}</a>
+                <Link href="/">{course.level}</Link>
               </div>
             </div>
           </div>
@@ -48,7 +49,7 @@ export default function CourseCard({
           <div className="col-xl-6 col-md-6 col-sm-6 col-12">
             <div className="course_content">
               <div className="crating">
-                <a href="#">{renderStars(course.rating)}</a>
+                <Link href="/">{renderStars(course.rating)}</Link>
               </div>
               <h2>
                 <a href={course.link || 'dashboard/login'}>{course.title}</a>

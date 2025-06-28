@@ -29,7 +29,7 @@ export default function MobileMenu({ opneMenu }: any) {
               {item.has_dropdown ? (
                 // For items with dropdown, use a button or span instead of Link
                 <a
-                  href="#"
+                  href=""
                   onClick={(e) => {
                     e.preventDefault()
                     openMobileMenu(item.title)

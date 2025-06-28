@@ -1,4 +1,5 @@
 import Image from 'next/image'
+import Link from 'next/link'
 
 export default function HeroSection() {
   return (
@@ -36,8 +37,8 @@ export default function HeroSection() {
                   </form>
                 </div>
                 <div className="bcate">
-                  <a href="#">K-12</a> , <a href="#">Special Needs</a> ,{' '}
-                  <a href="#">College & Beyond</a>
+                  <Link href="/k12">K-12</Link> , <Link href="/special-needs">Special Needs</Link> ,{' '}
+                  <Link href="/college-beyond">College & Beyond</Link>
                 </div>
               </div>
             </div>

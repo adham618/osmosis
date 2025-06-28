@@ -20,7 +20,7 @@ const menu_data: DataType[] = [
   {
     id: 2,
     title: 'For Students',
-    link: '#',
+    link: '/',
     has_dropdown: true,
     sub_menus: [
       { link: '/k12', title: 'K-12' },
@@ -32,7 +32,7 @@ const menu_data: DataType[] = [
   {
     id: 3,
     title: 'For Educators',
-    link: '#',
+    link: '/',
     has_dropdown: true,
     sub_menus: [
       { link: '/educator-features', title: 'For Instructors' },
@@ -42,7 +42,7 @@ const menu_data: DataType[] = [
   {
     id: 4,
     title: 'Opportunities',
-    link: '#',
+    link: '/',
     has_dropdown: false
   }
 ]
