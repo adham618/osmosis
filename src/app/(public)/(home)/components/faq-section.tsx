@@ -27,7 +27,7 @@ export default function FaqSection() {
             </div>
           </div>
 
-          <div className="col-xl-6 align-self-center" data-aos="fade-in">
+          <div className="col-xl-6 align-self-center wow fadeIn">
             <div className="section-title">
               <span>FAQ</span>
               <h2>
@@ -46,7 +46,7 @@ export default function FaqSection() {
                     aria-expanded="true"
                     aria-controls="collapse1"
                   >
-                    Development & Design
+                    What is Osmosis, exactly?
                   </button>
                 </h2>
 
@@ -57,9 +57,11 @@ export default function FaqSection() {
                   data-bs-parent="#faq_accordion"
                 >
                   <div className="accordion-body">
-                    Fusce luctus lacinia lorem non ornare. Aliquam quis libero quis orci finibus
-                    accumsan. Quisque suscipit justo dictum augue vehicula, quis tincidunt erat
-                    elementum. Curabitur tincidunt convallis blandit
+                    Osmosis is an online education platform, much like many others, where
+                    instructors can create courses teaching a wide range of subjects, from ancient
+                    history to biochemistry. The key difference that sets us apart from other
+                    platforms is that every course in Osmosis is designed to be an interactive
+                    experience in the realm of virtual or augmented reality.
                   </div>
                 </div>
               </div>
@@ -74,7 +76,7 @@ export default function FaqSection() {
                     aria-expanded="false"
                     aria-controls="collapse2"
                   >
-                    Start With mentors
+                    Who can teach through Osmosis?
                   </button>
                 </h2>
 
@@ -85,9 +87,9 @@ export default function FaqSection() {
                   data-bs-parent="#faq_accordion"
                 >
                   <div className="accordion-body">
-                    Fusce luctus lacinia lorem non ornare. Aliquam quis libero quis orci finibus
-                    accumsan. Quisque suscipit justo dictum augue vehicula, quis tincidunt erat
-                    elementum. Curabitur tincidunt convallis blandit
+                    Any instructor in a K-12 school, college, or university can use Osmosis to host
+                    courses or bring their classroom into virtual reality. An .edu email can be used
+                    to quickly verify your account and get you started, however, it is not required.
                   </div>
                 </div>
               </div>
@@ -102,7 +104,7 @@ export default function FaqSection() {
                     aria-expanded="false"
                     aria-controls="collapse3"
                   >
-                    The best way to Boost Your
+                    Who can learn through Osmosis?
                   </button>
                 </h2>
 
@@ -113,9 +115,10 @@ export default function FaqSection() {
                   data-bs-parent="#faq_accordion"
                 >
                   <div className="accordion-body">
-                    Fusce luctus lacinia lorem non ornare. Aliquam quis libero quis orci finibus
-                    accumsan. Quisque suscipit justo dictum augue vehicula, quis tincidunt erat
-                    elementum. Curabitur tincidunt convallis blandit
+                    We all already learn things through osmosis on a daily basis, but unfortunately,
+                    a lot of the most captivating subjects are confined to textbooks and
+                    documentaries. Or they were - until now. Any student with a desire to learn in a
+                    new and immersive way can do so through Osmosis.
                   </div>
                 </div>
               </div>
@@ -130,7 +133,7 @@ export default function FaqSection() {
                     aria-expanded="false"
                     aria-controls="collapse4"
                   >
-                    What Can i do to Help?
+                    Who can create courses through Osmosis?
                   </button>
                 </h2>
 
@@ -141,9 +144,10 @@ export default function FaqSection() {
                   data-bs-parent="#faq_accordion"
                 >
                   <div className="accordion-body">
-                    Fusce luctus lacinia lorem non ornare. Aliquam quis libero quis orci finibus
-                    accumsan. Quisque suscipit justo dictum augue vehicula, quis tincidunt erat
-                    elementum. Curabitur tincidunt convallis blandit
+                    Currently, aside from the Osmosis team, instructors with a .edu email can create
+                    new courses using Osmosis Studio. However, any instructor can adjust and
+                    customize existing courses to suit their class size, class length, and any
+                    accessibility needs.
                   </div>
                 </div>
               </div>
