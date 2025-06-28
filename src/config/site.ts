@@ -30,7 +30,8 @@ export const siteConfig = {
   ],
   url: 'http://localhost:3000',
   ogImage: 'http://localhost:3000/images/og.png',
-  twitter: '@OsmosisAR'
+  twitter: '@OsmosisAR',
+  indexingEnabled: process.env.NEXT_PUBLIC_INDEXING_ENABLED === 'true'
 }
 
 export type SiteConfig = typeof siteConfig

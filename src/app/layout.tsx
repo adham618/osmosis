@@ -46,11 +46,11 @@ export const metadata: Metadata = {
     creator: siteConfig.twitter
   },
   robots: {
-    index: true,
-    follow: true,
+    index: siteConfig.indexingEnabled,
+    follow: siteConfig.indexingEnabled,
     googleBot: {
-      index: true,
-      follow: true,
+      index: siteConfig.indexingEnabled,
+      follow: siteConfig.indexingEnabled,
       'max-video-preview': -1,
       'max-image-preview': 'large',
       'max-snippet': -1

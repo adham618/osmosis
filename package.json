@@ -1,12 +1,14 @@
 {
   "name": "osmosis",
   "version": "0.1.0",
+  "type": "module",
   "private": true,
   "scripts": {
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint . --ext .ts,.tsx -c .eslintrc.json --fix"
+    "lint": "eslint . --ext .ts,.tsx -c .eslintrc.json --fix",
+    "prebuild": "node scripts/compress-images.js"
   },
   "dependencies": {
     "aos": "^2.3.4",
