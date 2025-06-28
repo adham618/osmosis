@@ -152,7 +152,7 @@ const Copyright = () => (
   <div
     className="copyright text-center"
     data-aos="fade-in"
-    data-aos-offset="200"
+    data-aos-offset="50"
     data-aos-delay="50"
   >
     <p>
