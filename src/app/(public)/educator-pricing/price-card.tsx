@@ -28,7 +28,7 @@ export default function PriceCard({
   return (
     <div className="col-xl-4 col-lg-4 mt-4 col-md-6 col-12">
       <div className="feature-item">
-        <div className="fea-icon">{icon}</div>
+        <div className="fea-icon  mx-auto">{icon}</div>
         <h1>{price}</h1>
         <h3>{title}</h3>
         <div style={{ textAlign: 'left' }}>
