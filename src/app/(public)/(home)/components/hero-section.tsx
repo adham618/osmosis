@@ -1,7 +1,12 @@
+'use client'
+
 import Image from 'next/image'
 import Link from 'next/link'
+import { useRouter } from 'next/navigation'
 
 export default function HeroSection() {
+  const router = useRouter()
+
   return (
     <section className="home-banner hbstyle-2 position-relative w-100 overflow-hidden">
       <Image
@@ -23,7 +28,12 @@ export default function HeroSection() {
                   <p>Bringing Augmented Reality to education at every level.</p>
                 </div>
                 <div className="banner_search_form">
-                  <form action="#" method="post">
+                  <form
+                    onSubmit={(e) => {
+                      e.preventDefault()
+                      router.push('/dashboard/login')
+                    }}
+                  >
                     <input
                       name="search"
                       id="search"

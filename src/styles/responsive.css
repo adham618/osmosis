@@ -261,8 +261,9 @@
 
 @media only screen and (max-width: 767px){
 	.banner_search_form .form-control {
-	padding: 6px 20px;
+	padding: 6px 15px 6px 36px;
 	height: 60px;
+	background-position:18px;
 }
 .bsearch_btn {
 	width: 100px;
