@@ -48,7 +48,7 @@ export default function SignUp() {
               </div>
               <div className="imgcontainer">
                 <Image
-                  src="/assets/img/logo-purp.svg"
+                  src="/assets/img/logo-purp.png"
                   alt="Logo"
                   className="avatar logo-avatar"
                   width={100}

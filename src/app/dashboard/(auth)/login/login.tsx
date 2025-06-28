@@ -32,7 +32,7 @@ export default function Login() {
               </div>
               <div className="imgcontainer">
                 <Image
-                  src="/assets/img/logo-purp.svg"
+                  src="/assets/img/logo-purp.png"
                   alt={siteConfig.short_name}
                   className="avatar logo-avatar-2"
                   width={150}

@@ -12,7 +12,7 @@ export default function SendEmail() {
             <form className="forgot-form" method="post">
               <div className="imgcontainer">
                 <Image
-                  src="/assets/img/logo-purp.svg"
+                  src="/assets/img/logo-purp.png"
                   alt="Logo"
                   className="avatar logo-avatar-2"
                   width={100}
