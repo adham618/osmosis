@@ -24,7 +24,6 @@ export default function Login() {
         <div className="container-fluid p-0">
           <div className="water-bg" id="water-js"></div>
           <div className="content-detail">
-            {/* Login form */}
             <form className="login-form" method="post" onSubmit={handleSubmit}>
               <div style={{ textAlign: 'center', marginTop: '20px' }}>
                 <Link className="back-btn" href="/">

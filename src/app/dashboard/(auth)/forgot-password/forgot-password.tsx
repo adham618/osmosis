@@ -17,7 +17,6 @@ export default function ForgotPassword() {
         <div className="container-fluid p-0">
           <div className="water-bg" id="water-js"></div>
           <div className="content-detail">
-            {/* Forgot form */}
             <form className="forgot-form" method="post" onSubmit={handleResetSubmit}>
               <div className="imgcontainer">
                 <Image
