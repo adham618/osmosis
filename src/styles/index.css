@@ -1,9 +1,7 @@
-/* @import "~bootstrap/scss/bootstrap"; */
 
 @import 'swiper/css/bundle';
 @import 'react-modal-video/css/modal-video.css';
 
-/* @import './animate.css'; */
 @import '../../public/assets/css/boxicons.min.css';
 @import '../../public/assets/css/jquery-simple-mobilemenu.css';
 @import '../../public/assets/css/slicknav.css';
@@ -22,6 +20,10 @@
 
 @import '../../public/assets/bootstrap/css/bootstrap.css';
 @import '../../public/assets/bootstrap/css/bootstrap.min.css';
+
+@import './error-page.css';
+@import './login.css';
+@import './whatsapp-chat.css';
 
 @import '../../public/assets/fonts/themify-icons.css';
 @import '../../public/assets/fonts/fontawesome/fontawesome.css';

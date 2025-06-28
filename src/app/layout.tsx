@@ -5,7 +5,7 @@ import { Metadata, Viewport } from 'next'
 import RootProviders from './root-providers'
 
 import { siteConfig } from '@/config/site'
-import { fontUrbanist } from '@/config/fonts'
+import { primaryFont } from '@/config/fonts'
 
 export const metadata: Metadata = {
   applicationName: siteConfig.name,
@@ -96,7 +96,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html lang="en">
       <head />
-      <body className={fontUrbanist.className}>
+      <body className={primaryFont.className}>
         <RootProviders>{children}</RootProviders>
       </body>
     </html>
