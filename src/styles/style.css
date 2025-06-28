@@ -991,8 +991,10 @@ img{
 	display: inline-block;
 	transition: .5s;
 }
-
-.feature-item:hover svg .icon-shape {
+.feature-item:hover svg .icon-shape,
+.feature-item:hover svg circle,
+.feature-item:hover svg ellipse,
+.feature-item:hover svg path {
   fill: #fff;
 }
 
