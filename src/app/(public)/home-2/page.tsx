@@ -2,7 +2,6 @@ import React from 'react'
 import { Metadata } from 'next'
 
 import HomeTwo from '@/components/homes/home-2'
-import Wrapper from '@/layouts/Wrapper'
 
 export const metadata: Metadata = {
   title: 'Home Two Edumon - Education Next JS Template',
@@ -11,9 +10,5 @@ export const metadata: Metadata = {
 }
 
 export default function index() {
-  return (
-    <Wrapper>
-      <HomeTwo />
-    </Wrapper>
-  )
+  return <HomeTwo />
 }
