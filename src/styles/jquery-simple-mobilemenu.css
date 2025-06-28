@@ -46,7 +46,7 @@ body.mmactive {
   transform: translateY(-50%);
   width: 2%;
   height: 100%;
-  background: url("../img/back.png") no-repeat center / contain;
+  background: url("/assets/img/back.png") no-repeat center / contain;
 }
 .sm_menu_outer .mobile_menu li.back a:hover::before {
   filter: brightness(0) invert(1);
