@@ -1,7 +1,5 @@
 import type { Metadata } from 'next'
 
-import SiginUp from '@/components/register'
-
 export const metadata: Metadata = {
   title: 'Sign Up',
   description:
@@ -9,5 +7,5 @@ export const metadata: Metadata = {
 }
 
 export default function SiginUpPage() {
-  return <SiginUp />
+  return <></>
 }

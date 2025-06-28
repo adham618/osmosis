@@ -1,7 +1,5 @@
 import type { Metadata } from 'next'
 
-import SendEmail from '@/components/login'
-
 export const metadata: Metadata = {
   title: 'Check Your Email',
   description:
@@ -9,5 +7,5 @@ export const metadata: Metadata = {
 }
 
 export default function SendEmailPage() {
-  return <SendEmail />
+  return <></>
 }
