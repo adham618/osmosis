@@ -1,5 +1,7 @@
 import type { Metadata } from 'next'
 
+import Login from './login'
+
 export const metadata: Metadata = {
   title: 'Login',
   description:
@@ -7,5 +9,5 @@ export const metadata: Metadata = {
 }
 
 export default function LoginPage() {
-  return <></>
+  return <Login />
 }

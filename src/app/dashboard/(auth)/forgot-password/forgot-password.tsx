@@ -1,5 +1,5 @@
 import * as React from 'react'
 
-export default function SignUp() {
+export default function ForgotPassword() {
   return <div></div>
 }
