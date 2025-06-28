@@ -32,7 +32,6 @@ export function AuthBg({ children }: { children: React.ReactNode }) {
       {() =>
         loaded ? (
           <>
-            <div className="position-absolute top-0 bottom-0 start-0 end-0 bg-black bg-opacity-50 z-0"></div>
             <div className="position-relative z-10 w-100 h-100">{children}</div>
           </>
         ) : (
