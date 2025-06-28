@@ -40,11 +40,11 @@
 @keyframes spin {
   0% {
     -webkit-transform: rotate(0deg);
-            transform: rotate(0deg);
+    transform: rotate(0deg);
   }
   100% {
     -webkit-transform: rotate(360deg);
-            transform: rotate(360deg);
+    transform: rotate(360deg);
   }
 }
 
@@ -70,15 +70,15 @@
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
 }
 
 /*  Login page  */
@@ -89,10 +89,10 @@
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
 }
 .login-page #particles-js {
   position: fixed;
@@ -107,8 +107,8 @@
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 .login-page .login-form,
 .login-page .forgot-form {
@@ -125,7 +125,7 @@
   border: 1px solid transparent;
   border-radius: 30px;
   -webkit-box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.1);
-          box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.1);
 }
 .login-page .login-form p,
 .login-page .signup-form p,
@@ -184,7 +184,7 @@
   border-left: 0;
   border-right: 0;
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   border-radius: 5px;
   font-size: 14px;
   color: #666;
@@ -257,7 +257,7 @@
   -webkit-user-select: none;
      -moz-user-select: none;
       -ms-user-select: none;
-          user-select: none;
+  user-select: none;
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
 }
@@ -313,7 +313,7 @@
   border: solid white;
   border-width: 0 2px 2px 0;
   -webkit-transform: rotate(45deg);
-          transform: rotate(45deg);
+  transform: rotate(45deg);
 }
 .login-page .login-form .input-control .label-container input:checked ~ .checkmark,
 .login-page .signup-form .input-control .label-container input:checked ~ .checkmark,
@@ -354,7 +354,7 @@
 .login-page .login-form .input-control .login-btns button,
 .login-page .signup-form .input-control .login-btns button,
 .login-page .forgot-form .input-control .login-btns button {
-  background-color: #5076db;
+  background: var(--purple-gradient) !important;
   color: white;
   padding: 8px 15px;
   margin: 8px 0;
@@ -443,10 +443,10 @@
   display: inline-flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
   border: 2px solid #c3c3c3;
   border-radius: 30px;
   background-color: transparent;
@@ -576,4 +576,129 @@
     width: 25%;
   }
 }
-/*# sourceMappingURL=login.css.map */
+/* Logo styling to maintain same size as original avatar */
+
+.login-page .back-btn{
+  font-size: 16px;
+  color: rgb(60, 60, 60);
+  text-decoration: underline;
+}
+.login-page .back-btn:hover{
+  background: none;
+  color: rgb(60, 60, 60);
+  -webkit-text-fill-color: rgb(60, 60, 60);
+  text-decoration: underline;
+}
+
+.logo-avatar-2 {
+    width: 200px;  /* Same size as typical avatar */
+    height: auto; /* Same size as typical avatar */
+    display: block;
+    margin: 0 auto;
+    border-radius: 0; /* Remove circular styling for logo */
+    background: transparent;
+    padding: 10px;
+}
+
+/* Override any existing avatar styles specifically for logo */
+.imgcontainer .avatar.logo-avatar {
+    width: 200px !important;
+    height: 100px !important;
+    border-radius: 0 !important;
+    background: transparent !important;
+    padding: 10px !important;
+    box-shadow: none !important;
+}
+
+/* Ensure container accommodates the logo properly */
+.imgcontainer {
+    text-align: center;
+    margin: 24px 0 12px 0;
+    position: relative;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .logo-avatar {
+width: 80px;
+height: 80px;
+    }
+    .imgcontainer .avatar.logo-avatar {
+width: 80px !important;
+height: 80px !important;
+    }
+}
+
+@media (max-width: 480px) {
+    .logo-avatar {
+width: 70px;
+height: 70px;
+    }
+    .imgcontainer .avatar.logo-avatar {
+width: 70px !important;
+height: 70px !important;
+    }
+}
+
+/* Purple gradient theme overrides */
+:root {
+    --purple-gradient: linear-gradient(135deg, #8A2BE2, #DA70D6);
+    --purple-main: #8A2BE2;
+}
+
+/* Override button colors */
+.login-page .login-form .input-control .login-btns button,
+.login-page .signup-form .input-control .login-btns button,
+.login-page .forgot-form .input-control .login-btns button {
+    background: var(--purple-gradient) !important;
+    color: white !important;
+    border: 2px solid transparent !important;
+}
+
+.login-page .login-form .input-control .login-btns button:hover,
+.login-page .signup-form .input-control .login-btns button:hover,
+.login-page .forgot-form .input-control .login-btns button:hover {
+    background: transparent !important;
+    color: var(--purple-main) !important;
+    border: 2px solid var(--purple-main) !important;
+}
+
+/* Override link colors */
+.login-page .login-form .input-control .login-with-btns .already-acc a,
+.login-page .signup-form .input-control .login-with-btns .already-acc a,
+.login-page .forgot-form .input-control .login-with-btns .already-acc a {
+    color: var(--purple-main) !important;
+}
+
+.login-page .login-form .input-control .login-with-btns .already-acc a:hover,
+.login-page .signup-form .input-control .login-with-btns .already-acc a:hover,
+.login-page .forgot-form .input-control .login-with-btns .already-acc a:hover {
+    color: #444 !important;
+}
+
+/* Override forgot password link */
+.login-page .login-form .input-control span.psw a,
+.login-page .signup-form .input-control span.psw a,
+.login-page .forgot-form .input-control span.psw a {
+    color: var(--purple-main) !important;
+}
+
+/* Override checkbox focus border */
+.login-page .login-form .input-control input[type=text]:focus,
+.login-page .login-form .input-control input[type=email]:focus,
+.login-page .login-form .input-control input[type=password]:focus,
+.login-page .signup-form .input-control input[type=text]:focus,
+.login-page .signup-form .input-control input[type=email]:focus,
+.login-page .signup-form .input-control input[type=password]:focus,
+.login-page .forgot-form .input-control input[type=text]:focus,
+.login-page .forgot-form .input-control input[type=email]:focus,
+.login-page .forgot-form .input-control input[type=password]:focus {
+    border-bottom: 2px solid var(--purple-main) !important;
+}
+
+/* Override checked checkbox */
+.login-page .login-form .input-control .label-container input:checked ~ .checkmark,
+.login-page .signup-form .input-control .label-container input:checked ~ .checkmark,
+.login-page .forgot-form .input-control .label-container input:checked ~ .checkmark {
+    background-color: var(--purple-main) !important;
+}
