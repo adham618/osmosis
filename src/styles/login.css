@@ -557,8 +557,7 @@
   .login-page .login-form,
   .login-page .forgot-form,
   .login-page .signup-form  {
-    width: "100%";
-    max-width: 80vw;
+    max-width: 88vw;
   }
   .login-page .login-form .input-control .division-lines:before, .login-page .login-form .input-control .division-lines:after,
   .login-page .signup-form .input-control .division-lines:before,
