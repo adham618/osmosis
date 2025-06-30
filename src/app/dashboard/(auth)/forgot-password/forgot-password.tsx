@@ -3,12 +3,13 @@
 import * as React from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
+import { useRouter } from 'next/navigation'
 
 export default function ForgotPassword() {
+  const router = useRouter()
   const handleResetSubmit = (event: React.FormEvent<HTMLFormElement>) => {
     event.preventDefault()
-    // Add your reset password logic here
-    console.log('Reset password form submitted')
+    router.push('/dashboard/send-email')
   }
 
   return (

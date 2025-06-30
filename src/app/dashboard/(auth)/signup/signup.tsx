@@ -4,33 +4,21 @@ import * as React from 'react'
 import { useState } from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
+import { useRouter } from 'next/navigation'
+
+import { PasswordInput } from '@/components/password-input'
 
 export default function SignUp() {
-  const [showPassword, setShowPassword] = useState(false)
-  const [emailError, setEmailError] = useState(false)
+  const router = useRouter()
+
+  const [password, setPassword] = useState('')
+  const [confirmPassword, setConfirmPassword] = useState('')
 
   const validateEduEmail = (event: React.FormEvent<HTMLFormElement>) => {
     event.preventDefault()
-
-    const formData = new FormData(event.currentTarget)
-    const email = formData.get('email') as string
-
-    // Check if email ends with .edu
-    if (!email.endsWith('.edu')) {
-      setEmailError(true)
-
-      return false
-    }
-
-    setEmailError(false)
-    // Add your signup logic here
-    console.log('Signup form submitted')
+    router.push('/dashboard/send-email')
 
     return true
-  }
-
-  const togglePasswordVisibility = () => {
-    setShowPassword(!showPassword)
   }
 
   return (
@@ -50,7 +38,7 @@ export default function SignUp() {
                 <Image
                   src="/assets/img/logo-purp.png"
                   alt="Logo"
-                  className="avatar logo-avatar"
+                  className="avatar logo-avatar-2"
                   width={180}
                   height={60}
                   priority
@@ -69,47 +57,28 @@ export default function SignUp() {
                       id="email"
                       required
                     />
-                    <span
-                      id="email-error"
-                      style={{
-                        color: 'red',
-                        fontSize: '12px',
-                        display: emailError ? 'block' : 'none'
-                      }}
-                    >
-                      Please enter a valid .edu email address
-                    </span>
                   </div>
                   <div className="col-md-6 p-l-10 p-r-10">
-                    <input
-                      type="password"
+                    <PasswordInput
                       placeholder="Enter Password"
                       name="psw"
-                      className="input-checkmark"
+                      value={password}
+                      onChange={(e: React.ChangeEvent<HTMLInputElement>) =>
+                        setPassword(e.target.value)
+                      }
                       required
                     />
                   </div>
                   <div className="col-md-6 p-l-10 p-r-10">
-                    <span className="password-field-show">
-                      <input
-                        className="password-field input-checkmark"
-                        type={showPassword ? 'text' : 'password'}
-                        placeholder="Re-enter Password"
-                        name="confirmPsw"
-                        required
-                      />
-                      <button
-                        type="button"
-                        onClick={togglePasswordVisibility}
-                        className={`fa fa-fw ${showPassword ? 'fa-eye-slash' : 'fa-eye'} field-icon toggle-password`}
-                        style={{
-                          cursor: 'pointer',
-                          background: 'none',
-                          border: 'none',
-                          padding: '0'
-                        }}
-                      />
-                    </span>
+                    <PasswordInput
+                      placeholder="Re-enter Password"
+                      name="confirmPsw"
+                      value={confirmPassword}
+                      onChange={(e: React.ChangeEvent<HTMLInputElement>) =>
+                        setConfirmPassword(e.target.value)
+                      }
+                      required
+                    />
                   </div>
                 </div>
                 <label className="label-container">

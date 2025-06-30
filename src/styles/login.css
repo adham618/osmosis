@@ -555,11 +555,10 @@
 }
 @media screen and (max-width: 576px) {
   .login-page .login-form,
-  .login-page .forgot-form {
-    width: 290px;
-  }
-  .login-page .signup-form {
-    width: 290px;
+  .login-page .forgot-form,
+  .login-page .signup-form  {
+    width: "100%";
+    max-width: 80vw;
   }
   .login-page .login-form .input-control .division-lines:before, .login-page .login-form .input-control .division-lines:after,
   .login-page .signup-form .input-control .division-lines:before,
@@ -606,10 +605,9 @@
 /* Override any existing avatar styles specifically for logo */
 .imgcontainer .avatar.logo-avatar {
     width: 200px !important;
-    height: 100px !important;
+    height: auto !important;
     border-radius: 0 !important;
     background: transparent !important;
-    padding: 10px !important;
     box-shadow: none !important;
 }
 
@@ -628,7 +626,7 @@ height: 80px;
     }
     .imgcontainer .avatar.logo-avatar {
 width: 80px !important;
-height: 80px !important;
+height: auto !important;
     }
 }
 
@@ -639,7 +637,7 @@ height: 70px;
     }
     .imgcontainer .avatar.logo-avatar {
 width: 70px !important;
-height: 70px !important;
+height: auto !important;
     }
 }
 

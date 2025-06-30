@@ -5,6 +5,7 @@ import { useState } from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
 
+import { PasswordInput } from '@/components/password-input'
 import { siteConfig } from '@/config/site'
 
 export default function Login() {
@@ -49,17 +50,13 @@ export default function Login() {
                   onChange={(e) => setUsername(e.target.value)}
                   required
                 />
-                <span className="password-field-show">
-                  <input
-                    type="password"
-                    placeholder="Enter Password"
-                    name="password"
-                    className="password-field"
-                    value={password}
-                    onChange={(e) => setPassword(e.target.value)}
-                    required
-                  />
-                </span>
+                <PasswordInput
+                  placeholder="Enter Password"
+                  name="password"
+                  value={password}
+                  onChange={(e) => setPassword(e.target.value)}
+                  required
+                />
                 <label className="label-container">
                   Remember me
                   <input
