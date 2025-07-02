@@ -16,7 +16,7 @@ export default function SignUp() {
 
   const validateEduEmail = (event: React.FormEvent<HTMLFormElement>) => {
     event.preventDefault()
-    router.push('/dashboard/send-email')
+    router.push('/dashboard/verification')
 
     return true
   }
