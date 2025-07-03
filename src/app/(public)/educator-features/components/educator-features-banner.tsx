@@ -5,7 +5,7 @@ export default function EducatorFeaturesBanner() {
   return (
     <section className="home-banner hbstyle-2 position-relative w-100 overflow-hidden">
       <Image
-        src="/assets/img/bg/metaverse-2.jpg"
+        src="/assets/img/for-educators/banner.jpg"
         alt="background"
         fill
         className="object-fit-cover z-n1"
@@ -17,10 +17,12 @@ export default function EducatorFeaturesBanner() {
             <div className="banner-content d-flex align-items-center">
               <div className="banner-content-inner">
                 <div style={{ maxWidth: '70%' }}>
-                  <h1 className="title">
-                    <span>Transforming</span> K-12 Education{' '}
-                  </h1>
-                  <p>Bringing textbooks to life through interactive 3D experiences</p>
+                  <h1 className="title">Features for Educators</h1>
+                  <p>
+                    {' '}
+                    We offer a suite of features that help educators create new experiences, or
+                    bring existing ones to life in their classroom.
+                  </p>
                 </div>
                 <div className="bcate">
                   <Link href="/k12">K-12</Link> , <Link href="/special-needs">Special Needs</Link> ,{' '}
@@ -34,7 +36,7 @@ export default function EducatorFeaturesBanner() {
         <div className="banner_img">
           <div className="banner_img_inner">
             <video autoPlay loop muted playsInline>
-              <source src="assets/img/k12/vr-girl.mp4" type="video/mp4" />
+              <source src="assets/img/for-educators/vr-teacher.mp4" type="video/mp4" />
             </video>
             <div className="sinfo">
               <Image src="/assets/img/placeholder.png" alt="image" width={165} height={94} />
