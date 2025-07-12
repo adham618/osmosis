@@ -18,6 +18,7 @@ export interface Job {
   posted: string
   deadline: string
   image?: string
+  isFeatured?: boolean
 }
 
 interface JobCardProps {

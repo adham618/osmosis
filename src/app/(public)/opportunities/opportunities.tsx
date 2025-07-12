@@ -4,7 +4,7 @@ import React, { useState } from 'react'
 
 import JobCard, { type Job } from './job-card'
 import ApplicationForm, { type ApplicationData } from './application-form'
-import { featuredJobs, otherJobs } from './data'
+import { jobs } from './data'
 
 export default function Opportunities() {
   const [selectedJob, setSelectedJob] = useState<Job | null>(null)
@@ -13,7 +13,7 @@ export default function Opportunities() {
   const [filterLevel, setFilterLevel] = useState<string>('all')
   const [filterLocation, setFilterLocation] = useState<string>('all')
 
-  const allJobs = [...featuredJobs, ...otherJobs]
+  const allJobs = jobs
 
   const handleApplyClick = (jobId: string) => {
     const job = allJobs.find((j) => j.id === jobId)
@@ -45,10 +45,8 @@ export default function Opportunities() {
     return matchesType && matchesLevel && matchesLocation
   })
 
-  const filteredFeaturedJobs = filteredJobs.filter((job) =>
-    featuredJobs.some((fj) => fj.id === job.id)
-  )
-  const filteredOtherJobs = filteredJobs.filter((job) => otherJobs.some((oj) => oj.id === job.id))
+  const filteredFeaturedJobs = filteredJobs.filter((job) => job.isFeatured)
+  const filteredOtherJobs = filteredJobs
 
   return (
     <>
@@ -63,28 +61,16 @@ export default function Opportunities() {
             </div>
           </div>
           <div className="row text-center">
-            <div className="col-md-3 col-6">
+            <div className="col-md-6 col-6">
               <div className="stat-card">
                 <div className="stat-number">{allJobs.length}</div>
                 <div className="stat-label">Open Positions</div>
               </div>
             </div>
-            <div className="col-md-3 col-6">
-              <div className="stat-card">
-                <div className="stat-number">{new Set(allJobs.map((j) => j.company)).size}</div>
-                <div className="stat-label">Partner Companies</div>
-              </div>
-            </div>
-            <div className="col-md-3 col-6">
+            <div className="col-md-6 col-6">
               <div className="stat-card">
                 <div className="stat-number">{allJobs.filter((j) => j.remote).length}</div>
                 <div className="stat-label">Remote Jobs</div>
-              </div>
-            </div>
-            <div className="col-md-3 col-6">
-              <div className="stat-card">
-                <div className="stat-number">{new Set(allJobs.map((j) => j.category)).size}</div>
-                <div className="stat-label">Departments</div>
               </div>
             </div>
           </div>
@@ -208,29 +194,6 @@ export default function Opportunities() {
                   <i className="bx bx-search-alt-2 display-1 text-muted mb-3"></i>
                   <h4>No opportunities found</h4>
                   <p className="text-muted">Try adjusting your filters to see more results</p>
-                </div>
-              </div>
-            )}
-
-            {filteredJobs.length > 0 && (
-              <div className="col-12 text-center mt-4">
-                <div className="post_pagination">
-                  <ul>
-                    <li className="active">
-                      <a href="#">1</a>
-                    </li>
-                    <li>
-                      <a href="#">2</a>
-                    </li>
-                    <li>
-                      <a href="#">3</a>
-                    </li>
-                    <li>
-                      <a href="#">
-                        <i className="fa-solid fa-arrow-right-long" />
-                      </a>
-                    </li>
-                  </ul>
                 </div>
               </div>
             )}
