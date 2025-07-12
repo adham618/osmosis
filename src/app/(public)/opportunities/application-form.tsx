@@ -1,6 +1,7 @@
 'use client'
 
 import React, { useState } from 'react'
+import { useForm } from 'react-hook-form'
 
 import { Job } from './job-card'
 
@@ -24,103 +25,54 @@ export interface ApplicationData {
   experience: string
   expectedSalary: string
   availabilityDate: string
-  cv: File | null
-  additionalDocuments: File[]
+  cv: FileList | null
+  additionalDocuments: FileList | null
 }
 
 export default function ApplicationForm({ job, onClose, onSubmit }: ApplicationFormProps) {
-  const [formData, setFormData] = useState<ApplicationData>({
-    jobId: job.id,
-    jobTitle: job.title,
-    firstName: '',
-    lastName: '',
-    email: '',
-    phone: '',
-    linkedinUrl: '',
-    githubUrl: '',
-    portfolioUrl: '',
-    coverLetter: '',
-    experience: '',
-    expectedSalary: '',
-    availabilityDate: '',
-    cv: null,
-    additionalDocuments: []
-  })
-
-  const [errors, setErrors] = useState<{ [key: string]: string }>({})
   const [isSubmitting, setIsSubmitting] = useState(false)
 
-  const handleInputChange = (
-    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>
-  ) => {
-    const { name, value } = e.target
-
-    setFormData((prev) => ({
-      ...prev,
-      [name]: value
-    }))
-
-    // Clear error when user starts typing
-    if (errors[name]) {
-      setErrors((prev) => ({
-        ...prev,
-        [name]: ''
-      }))
+  const {
+    register,
+    handleSubmit,
+    formState: { errors },
+    watch
+  } = useForm<ApplicationData>({
+    defaultValues: {
+      jobId: job.id,
+      jobTitle: job.title,
+      firstName: '',
+      lastName: '',
+      email: '',
+      phone: '',
+      linkedinUrl: '',
+      githubUrl: '',
+      portfolioUrl: '',
+      coverLetter: '',
+      experience: '',
+      expectedSalary: '',
+      availabilityDate: '',
+      cv: null,
+      additionalDocuments: null
     }
-  }
+  })
 
-  const handleFileChange = (e: React.ChangeEvent<HTMLInputElement>) => {
-    const { name, files } = e.target
+  const cvFiles = watch('cv')
+  const additionalFiles = watch('additionalDocuments')
 
-    if (name === 'cv' && files && files[0]) {
-      setFormData((prev) => ({
-        ...prev,
-        cv: files[0]
-      }))
-    } else if (name === 'additionalDocuments' && files) {
-      setFormData((prev) => ({
-        ...prev,
-        additionalDocuments: Array.from(files)
-      }))
-    }
-  }
-
-  const validateForm = () => {
-    const newErrors: { [key: string]: string } = {}
-
-    if (!formData.firstName.trim()) newErrors.firstName = 'First name is required'
-    if (!formData.lastName.trim()) newErrors.lastName = 'Last name is required'
-    if (!formData.email.trim()) newErrors.email = 'Email is required'
-    else if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(formData.email))
-      newErrors.email = 'Invalid email format'
-    if (!formData.phone.trim()) newErrors.phone = 'Phone number is required'
-    if (!formData.coverLetter.trim()) newErrors.coverLetter = 'Cover letter is required'
-    if (!formData.experience.trim()) newErrors.experience = 'Experience information is required'
-    if (!formData.cv) newErrors.cv = 'CV/Resume is required'
-
-    // URL validations (optional fields)
-    if (formData.linkedinUrl && !formData.linkedinUrl.includes('linkedin.com')) {
-      newErrors.linkedinUrl = 'Please enter a valid LinkedIn URL'
-    }
-    if (formData.githubUrl && !formData.githubUrl.includes('github.com')) {
-      newErrors.githubUrl = 'Please enter a valid GitHub URL'
-    }
-
-    setErrors(newErrors)
-
-    return Object.keys(newErrors).length === 0
-  }
-
-  const handleSubmit = async (e: React.FormEvent) => {
-    e.preventDefault()
-
-    if (!validateForm()) return
-
+  const onSubmitHandler = async (data: ApplicationData) => {
     setIsSubmitting(true)
 
     try {
       await new Promise((resolve) => setTimeout(resolve, 1000))
-      onSubmit(formData)
+
+      const applicationData = {
+        ...data,
+        cv: data.cv?.[0] || null,
+        additionalDocuments: data.additionalDocuments ? Array.from(data.additionalDocuments) : []
+      }
+
+      onSubmit(applicationData as any)
       alert('Application submitted successfully!')
       onClose()
     } catch (error) {
@@ -149,7 +101,7 @@ export default function ApplicationForm({ job, onClose, onSubmit }: ApplicationF
             ></button>
           </div>
 
-          <form onSubmit={handleSubmit}>
+          <form onSubmit={handleSubmit(onSubmitHandler)}>
             <div className="section mb-4">
               <h5 className="section-title mb-3">Personal Information</h5>
               <div className="row">
@@ -162,11 +114,17 @@ export default function ApplicationForm({ job, onClose, onSubmit }: ApplicationF
                       type="text"
                       className={`form-control ${errors.firstName ? 'is-invalid' : ''}`}
                       id="firstName"
-                      name="firstName"
-                      value={formData.firstName}
-                      onChange={handleInputChange}
+                      {...register('firstName', {
+                        required: 'First name is required',
+                        minLength: {
+                          value: 2,
+                          message: 'First name must be at least 2 characters'
+                        }
+                      })}
                     />
-                    {errors.firstName && <div className="invalid-feedback">{errors.firstName}</div>}
+                    {errors.firstName && (
+                      <div className="invalid-feedback">{errors.firstName.message}</div>
+                    )}
                   </div>
                 </div>
                 <div className="col-md-6">
@@ -178,11 +136,17 @@ export default function ApplicationForm({ job, onClose, onSubmit }: ApplicationF
                       type="text"
                       className={`form-control ${errors.lastName ? 'is-invalid' : ''}`}
                       id="lastName"
-                      name="lastName"
-                      value={formData.lastName}
-                      onChange={handleInputChange}
+                      {...register('lastName', {
+                        required: 'Last name is required',
+                        minLength: {
+                          value: 2,
+                          message: 'Last name must be at least 2 characters'
+                        }
+                      })}
                     />
-                    {errors.lastName && <div className="invalid-feedback">{errors.lastName}</div>}
+                    {errors.lastName && (
+                      <div className="invalid-feedback">{errors.lastName.message}</div>
+                    )}
                   </div>
                 </div>
               </div>
@@ -197,11 +161,15 @@ export default function ApplicationForm({ job, onClose, onSubmit }: ApplicationF
                       type="email"
                       className={`form-control ${errors.email ? 'is-invalid' : ''}`}
                       id="email"
-                      name="email"
-                      value={formData.email}
-                      onChange={handleInputChange}
+                      {...register('email', {
+                        required: 'Email is required',
+                        pattern: {
+                          value: /^[^\s@]+@[^\s@]+\.[^\s@]+$/,
+                          message: 'Invalid email format'
+                        }
+                      })}
                     />
-                    {errors.email && <div className="invalid-feedback">{errors.email}</div>}
+                    {errors.email && <div className="invalid-feedback">{errors.email.message}</div>}
                   </div>
                 </div>
                 <div className="col-md-6">
@@ -213,11 +181,15 @@ export default function ApplicationForm({ job, onClose, onSubmit }: ApplicationF
                       type="tel"
                       className={`form-control ${errors.phone ? 'is-invalid' : ''}`}
                       id="phone"
-                      name="phone"
-                      value={formData.phone}
-                      onChange={handleInputChange}
+                      {...register('phone', {
+                        required: 'Phone number is required',
+                        pattern: {
+                          value: /^[\+]?[0-9\s\-\(\)]{10,}$/,
+                          message: 'Invalid phone number format'
+                        }
+                      })}
                     />
-                    {errors.phone && <div className="invalid-feedback">{errors.phone}</div>}
+                    {errors.phone && <div className="invalid-feedback">{errors.phone.message}</div>}
                   </div>
                 </div>
               </div>
@@ -235,13 +207,16 @@ export default function ApplicationForm({ job, onClose, onSubmit }: ApplicationF
                       type="url"
                       className={`form-control ${errors.linkedinUrl ? 'is-invalid' : ''}`}
                       id="linkedinUrl"
-                      name="linkedinUrl"
-                      value={formData.linkedinUrl}
-                      onChange={handleInputChange}
                       placeholder="https://linkedin.com/in/yourprofile"
+                      {...register('linkedinUrl', {
+                        pattern: {
+                          value: /^https?:\/\/(www\.)?linkedin\.com\/in\/[\w-]+\/?$/,
+                          message: 'Please enter a valid LinkedIn URL'
+                        }
+                      })}
                     />
                     {errors.linkedinUrl && (
-                      <div className="invalid-feedback">{errors.linkedinUrl}</div>
+                      <div className="invalid-feedback">{errors.linkedinUrl.message}</div>
                     )}
                   </div>
                 </div>
@@ -254,12 +229,17 @@ export default function ApplicationForm({ job, onClose, onSubmit }: ApplicationF
                       type="url"
                       className={`form-control ${errors.githubUrl ? 'is-invalid' : ''}`}
                       id="githubUrl"
-                      name="githubUrl"
-                      value={formData.githubUrl}
-                      onChange={handleInputChange}
                       placeholder="https://github.com/yourusername"
+                      {...register('githubUrl', {
+                        pattern: {
+                          value: /^https?:\/\/(www\.)?github\.com\/[\w-]+\/?$/,
+                          message: 'Please enter a valid GitHub URL'
+                        }
+                      })}
                     />
-                    {errors.githubUrl && <div className="invalid-feedback">{errors.githubUrl}</div>}
+                    {errors.githubUrl && (
+                      <div className="invalid-feedback">{errors.githubUrl.message}</div>
+                    )}
                   </div>
                 </div>
               </div>
@@ -270,13 +250,19 @@ export default function ApplicationForm({ job, onClose, onSubmit }: ApplicationF
                 </label>
                 <input
                   type="url"
-                  className="form-control"
+                  className={`form-control ${errors.portfolioUrl ? 'is-invalid' : ''}`}
                   id="portfolioUrl"
-                  name="portfolioUrl"
-                  value={formData.portfolioUrl}
-                  onChange={handleInputChange}
                   placeholder="https://yourportfolio.com"
+                  {...register('portfolioUrl', {
+                    pattern: {
+                      value: /^https?:\/\/.+\..+/,
+                      message: 'Please enter a valid URL'
+                    }
+                  })}
                 />
+                {errors.portfolioUrl && (
+                  <div className="invalid-feedback">{errors.portfolioUrl.message}</div>
+                )}
               </div>
             </div>
 
@@ -289,13 +275,19 @@ export default function ApplicationForm({ job, onClose, onSubmit }: ApplicationF
                 <textarea
                   className={`form-control ${errors.coverLetter ? 'is-invalid' : ''}`}
                   id="coverLetter"
-                  name="coverLetter"
                   rows={4}
-                  value={formData.coverLetter}
-                  onChange={handleInputChange}
                   placeholder="Tell us why you're interested in this position..."
+                  {...register('coverLetter', {
+                    required: 'Cover letter is required',
+                    minLength: {
+                      value: 50,
+                      message: 'Cover letter must be at least 50 characters'
+                    }
+                  })}
                 />
-                {errors.coverLetter && <div className="invalid-feedback">{errors.coverLetter}</div>}
+                {errors.coverLetter && (
+                  <div className="invalid-feedback">{errors.coverLetter.message}</div>
+                )}
               </div>
 
               <div className="mb-3">
@@ -305,13 +297,19 @@ export default function ApplicationForm({ job, onClose, onSubmit }: ApplicationF
                 <textarea
                   className={`form-control ${errors.experience ? 'is-invalid' : ''}`}
                   id="experience"
-                  name="experience"
                   rows={3}
-                  value={formData.experience}
-                  onChange={handleInputChange}
                   placeholder="Describe your relevant experience and skills..."
+                  {...register('experience', {
+                    required: 'Experience information is required',
+                    minLength: {
+                      value: 30,
+                      message: 'Experience description must be at least 30 characters'
+                    }
+                  })}
                 />
-                {errors.experience && <div className="invalid-feedback">{errors.experience}</div>}
+                {errors.experience && (
+                  <div className="invalid-feedback">{errors.experience.message}</div>
+                )}
               </div>
 
               <div className="row">
@@ -324,10 +322,8 @@ export default function ApplicationForm({ job, onClose, onSubmit }: ApplicationF
                       type="text"
                       className="form-control"
                       id="expectedSalary"
-                      name="expectedSalary"
-                      value={formData.expectedSalary}
-                      onChange={handleInputChange}
                       placeholder="e.g., $60,000 - $80,000"
+                      {...register('expectedSalary')}
                     />
                   </div>
                 </div>
@@ -340,9 +336,7 @@ export default function ApplicationForm({ job, onClose, onSubmit }: ApplicationF
                       type="date"
                       className="form-control"
                       id="availabilityDate"
-                      name="availabilityDate"
-                      value={formData.availabilityDate}
-                      onChange={handleInputChange}
+                      {...register('availabilityDate')}
                     />
                   </div>
                 </div>
@@ -361,19 +355,42 @@ export default function ApplicationForm({ job, onClose, onSubmit }: ApplicationF
                   <input
                     type="file"
                     id="cv"
-                    name="cv"
                     accept=".pdf,.doc,.docx"
-                    onChange={handleFileChange}
                     className="file-input"
+                    {...register('cv', {
+                      required: 'CV/Resume is required',
+                      validate: {
+                        fileSize: (files) => {
+                          if (!files || files.length === 0) return true
+                          const file = files[0]
+
+                          return file.size <= 5 * 1024 * 1024 || 'File size must be less than 5MB'
+                        },
+                        fileType: (files) => {
+                          if (!files || files.length === 0) return true
+                          const file = files[0]
+                          const allowedTypes = [
+                            'application/pdf',
+                            'application/msword',
+                            'application/vnd.openxmlformats-officedocument.wordprocessingml.document'
+                          ]
+
+                          return (
+                            allowedTypes.includes(file.type) ||
+                            'Only PDF, DOC, and DOCX files are allowed'
+                          )
+                        }
+                      }
+                    })}
                   />
                   <label htmlFor="cv" className="file-upload-label">
                     <span className="file-name">
-                      {formData.cv ? formData.cv.name : 'Choose file'}
+                      {cvFiles && cvFiles.length > 0 ? cvFiles[0].name : 'Choose file'}
                     </span>
                     <span className="upload-btn">Browse</span>
                   </label>
                 </div>
-                {errors.cv && <div className="file-error">{errors.cv}</div>}
+                {errors.cv && <div className="file-error">{errors.cv.message}</div>}
                 <small className="text-muted">PDF, DOC, DOCX (Max 5MB)</small>
               </div>
 
@@ -386,21 +403,36 @@ export default function ApplicationForm({ job, onClose, onSubmit }: ApplicationF
                   <input
                     type="file"
                     id="additionalDocuments"
-                    name="additionalDocuments"
                     multiple
                     accept=".pdf,.doc,.docx,.txt"
-                    onChange={handleFileChange}
                     className="file-input"
+                    {...register('additionalDocuments', {
+                      validate: {
+                        fileSize: (files) => {
+                          if (!files || files.length === 0) return true
+                          for (let i = 0; i < files.length; i++) {
+                            if (files[i].size > 5 * 1024 * 1024) {
+                              return 'Each file must be less than 5MB'
+                            }
+                          }
+
+                          return true
+                        }
+                      }
+                    })}
                   />
                   <label htmlFor="additionalDocuments" className="file-upload-label">
                     <span className="file-name">
-                      {formData.additionalDocuments.length > 0
-                        ? `${formData.additionalDocuments.length} file${formData.additionalDocuments.length > 1 ? 's' : ''} selected`
+                      {additionalFiles && additionalFiles.length > 0
+                        ? `${additionalFiles.length} file${additionalFiles.length > 1 ? 's' : ''} selected`
                         : 'Choose files'}
                     </span>
                     <span className="upload-btn">Browse</span>
                   </label>
                 </div>
+                {errors.additionalDocuments && (
+                  <div className="file-error">{errors.additionalDocuments.message}</div>
+                )}
                 <small className="text-muted">Portfolio, certificates, references (Optional)</small>
               </div>
             </div>
