@@ -351,36 +351,57 @@ export default function ApplicationForm({ job, onClose, onSubmit }: ApplicationF
 
             <div className="section mb-4">
               <h5 className="section-title mb-3">Documents</h5>
+
+              {/* CV/Resume Upload */}
               <div className="mb-3">
                 <label htmlFor="cv" className="form-label">
                   CV/Resume *
                 </label>
-                <input
-                  type="file"
-                  className={`form-control ${errors.cv ? 'is-invalid' : ''}`}
-                  id="cv"
-                  name="cv"
-                  accept=".pdf,.doc,.docx"
-                  onChange={handleFileChange}
-                />
-                {errors.cv && <div className="invalid-feedback">{errors.cv}</div>}
-                <div className="form-text">Accepted formats: PDF, DOC, DOCX (Max 5MB)</div>
+                <div className={`simple-file-upload ${errors.cv ? 'error' : ''}`}>
+                  <input
+                    type="file"
+                    id="cv"
+                    name="cv"
+                    accept=".pdf,.doc,.docx"
+                    onChange={handleFileChange}
+                    className="file-input"
+                  />
+                  <label htmlFor="cv" className="file-upload-label">
+                    <span className="file-name">
+                      {formData.cv ? formData.cv.name : 'Choose file'}
+                    </span>
+                    <span className="upload-btn">Browse</span>
+                  </label>
+                </div>
+                {errors.cv && <div className="file-error">{errors.cv}</div>}
+                <small className="text-muted">PDF, DOC, DOCX (Max 5MB)</small>
               </div>
 
+              {/* Additional Documents Upload */}
               <div className="mb-3">
                 <label htmlFor="additionalDocuments" className="form-label">
                   Additional Documents
                 </label>
-                <input
-                  type="file"
-                  className="form-control"
-                  id="additionalDocuments"
-                  name="additionalDocuments"
-                  multiple
-                  accept=".pdf,.doc,.docx,.txt"
-                  onChange={handleFileChange}
-                />
-                <div className="form-text">Optional: Portfolio, certificates, references, etc.</div>
+                <div className="simple-file-upload">
+                  <input
+                    type="file"
+                    id="additionalDocuments"
+                    name="additionalDocuments"
+                    multiple
+                    accept=".pdf,.doc,.docx,.txt"
+                    onChange={handleFileChange}
+                    className="file-input"
+                  />
+                  <label htmlFor="additionalDocuments" className="file-upload-label">
+                    <span className="file-name">
+                      {formData.additionalDocuments.length > 0
+                        ? `${formData.additionalDocuments.length} file${formData.additionalDocuments.length > 1 ? 's' : ''} selected`
+                        : 'Choose files'}
+                    </span>
+                    <span className="upload-btn">Browse</span>
+                  </label>
+                </div>
+                <small className="text-muted">Portfolio, certificates, references (Optional)</small>
               </div>
             </div>
 
@@ -445,6 +466,78 @@ export default function ApplicationForm({ job, onClose, onSubmit }: ApplicationF
           color: #333;
           border-bottom: 2px solid #e9ecef;
           padding-bottom: 8px;
+        }
+
+        .form-control{
+        margin-bottom: 8px;
+        }
+
+        .simple-file-upload {
+          position: relative;
+          margin-bottom: 8px;
+        }
+
+        .simple-file-upload.error .file-upload-label {
+          border-color: #dc3545;
+        }
+
+        .file-input {
+          position: absolute;
+          width: 1px;
+          height: 1px;
+          padding: 0;
+          margin: -1px;
+          overflow: hidden;
+          clip: rect(0, 0, 0, 0);
+          white-space: nowrap;
+          border: 0;
+        }
+
+        .file-upload-label {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          padding: 12px 16px;
+          border: 1px solid #ced4da;
+          border-radius: 4px;
+          background-color: #fff;
+          cursor: pointer;
+          transition: border-color 0.15s ease-in-out;
+        }
+
+        .file-upload-label:hover {
+          border-color: var(--purple-main);
+        }
+
+        .file-name {
+          flex: 1;
+          color: #495057;
+          font-size: 0.875rem;
+          text-overflow: ellipsis;
+          overflow: hidden;
+          white-space: nowrap;
+        }
+
+        .upload-btn {
+          padding: 6px 12px;
+          background-color: #f8f9fa;
+          color: #495057;
+          border: 1px solid #ced4da;
+          border-radius: 4px;
+          font-size: 0.875rem;
+          font-weight: 500;
+          margin-left: 12px;
+          flex-shrink: 0;
+        }
+
+        .file-upload-label:hover .upload-btn {
+          background-color: #e9ecef;
+        }
+
+        .file-error {
+          color: #dc3545;
+          font-size: 0.875rem;
+          margin-top: 4px;
         }
       `}</style>
     </div>
