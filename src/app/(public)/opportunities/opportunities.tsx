@@ -266,7 +266,10 @@ export default function Opportunities() {
           background-color: var(--purple-main);
           border-color: var(--purple-main);
         }
-
+        .btn-primary:disabled{
+          background-color: var(--purple-main);
+          border-color: var(--purple-main);
+        }
         .btn-primary:hover {
           background-color: var(--purple-main);
           opacity: 0.9;

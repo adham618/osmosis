@@ -1,8 +1,10 @@
+// Updated ApplicationForm.tsx
 'use client'
 import type { Job } from './job-card'
 
 import React, { useState } from 'react'
 import { useForm } from 'react-hook-form'
+import { toast } from 'sonner'
 
 interface ApplicationFormProps {
   job: Job
@@ -36,8 +38,7 @@ export default function ApplicationForm({ job, onClose, onSubmit }: ApplicationF
     register,
     handleSubmit,
     formState: { errors },
-    watch,
-    setValue
+    watch
   } = useForm<ApplicationData>({
     defaultValues: {
       jobId: job.id,
@@ -63,18 +64,37 @@ export default function ApplicationForm({ job, onClose, onSubmit }: ApplicationF
   const onSubmitHandler = async (data: ApplicationData) => {
     setIsSubmitting(true)
     try {
-      await new Promise((resolve) => setTimeout(resolve, 1000))
-      const applicationData = {
-        ...data,
-        cv: data.cv?.[0] || null,
-        additionalDocuments: additionalFiles.length > 0 ? additionalFiles : null
-      }
+      const formData = new FormData()
 
-      onSubmit(applicationData as any)
-      alert('Application submitted successfully!')
-      onClose()
+      Object.entries(data).forEach(([key, value]) => {
+        if (key === 'cv' && value?.[0]) {
+          formData.append('cv', value[0])
+        } else if (key === 'additionalDocuments') {
+          additionalFiles.forEach((file) => {
+            formData.append('additionalDocuments', file)
+          })
+        } else if (value && typeof value === 'string') {
+          formData.append(key, value)
+        }
+      })
+
+      const response = await fetch('/api/apply', {
+        method: 'POST',
+        body: formData
+      })
+
+      const result = await response.json()
+
+      if (result.success) {
+        onSubmit(data)
+        toast.success('Application submitted successfully!')
+        onClose()
+      } else {
+        throw new Error(result.error || 'Failed to submit application')
+      }
+      // eslint-disable-next-line @typescript-eslint/no-unused-vars
     } catch (error) {
-      alert(`Error submitting application. Please try again., ${error}`)
+      toast.error('Error submitting application')
     } finally {
       setIsSubmitting(false)
     }
@@ -85,7 +105,6 @@ export default function ApplicationForm({ job, onClose, onSubmit }: ApplicationF
       const newFiles = Array.from(e.target.files)
 
       setAdditionalFiles((prevFiles) => [...prevFiles, ...newFiles])
-      setValue('additionalDocuments', [...additionalFiles, ...newFiles] as any)
     }
   }
 
@@ -336,6 +355,7 @@ export default function ApplicationForm({ job, onClose, onSubmit }: ApplicationF
                       type="date"
                       className="form-control"
                       id="availabilityDate"
+                      min={new Date().toISOString().split('T')[0]}
                       {...register('availabilityDate')}
                     />
                   </div>
@@ -412,8 +432,23 @@ export default function ApplicationForm({ job, onClose, onSubmit }: ApplicationF
                     <span className="upload-btn">Browse</span>
                   </label>
                 </div>
-                {errors.additionalDocuments && (
-                  <div className="file-error">{errors.additionalDocuments.message}</div>
+                {additionalFiles.length > 0 && (
+                  <div className="selected-files">
+                    {additionalFiles.map((file, index) => (
+                      <div key={index} className="file-item">
+                        <span>{file.name}</span>
+                        <button
+                          type="button"
+                          className="remove-file"
+                          onClick={() => {
+                            setAdditionalFiles((prev) => prev.filter((_, i) => i !== index))
+                          }}
+                        >
+                          ×
+                        </button>
+                      </div>
+                    ))}
+                  </div>
                 )}
                 <small className="text-muted">Portfolio, certificates, references (Optional)</small>
               </div>
@@ -427,7 +462,14 @@ export default function ApplicationForm({ job, onClose, onSubmit }: ApplicationF
               >
                 Cancel
               </button>
-              <button type="submit" className="btn btn-primary" disabled={isSubmitting}>
+              <button
+                type="submit"
+                className="btn btn-primary"
+                style={{
+                  minWidth: '160px'
+                }}
+                disabled={isSubmitting}
+              >
                 {isSubmitting ? (
                   <>
                     <span
@@ -537,6 +579,44 @@ export default function ApplicationForm({ job, onClose, onSubmit }: ApplicationF
           color: #dc3545;
           font-size: 0.875rem;
           margin-top: 4px;
+        }
+        .selected-files {
+          margin-top: 8px;
+          padding: 8px;
+          border: 1px solid #e9ecef;
+          border-radius: 4px;
+          background-color: #f8f9fa;
+        }
+        .file-item {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          padding: 4px 8px;
+          margin-bottom: 4px;
+          background-color: white;
+          border-radius: 4px;
+          font-size: 0.875rem;
+        }
+        .file-item:last-child {
+          margin-bottom: 0;
+        }
+        .remove-file {
+          background: none;
+          border: none;
+          color: #dc3545;
+          cursor: pointer;
+          font-size: 1.2rem;
+          padding: 0;
+          width: 20px;
+          height: 20px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
+        .remove-file:hover {
+          background-color: #dc3545;
+          color: white;
+          border-radius: 50%;
         }
       `}</style>
     </div>
