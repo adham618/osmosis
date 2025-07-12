@@ -1,6 +1,6 @@
 import { Metadata } from 'next'
 
-import Opportunities from './courses-area'
+import Opportunities from './opportunities'
 
 import Breadcrumb from '@/components/common/Breadcrumb'
 
