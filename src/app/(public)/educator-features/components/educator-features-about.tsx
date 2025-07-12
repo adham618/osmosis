@@ -1,12 +1,18 @@
+'use client'
 import Link from 'next/link'
 
+import { useVideoAutoplay } from '@/hooks/use-video-autoplay'
+
 export default function EducatorFeaturesAbout() {
+  // Fix for Safari
+  const { videoRef } = useVideoAutoplay()
+
   return (
     <section className="about" style={{ marginBottom: '5%' }}>
       <div className="container" style={{ paddingTop: '60px' }}>
         <div className="row gap-5 justify-content-between">
           <div className="col-lg-6 aboutvideo align-self-center" data-aos="fade-in">
-            <video autoPlay loop muted playsInline>
+            <video ref={videoRef} autoPlay loop muted playsInline>
               <source src="assets/img/for-educators/vr-biochem.mp4" type="video/mp4" />
             </video>
           </div>

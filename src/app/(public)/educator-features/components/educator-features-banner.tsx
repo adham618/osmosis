@@ -1,7 +1,13 @@
+'use client'
 import Image from 'next/image'
 import Link from 'next/link'
 
+import { useVideoAutoplay } from '@/hooks/use-video-autoplay'
+
 export default function EducatorFeaturesBanner() {
+  // Fix for Safari
+  const { videoRef } = useVideoAutoplay()
+
   return (
     <section className="home-banner hbstyle-2 position-relative w-100 overflow-hidden">
       <Image
@@ -35,7 +41,7 @@ export default function EducatorFeaturesBanner() {
 
         <div className="banner_img">
           <div className="banner_img_inner">
-            <video autoPlay loop muted playsInline>
+            <video ref={videoRef} autoPlay loop muted playsInline>
               <source src="assets/img/for-educators/vr-teacher.mp4" type="video/mp4" />
             </video>
             <div className="sinfo">
