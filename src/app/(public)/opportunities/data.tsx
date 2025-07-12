@@ -4,7 +4,7 @@ export const featuredJobs: Job[] = [
   {
     id: '1',
     title: 'Senior Full Stack Developer',
-    company: 'EduTech Solutions',
+    company: 'Osmosis - AR',
     location: 'San Francisco, CA',
     type: 'Full-time',
     level: 'Senior',
@@ -33,7 +33,7 @@ export const featuredJobs: Job[] = [
   {
     id: '7',
     title: 'Marketing Specialist',
-    company: 'EduTech Solutions',
+    company: 'Osmosis - AR',
     location: 'Los Angeles, CA',
     type: 'Full-time',
     level: 'Entry',
@@ -120,7 +120,7 @@ export const featuredJobs: Job[] = [
   {
     id: '10',
     title: 'QA Engineer',
-    company: 'EduTech Solutions',
+    company: 'Osmosis - AR',
     location: 'Denver, CO',
     type: 'Contract',
     level: 'Mid',
@@ -210,7 +210,7 @@ export const otherJobs: Job[] = [
   {
     id: '4',
     title: 'DevOps Engineer',
-    company: 'EduTech Solutions',
+    company: 'Osmosis - AR',
     location: 'Austin, TX',
     type: 'Full-time',
     level: 'Mid',
