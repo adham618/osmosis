@@ -91,7 +91,7 @@ export const featuredJobs: Job[] = [
   {
     id: '9',
     title: 'Customer Success Manager',
-    company: 'Creative Education Co.',
+    company: 'Osmosis - AR',
     location: 'Chicago, IL',
     type: 'Full-time',
     level: 'Mid',
@@ -181,7 +181,7 @@ export const otherJobs: Job[] = [
   {
     id: '3',
     title: 'UX/UI Designer',
-    company: 'Creative Education Co.',
+    company: 'Osmosis - AR',
     location: 'Remote',
     type: 'Full-time',
     level: 'Mid',

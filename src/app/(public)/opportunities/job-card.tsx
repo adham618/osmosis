@@ -157,7 +157,7 @@ export default function JobCard({
 
   return (
     <div className={`single-job card ${className}`}>
-      <div className="card-body">
+      <div className="card-body d-flex flex-column" style={{ height: '100%' }}>
         <div className="job-header mb-3">
           <div className="d-flex justify-content-between align-items-start">
             <div>
@@ -192,7 +192,7 @@ export default function JobCard({
           <p className="card-text">{job.description.substring(0, 120)}...</p>
         </div>
 
-        <div className="job-footer d-flex justify-content-between align-items-center mt-3">
+        <div className="job-footer d-flex justify-content-between align-items-center mt-auto">
           <small className="text-muted">
             <i className="bx bx-time-five"></i> Posted: {job.posted}
           </small>
