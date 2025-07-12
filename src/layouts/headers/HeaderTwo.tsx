@@ -12,6 +12,10 @@ export default function HeaderTwo() {
   const [open, setOpen] = useState(false)
   const [opneMenu, setOpneMenu] = useState(false)
 
+  const closeMenu = () => {
+    setOpneMenu(false)
+  }
+
   return (
     <>
       <header id="navigation" className="header-2">
@@ -208,7 +212,7 @@ export default function HeaderTwo() {
           <span></span>
           <span></span>
         </button>
-        <MobileMenu opneMenu={opneMenu} />
+        <MobileMenu opneMenu={opneMenu} closeMenu={closeMenu} />
       </header>
     </>
   )
