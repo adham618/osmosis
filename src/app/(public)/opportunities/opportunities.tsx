@@ -334,7 +334,7 @@ export default function Opportunities() {
           }
 
         .salary {
-          font-size: 1.1rem;
+          font-size: 1rem;
           font-weight: 600;
           color: #28a745;
           line-height: 1.5;

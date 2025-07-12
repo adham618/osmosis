@@ -1,9 +1,8 @@
 'use client'
+import type { Job } from './job-card'
 
 import React, { useState } from 'react'
 import { useForm } from 'react-hook-form'
-
-import { Job } from './job-card'
 
 interface ApplicationFormProps {
   job: Job
@@ -31,12 +30,14 @@ export interface ApplicationData {
 
 export default function ApplicationForm({ job, onClose, onSubmit }: ApplicationFormProps) {
   const [isSubmitting, setIsSubmitting] = useState(false)
+  const [additionalFiles, setAdditionalFiles] = useState<File[]>([])
 
   const {
     register,
     handleSubmit,
     formState: { errors },
-    watch
+    watch,
+    setValue
   } = useForm<ApplicationData>({
     defaultValues: {
       jobId: job.id,
@@ -58,18 +59,15 @@ export default function ApplicationForm({ job, onClose, onSubmit }: ApplicationF
   })
 
   const cvFiles = watch('cv')
-  const additionalFiles = watch('additionalDocuments')
 
   const onSubmitHandler = async (data: ApplicationData) => {
     setIsSubmitting(true)
-
     try {
       await new Promise((resolve) => setTimeout(resolve, 1000))
-
       const applicationData = {
         ...data,
         cv: data.cv?.[0] || null,
-        additionalDocuments: data.additionalDocuments ? Array.from(data.additionalDocuments) : []
+        additionalDocuments: additionalFiles.length > 0 ? additionalFiles : null
       }
 
       onSubmit(applicationData as any)
@@ -79,6 +77,15 @@ export default function ApplicationForm({ job, onClose, onSubmit }: ApplicationF
       alert(`Error submitting application. Please try again., ${error}`)
     } finally {
       setIsSubmitting(false)
+    }
+  }
+
+  const handleAdditionalFilesChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+    if (e.target.files) {
+      const newFiles = Array.from(e.target.files)
+
+      setAdditionalFiles((prevFiles) => [...prevFiles, ...newFiles])
+      setValue('additionalDocuments', [...additionalFiles, ...newFiles] as any)
     }
   }
 
@@ -100,7 +107,6 @@ export default function ApplicationForm({ job, onClose, onSubmit }: ApplicationF
               aria-label="Close"
             ></button>
           </div>
-
           <form onSubmit={handleSubmit(onSubmitHandler)}>
             <div className="section mb-4">
               <h5 className="section-title mb-3">Personal Information</h5>
@@ -150,7 +156,6 @@ export default function ApplicationForm({ job, onClose, onSubmit }: ApplicationF
                   </div>
                 </div>
               </div>
-
               <div className="row">
                 <div className="col-md-6">
                   <div className="mb-3">
@@ -194,7 +199,6 @@ export default function ApplicationForm({ job, onClose, onSubmit }: ApplicationF
                 </div>
               </div>
             </div>
-
             <div className="section mb-4">
               <h5 className="section-title mb-3">Professional Links</h5>
               <div className="row">
@@ -243,7 +247,6 @@ export default function ApplicationForm({ job, onClose, onSubmit }: ApplicationF
                   </div>
                 </div>
               </div>
-
               <div className="mb-3">
                 <label htmlFor="portfolioUrl" className="form-label">
                   Portfolio/Personal Website
@@ -265,7 +268,6 @@ export default function ApplicationForm({ job, onClose, onSubmit }: ApplicationF
                 )}
               </div>
             </div>
-
             <div className="section mb-4">
               <h5 className="section-title mb-3">Application Details</h5>
               <div className="mb-3">
@@ -289,7 +291,6 @@ export default function ApplicationForm({ job, onClose, onSubmit }: ApplicationF
                   <div className="invalid-feedback">{errors.coverLetter.message}</div>
                 )}
               </div>
-
               <div className="mb-3">
                 <label htmlFor="experience" className="form-label">
                   Relevant Experience *
@@ -311,7 +312,6 @@ export default function ApplicationForm({ job, onClose, onSubmit }: ApplicationF
                   <div className="invalid-feedback">{errors.experience.message}</div>
                 )}
               </div>
-
               <div className="row">
                 <div className="col-md-6">
                   <div className="mb-3">
@@ -342,11 +342,8 @@ export default function ApplicationForm({ job, onClose, onSubmit }: ApplicationF
                 </div>
               </div>
             </div>
-
             <div className="section mb-4">
               <h5 className="section-title mb-3">Documents</h5>
-
-              {/* CV/Resume Upload */}
               <div className="mb-3">
                 <label htmlFor="cv" className="form-label">
                   CV/Resume *
@@ -393,8 +390,6 @@ export default function ApplicationForm({ job, onClose, onSubmit }: ApplicationF
                 {errors.cv && <div className="file-error">{errors.cv.message}</div>}
                 <small className="text-muted">PDF, DOC, DOCX (Max 5MB)</small>
               </div>
-
-              {/* Additional Documents Upload */}
               <div className="mb-3">
                 <label htmlFor="additionalDocuments" className="form-label">
                   Additional Documents
@@ -406,24 +401,11 @@ export default function ApplicationForm({ job, onClose, onSubmit }: ApplicationF
                     multiple
                     accept=".pdf,.doc,.docx,.txt"
                     className="file-input"
-                    {...register('additionalDocuments', {
-                      validate: {
-                        fileSize: (files) => {
-                          if (!files || files.length === 0) return true
-                          for (let i = 0; i < files.length; i++) {
-                            if (files[i].size > 5 * 1024 * 1024) {
-                              return 'Each file must be less than 5MB'
-                            }
-                          }
-
-                          return true
-                        }
-                      }
-                    })}
+                    onChange={handleAdditionalFilesChange}
                   />
                   <label htmlFor="additionalDocuments" className="file-upload-label">
                     <span className="file-name">
-                      {additionalFiles && additionalFiles.length > 0
+                      {additionalFiles.length > 0
                         ? `${additionalFiles.length} file${additionalFiles.length > 1 ? 's' : ''} selected`
                         : 'Choose files'}
                     </span>
@@ -436,7 +418,6 @@ export default function ApplicationForm({ job, onClose, onSubmit }: ApplicationF
                 <small className="text-muted">Portfolio, certificates, references (Optional)</small>
               </div>
             </div>
-
             <div className="form-footer d-flex justify-content-end gap-2">
               <button
                 type="button"
@@ -464,7 +445,6 @@ export default function ApplicationForm({ job, onClose, onSubmit }: ApplicationF
           </form>
         </div>
       </div>
-
       <style>{`
         .application-form-overlay {
           position: fixed;
@@ -479,7 +459,6 @@ export default function ApplicationForm({ job, onClose, onSubmit }: ApplicationF
           z-index: 1050;
           padding: 20px;
         }
-
         .application-form-container {
           background: white;
           border-radius: 8px;
@@ -489,30 +468,24 @@ export default function ApplicationForm({ job, onClose, onSubmit }: ApplicationF
           overflow-y: auto;
           box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
         }
-
         .application-form {
           padding: 30px;
         }
-
         .section-title {
           color: #333;
           border-bottom: 2px solid #e9ecef;
           padding-bottom: 8px;
         }
-
-        .form-control{
-        margin-bottom: 8px;
+        .form-control {
+          margin-bottom: 8px;
         }
-
         .simple-file-upload {
           position: relative;
           margin-bottom: 8px;
         }
-
         .simple-file-upload.error .file-upload-label {
           border-color: #dc3545;
         }
-
         .file-input {
           position: absolute;
           width: 1px;
@@ -524,7 +497,6 @@ export default function ApplicationForm({ job, onClose, onSubmit }: ApplicationF
           white-space: nowrap;
           border: 0;
         }
-
         .file-upload-label {
           display: flex;
           align-items: center;
@@ -536,11 +508,9 @@ export default function ApplicationForm({ job, onClose, onSubmit }: ApplicationF
           cursor: pointer;
           transition: border-color 0.15s ease-in-out;
         }
-
         .file-upload-label:hover {
           border-color: var(--purple-main);
         }
-
         .file-name {
           flex: 1;
           color: #495057;
@@ -549,7 +519,6 @@ export default function ApplicationForm({ job, onClose, onSubmit }: ApplicationF
           overflow: hidden;
           white-space: nowrap;
         }
-
         .upload-btn {
           padding: 6px 12px;
           background-color: #f8f9fa;
@@ -561,11 +530,9 @@ export default function ApplicationForm({ job, onClose, onSubmit }: ApplicationF
           margin-left: 12px;
           flex-shrink: 0;
         }
-
         .file-upload-label:hover .upload-btn {
           background-color: #e9ecef;
         }
-
         .file-error {
           color: #dc3545;
           font-size: 0.875rem;
