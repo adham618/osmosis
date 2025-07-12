@@ -12,6 +12,10 @@ import { siteConfig } from '@/config/site'
 export default function Header() {
   const [openMenu, setOpenMenu] = useState(false)
 
+  const closeMenu = () => {
+    setOpenMenu(false)
+  }
+
   return (
     <header id="navigation" className="header-2">
       <div className="container">
@@ -45,7 +49,7 @@ export default function Header() {
           </div>
 
           {/* Call to Action Button */}
-          <div className="col-xl-3 col-lg-3 col-md-3 col-auto align-self-center text-end pe-5 pe-sm-0 flex-shrink-0">
+          <div className="col-xl-3 w-auto col-lg-3 col-md-3 col-auto align-self-center text-end pe-5 pe-sm-0 flex-shrink-0">
             <Link href="/dashboard/login" className="bg_btn call-action-button bt">
               Get Started
             </Link>
@@ -66,7 +70,7 @@ export default function Header() {
         <span></span>
       </button>
       {/* Mobile Menu Component */}
-      {openMenu && <MobileMenu opneMenu={openMenu} />}
+      {openMenu && <MobileMenu opneMenu={openMenu} closeMenu={closeMenu} />}
     </header>
   )
 }

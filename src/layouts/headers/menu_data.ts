@@ -42,7 +42,7 @@ const menu_data: DataType[] = [
   {
     id: 4,
     title: 'Opportunities',
-    link: '/',
+    link: '/opportunities',
     has_dropdown: false
   }
 ]

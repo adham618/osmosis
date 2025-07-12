@@ -5,7 +5,13 @@ import React, { useState } from 'react'
 
 import menu_data from './menu_data'
 
-export default function MobileMenu({ opneMenu }: any) {
+export default function MobileMenu({
+  opneMenu,
+  closeMenu
+}: {
+  opneMenu: boolean
+  closeMenu: () => void
+}) {
   const [navTitle, setNavTitle] = useState('')
 
   // openMobileMenu
@@ -40,7 +46,11 @@ export default function MobileMenu({ opneMenu }: any) {
                 </a>
               ) : (
                 // For items without dropdown, use Link normally
-                <Link href={item.link} style={{ fontSize: '18px', cursor: 'pointer' }}>
+                <Link
+                  href={item.link}
+                  style={{ fontSize: '18px', cursor: 'pointer' }}
+                  onClick={closeMenu}
+                >
                   {item.title}
                 </Link>
               )}
@@ -54,7 +64,9 @@ export default function MobileMenu({ opneMenu }: any) {
                         </li>
                       )}
                       <li>
-                        <Link href={sub_menu.link}>{sub_menu.title}</Link>
+                        <Link href={sub_menu.link} onClick={closeMenu}>
+                          {sub_menu.title}
+                        </Link>
                       </li>
                     </React.Fragment>
                   ))}

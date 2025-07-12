@@ -31,7 +31,7 @@ export default function PriceCard({
         <div className="fea-icon  mx-auto">{icon}</div>
         <h1>{price}</h1>
         <h3>{title}</h3>
-        <div style={{ textAlign: 'left' }}>
+        <div style={{ textAlign: 'left', marginBottom: '20px' }}>
           {features.map((feature, index) => (
             <p key={index}>{feature.text}</p>
           ))}
@@ -42,7 +42,7 @@ export default function PriceCard({
           style={{
             background: 'linear-gradient(45deg, #8A2BE2, #DA70D6)',
             border: 'none',
-            margin: '20px 0',
+            marginTop: 'auto',
             color: 'white',
             cursor: 'pointer',
             textDecoration: 'none',
