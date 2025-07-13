@@ -1,14 +1,16 @@
 import type { Job } from './job-card'
 
+import { siteConfig } from '@/config/site'
+
 export const jobs: Job[] = [
   {
     id: '1',
     title: 'Software Engineering Intern',
-    company: 'Learning Labs Inc.',
-    location: 'Remote',
+    company: siteConfig.name,
+    location: 'New York, NY',
     type: 'Internship',
     level: 'Entry',
-    salary: '$25 - $30 per hour',
+    salary: 'Variable',
     description:
       'Gain hands-on experience in software development while working on real projects that impact education. This internship offers mentorship and learning opportunities in a collaborative environment.',
     requirements: [
@@ -26,7 +28,7 @@ export const jobs: Job[] = [
       'Remote work experience'
     ],
     category: 'Engineering',
-    remote: true,
+    remote: false,
     posted: '1 week ago',
     deadline: '2025-08-05',
     isFeatured: true
@@ -34,11 +36,11 @@ export const jobs: Job[] = [
   {
     id: '2',
     title: 'Product Manager',
-    company: 'Learning Labs Inc.',
-    location: 'New York, NY',
+    company: siteConfig.name,
+    location: 'Remote',
     type: 'Full-time',
     level: 'Mid',
-    salary: '$90,000 - $120,000',
+    salary: 'Variable',
     description:
       'Join our product team to drive innovation in educational technology. You will work closely with engineering, design, and business teams to define and execute product roadmaps that impact millions of students.',
     requirements: [
@@ -56,7 +58,7 @@ export const jobs: Job[] = [
       'Team building activities'
     ],
     category: 'Product',
-    remote: false,
+    remote: true,
     posted: '1 week ago',
     deadline: '2025-08-20',
     isFeatured: true
