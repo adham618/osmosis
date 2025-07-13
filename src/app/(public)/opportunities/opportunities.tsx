@@ -179,7 +179,7 @@ export default function Opportunities() {
           <div className="row">
             <div className="col-12">
               <h2>All Opportunities</h2>
-              <p className="mb-4">Explore all available positions across our partner companies</p>
+              <p className="mb-4">All available positions across Osmosis and Nucleus</p>
             </div>
 
             {filteredOtherJobs.length > 0 ? (

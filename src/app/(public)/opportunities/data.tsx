@@ -7,10 +7,10 @@ export const jobs: Job[] = [
     id: '1',
     title: 'Software Engineering Intern',
     company: siteConfig.name,
-    location: 'New York, NY',
+    location: 'Arizona',
     type: 'Internship',
     level: 'Entry',
-    salary: 'Variable',
+    salary: 'Flexible',
     description:
       'Gain hands-on experience in software development while working on real projects that impact education. This internship offers mentorship and learning opportunities in a collaborative environment.',
     requirements: [
@@ -40,7 +40,7 @@ export const jobs: Job[] = [
     location: 'Remote',
     type: 'Full-time',
     level: 'Mid',
-    salary: 'Variable',
+    salary: 'Flexible',
     description:
       'Join our product team to drive innovation in educational technology. You will work closely with engineering, design, and business teams to define and execute product roadmaps that impact millions of students.',
     requirements: [
