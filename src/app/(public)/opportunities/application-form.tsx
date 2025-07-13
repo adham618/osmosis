@@ -341,7 +341,7 @@ export default function ApplicationForm({ job, onClose, onSubmit }: ApplicationF
                       type="text"
                       className="form-control"
                       id="expectedSalary"
-                      placeholder="e.g., $60,000 - $80,000"
+                      placeholder={job.salary}
                       {...register('expectedSalary')}
                     />
                   </div>
